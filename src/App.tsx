@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Quiz from "./components/Quiz";
+import { ConceptGuide } from "./components/ConceptGuide";
 
 // Import JSON data
 import decisionTreeData from "./data/decisionTree.json";
@@ -8,6 +9,9 @@ import naiveBayesData from "./data/naiveBayes.json";
 import svmData from "./data/svm.json";
 import pcaData from "./data/pca.json";
 import regressionData from "./data/regression.json";
+
+// Import concept guides
+import { conceptGuides } from "./data/conceptGuides";
 
 // Import shadcn/ui components
 import { Button } from "./components/ui/button";
@@ -62,6 +66,8 @@ type TopicKey =
   | "svm"
   | "pca"
   | "regression";
+
+type ViewMode = "topics" | "quiz" | "concepts";
 
 // Topic icons and colors for improved UI
 const topicIcons: Record<TopicKey, { icon: string; description: string }> = {
@@ -129,25 +135,26 @@ const topicData: Record<TopicKey, TopicInfo> = {
 
 // --- Component Definition ---
 
-// Define Props for the Quiz component to match the actual prop types
-// interface QuizProps {
-//   title: string;
-//   questions: QuestionData[];
-// }
-
 // Use React.FC (Functional Component) type
 const App: React.FC = () => {
   // Type the state: it can be one of the TopicKeys or null
   const [selectedTopic, setSelectedTopic] = useState<TopicKey | null>(null);
-
-  // Type the parameter for the handler
-  const handleTopicSelect = (topic: TopicKey): void => {
-    setSelectedTopic(topic);
-  };
+  const [viewMode, setViewMode] = useState<ViewMode>("topics");
 
   // Add explicit void return type
   const handleBack = (): void => {
     setSelectedTopic(null);
+    setViewMode("topics");
+  };
+
+  const handleStartQuiz = (topic: TopicKey): void => {
+    setSelectedTopic(topic);
+    setViewMode("quiz");
+  };
+
+  const handleReadConcepts = (topic: TopicKey): void => {
+    setSelectedTopic(topic);
+    setViewMode("concepts");
   };
 
   // Get the keys strongly typed
@@ -165,29 +172,12 @@ const App: React.FC = () => {
           </p>
         </header>
 
-        {selectedTopic ? (
-          <div className="max-w-4xl mx-auto scroll-y-only">
-            <Button
-              onClick={handleBack}
-              className="mb-6 gap-2"
-              variant="default"
-            >
-              <span aria-hidden="true">←</span> Back to Topics
-            </Button>
-            <Quiz
-              title={topicData[selectedTopic].title}
-              questions={processQuestions(
-                topicData[selectedTopic].data.questions
-              )}
-            />
-          </div>
-        ) : (
+        {viewMode === "topics" ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {availableTopics.map((topic) => (
               <Card
                 key={topic}
-                className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer bg-white border-none shadow"
-                onClick={() => handleTopicSelect(topic)}
+                className="overflow-hidden hover:shadow-lg transition-all duration-300 bg-white border-none shadow"
               >
                 <CardHeader className="pb-3 border-b border-gray-100">
                   <CardTitle className="flex items-center gap-2 text-black">
@@ -206,17 +196,52 @@ const App: React.FC = () => {
                     your knowledge
                   </p>
                 </CardContent>
-                <CardFooter className="pt-4">
-                  <Button variant="default" className="w-full">
+                <CardFooter className="pt-4 flex flex-col sm:flex-row gap-2">
+                  <Button
+                    variant="default"
+                    className="w-full sm:w-1/2"
+                    onClick={() => handleStartQuiz(topic)}
+                  >
                     Start Quiz
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full sm:w-1/2 border-amber-500 text-amber-700 hover:bg-amber-50"
+                    onClick={() => handleReadConcepts(topic)}
+                  >
+                    Read Concepts
                   </Button>
                 </CardFooter>
               </Card>
             ))}
           </div>
-        )}
+        ) : viewMode === "quiz" && selectedTopic ? (
+          <div className="max-w-4xl mx-auto scroll-y-only">
+            <Button
+              onClick={handleBack}
+              className="mb-6 gap-2"
+              variant="default"
+            >
+              <span aria-hidden="true">←</span> Back to Topics
+            </Button>
+            <Quiz
+              title={topicData[selectedTopic].title}
+              questions={processQuestions(
+                topicData[selectedTopic].data.questions
+              )}
+            />
+          </div>
+        ) : viewMode === "concepts" && selectedTopic ? (
+          <div className="max-w-4xl mx-auto">
+            <ConceptGuide
+              topicTitle={topicData[selectedTopic].title}
+              concepts={conceptGuides[selectedTopic]}
+              onBack={handleBack}
+            />
+          </div>
+        ) : null}
 
-        {!selectedTopic && (
+        {viewMode === "topics" && (
           <footer className="mt-12 text-center text-gray-500 text-sm py-4">
             <p>
               Created for machine learning students. Study and test your

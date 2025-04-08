@@ -4,4 +4,10 @@ export interface Question {
   question: string;
   userAnswer: string;
   correctAnswer: string;
+}
+
+// Define the Concept interface for concept guides
+export interface Concept {
+  title: string;
+  description: string[];
 } 
