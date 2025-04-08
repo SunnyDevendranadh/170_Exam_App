@@ -1,0 +1,205 @@
+{
+    "questions": [
+      {
+        "questionText": "What is the primary purpose of regression analysis?",
+        "answerOptions": [
+          { "answerText": "To classify data points into categories", "isCorrect": false },
+          { "answerText": "To reduce dimensionality", "isCorrect": false },
+          { "answerText": "To predict a continuous outcome variable", "isCorrect": true },
+          { "answerText": "To group similar data points", "isCorrect": false }
+        ],
+        "explanation": "Regression analysis is used to predict continuous values such as prices, temperature, or revenue."
+      },
+      {
+        "questionText": "Which type of regression fits a straight line through the data?",
+        "answerOptions": [
+          { "answerText": "Polynomial Regression", "isCorrect": false },
+          { "answerText": "Linear Regression", "isCorrect": true },
+          { "answerText": "Logistic Regression", "isCorrect": false },
+          { "answerText": "Ridge Regression", "isCorrect": false }
+        ],
+        "explanation": "Linear regression fits a straight line through the data by modeling the relationship between dependent and independent variables."
+      },
+      {
+        "questionText": "What is the dependent variable in regression?",
+        "answerOptions": [
+          { "answerText": "The input feature", "isCorrect": false },
+          { "answerText": "The outcome being predicted", "isCorrect": true },
+          { "answerText": "The error rate", "isCorrect": false },
+          { "answerText": "The regression coefficient", "isCorrect": false }
+        ],
+        "explanation": "The dependent variable is what we are trying to predict in a regression model."
+      },
+      {
+        "questionText": "What does the slope coefficient represent in linear regression?",
+        "answerOptions": [
+          { "answerText": "The total error in prediction", "isCorrect": false },
+          { "answerText": "The constant in the model", "isCorrect": false },
+          { "answerText": "The change in the outcome for a one-unit change in the input", "isCorrect": true },
+          { "answerText": "The average of predicted values", "isCorrect": false }
+        ],
+        "explanation": "The slope coefficient represents how much the dependent variable changes for a one-unit change in the independent variable."
+      },
+      {
+        "questionText": "What is R-squared (R²) in linear regression?",
+        "answerOptions": [
+          { "answerText": "A measure of correlation between variables", "isCorrect": false },
+          { "answerText": "A measure of the variance explained by the model", "isCorrect": true },
+          { "answerText": "The total prediction error", "isCorrect": false },
+          { "answerText": "The standard deviation of predictions", "isCorrect": false }
+        ],
+        "explanation": "R² measures the proportion of variance in the dependent variable that is predictable from the independent variable(s)."
+      },
+      {
+        "questionText": "Which regression model is used when the relationship between variables is curved?",
+        "answerOptions": [
+          { "answerText": "Linear Regression", "isCorrect": false },
+          { "answerText": "Logistic Regression", "isCorrect": false },
+          { "answerText": "Polynomial Regression", "isCorrect": true },
+          { "answerText": "Lasso Regression", "isCorrect": false }
+        ],
+        "explanation": "Polynomial regression includes higher-degree terms to model non-linear relationships between the variables."
+      },
+      {
+        "questionText": "What does logistic regression predict?",
+        "answerOptions": [
+          { "answerText": "A continuous outcome", "isCorrect": false },
+          { "answerText": "A category or class label", "isCorrect": true },
+          { "answerText": "The number of features", "isCorrect": false },
+          { "answerText": "The cluster centroid", "isCorrect": false }
+        ],
+        "explanation": "Logistic regression is used for classification tasks, predicting the probability of a categorical outcome."
+      },
+      {
+        "questionText": "What is the activation function used in logistic regression?",
+        "answerOptions": [
+          { "answerText": "ReLU", "isCorrect": false },
+          { "answerText": "Sigmoid function", "isCorrect": true },
+          { "answerText": "Tanh", "isCorrect": false },
+          { "answerText": "Softmax", "isCorrect": false }
+        ],
+        "explanation": "Logistic regression uses the sigmoid function to map predictions to a probability range between 0 and 1."
+      },
+      {
+        "questionText": "Which loss function is used in linear regression?",
+        "answerOptions": [
+          { "answerText": "Cross-entropy", "isCorrect": false },
+          { "answerText": "Mean Squared Error (MSE)", "isCorrect": true },
+          { "answerText": "Hinge loss", "isCorrect": false },
+          { "answerText": "Log loss", "isCorrect": false }
+        ],
+        "explanation": "Mean Squared Error measures the average squared difference between the predicted and actual values."
+      },
+      {
+        "questionText": "Which sklearn function is used for linear regression?",
+        "answerOptions": [
+          { "answerText": "LogisticRegression()", "isCorrect": false },
+          { "answerText": "LinearRegression()", "isCorrect": true },
+          { "answerText": "Lasso()", "isCorrect": false },
+          { "answerText": "RidgeClassifier()", "isCorrect": false }
+        ],
+        "explanation": "The LinearRegression() function in scikit-learn is used to perform linear regression."
+      },
+      {
+        "questionText": "Which metric evaluates regression model performance by calculating average absolute errors?",
+        "answerOptions": [
+          { "answerText": "R-squared", "isCorrect": false },
+          { "answerText": "Mean Absolute Error (MAE)", "isCorrect": true },
+          { "answerText": "Variance Inflation Factor", "isCorrect": false },
+          { "answerText": "F1-score", "isCorrect": false }
+        ],
+        "explanation": "MAE measures the average magnitude of errors in a regression model without considering their direction."
+      },
+      {
+        "questionText": "What does a high R-squared value indicate in regression?",
+        "answerOptions": [
+          { "answerText": "Model has overfitted", "isCorrect": false },
+          { "answerText": "The model explains a large portion of the variance in the output", "isCorrect": true },
+          { "answerText": "The model is too simple", "isCorrect": false },
+          { "answerText": "Prediction errors are increasing", "isCorrect": false }
+        ],
+        "explanation": "A high R² indicates that the model explains a high proportion of the variance in the dependent variable."
+      },
+      {
+        "questionText": "What is multicollinearity in multiple linear regression?",
+        "answerOptions": [
+          { "answerText": "When features are independent of each other", "isCorrect": false },
+          { "answerText": "When two or more independent variables are highly correlated", "isCorrect": true },
+          { "answerText": "When the output variable is categorical", "isCorrect": false },
+          { "answerText": "When the intercept is zero", "isCorrect": false }
+        ],
+        "explanation": "Multicollinearity occurs when independent variables are highly correlated, which can distort the estimated coefficients."
+      },
+      {
+        "questionText": "What is overfitting in regression models?",
+        "answerOptions": [
+          { "answerText": "The model fits the training data perfectly but performs poorly on new data", "isCorrect": true },
+          { "answerText": "The model has a low R-squared value", "isCorrect": false },
+          { "answerText": "The model is too simple to capture patterns", "isCorrect": false },
+          { "answerText": "The model ignores intercepts", "isCorrect": false }
+        ],
+        "explanation": "Overfitting happens when the model captures noise from the training data, compromising its ability to generalize."
+      },
+      {
+        "questionText": "Which technique can help reduce overfitting in regression?",
+        "answerOptions": [
+          { "answerText": "Increasing the number of predictors", "isCorrect": false },
+          { "answerText": "Using regularization (like Lasso or Ridge)", "isCorrect": true },
+          { "answerText": "Removing the test set", "isCorrect": false },
+          { "answerText": "Reducing the dataset size", "isCorrect": false }
+        ],
+        "explanation": "Regularization methods penalize large coefficients to reduce model complexity and overfitting."
+      },
+      {
+        "questionText": "What is the key difference between Ridge and Lasso regression?",
+        "answerOptions": [
+          { "answerText": "Ridge uses L1 regularization, Lasso uses L2", "isCorrect": false },
+          { "answerText": "Ridge shrinks coefficients but does not set them to zero; Lasso can set coefficients to zero", "isCorrect": true },
+          { "answerText": "Ridge is for classification, Lasso for regression", "isCorrect": false },
+          { "answerText": "Ridge increases model complexity, while Lasso reduces it", "isCorrect": false }
+        ],
+        "explanation": "Lasso (L1) can shrink some coefficients to zero, effectively performing feature selection, whereas Ridge (L2) only shrinks coefficients."
+      },
+      {
+        "questionText": "Which scenario best fits using logistic regression?",
+        "answerOptions": [
+          { "answerText": "Predicting temperature", "isCorrect": false },
+          { "answerText": "Predicting housing prices", "isCorrect": false },
+          { "answerText": "Predicting if a customer will buy a product (Yes/No)", "isCorrect": true },
+          { "answerText": "Predicting number of website visits", "isCorrect": false }
+        ],
+        "explanation": "Logistic regression is designed for binary classification problems, such as Yes/No decisions."
+      },
+      {
+        "questionText": "Which function is used to evaluate classification accuracy in logistic regression?",
+        "answerOptions": [
+          { "answerText": "Confusion Matrix", "isCorrect": true },
+          { "answerText": "R-squared", "isCorrect": false },
+          { "answerText": "Mean Squared Error", "isCorrect": false },
+          { "answerText": "Variance Inflation Factor", "isCorrect": false }
+        ],
+        "explanation": "Confusion matrices are commonly used to evaluate the performance of classification models like logistic regression."
+      },
+      {
+        "questionText": "What is the intercept term in a linear regression model?",
+        "answerOptions": [
+          { "answerText": "The slope of the line", "isCorrect": false },
+          { "answerText": "The predicted value when all features are zero", "isCorrect": true },
+          { "answerText": "The R-squared value", "isCorrect": false },
+          { "answerText": "The total residual sum", "isCorrect": false }
+        ],
+        "explanation": "The intercept is the predicted output when all input features are zero."
+      },
+      {
+        "questionText": "Which business case is best modeled with linear regression?",
+        "answerOptions": [
+          { "answerText": "Detecting spam emails", "isCorrect": false },
+          { "answerText": "Forecasting sales revenue", "isCorrect": true },
+          { "answerText": "Clustering customer types", "isCorrect": false },
+          { "answerText": "Predicting fraud types", "isCorrect": false }
+        ],
+        "explanation": "Linear regression is typically used for forecasting continuous values, such as sales revenue, prices, or profits."
+      }
+    ]
+  }
+  

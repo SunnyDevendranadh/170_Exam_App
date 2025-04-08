@@ -1,0 +1,215 @@
+{
+    "questions": [
+      {
+        "questionText": "What does the Naive Bayes algorithm assume about features?",
+        "answerOptions": [
+          { "answerText": "Features are dependent on each other", "isCorrect": false },
+          { "answerText": "Features are chosen randomly", "isCorrect": false },
+          { "answerText": "Features are conditionally dependent", "isCorrect": false },
+          { "answerText": "Features are independent of each other", "isCorrect": true }
+        ],
+        "explanation": "Naive Bayes is called 'naive' because it assumes that the features (independent variables) are independent of each other, which rarely holds true in real-life data but works well in practice."
+      },
+      {
+        "questionText": "Which theorem is used in the Naive Bayes algorithm?",
+        "answerOptions": [
+          { "answerText": "Central Limit Theorem", "isCorrect": false },
+          { "answerText": "Pythagorean Theorem", "isCorrect": false },
+          { "answerText": "Bayes Theorem", "isCorrect": true },
+          { "answerText": "Binomial Theorem", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes uses Bayes Theorem to calculate the probability of a hypothesis given some evidence."
+      },
+      {
+        "questionText": "What type of algorithm is Naive Bayes considered?",
+        "answerOptions": [
+          { "answerText": "Unsupervised classification", "isCorrect": false },
+          { "answerText": "Supervised classification", "isCorrect": true },
+          { "answerText": "Unsupervised regression", "isCorrect": false },
+          { "answerText": "Reinforcement learning", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes is a supervised learning algorithm because it learns from labeled training data to classify new observations."
+      },
+      {
+        "questionText": "What is P(h|D) in Bayes Theorem?",
+        "answerOptions": [
+          { "answerText": "Prior probability of the hypothesis", "isCorrect": false },
+          { "answerText": "Probability of the data given the hypothesis", "isCorrect": false },
+          { "answerText": "Posterior probability of the hypothesis given the data", "isCorrect": true },
+          { "answerText": "Likelihood of the data", "isCorrect": false }
+        ],
+        "explanation": "P(h|D) represents the posterior probability, which is the probability of the hypothesis h given the observed data D."
+      },
+      {
+        "questionText": "What is GaussianNB in Python?",
+        "answerOptions": [
+          { "answerText": "A plotting function", "isCorrect": false },
+          { "answerText": "A Naive Bayes classifier for Gaussian-distributed data", "isCorrect": true },
+          { "answerText": "A data pre-processing method", "isCorrect": false },
+          { "answerText": "A clustering algorithm", "isCorrect": false }
+        ],
+        "explanation": "GaussianNB is a Naive Bayes classifier provided by scikit-learn used for data that follows a normal (Gaussian) distribution."
+      },
+      {
+        "questionText": "Why is Naive Bayes considered 'naive'?",
+        "answerOptions": [
+          { "answerText": "Because it is not effective", "isCorrect": false },
+          { "answerText": "Because it ignores the output variable", "isCorrect": false },
+          { "answerText": "Because it assumes feature independence", "isCorrect": true },
+          { "answerText": "Because it is used only on naive datasets", "isCorrect": false }
+        ],
+        "explanation": "It is called 'naive' because the model assumes all features are independent of each other given the class label, which is rarely true in real-world scenarios."
+      },
+      {
+        "questionText": "Which of the following is a real-life application of Naive Bayes?",
+        "answerOptions": [
+          { "answerText": "Predicting continuous values", "isCorrect": false },
+          { "answerText": "Predicting stock prices", "isCorrect": false },
+          { "answerText": "Email spam detection", "isCorrect": true },
+          { "answerText": "Image style transfer", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes is commonly used in spam detection systems to classify emails as spam or not spam based on the words they contain."
+      },
+      {
+        "questionText": "What type of problem does Naive Bayes solve?",
+        "answerOptions": [
+          { "answerText": "Regression", "isCorrect": false },
+          { "answerText": "Unsupervised clustering", "isCorrect": false },
+          { "answerText": "Classification", "isCorrect": true },
+          { "answerText": "Time series forecasting", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes is a classification algorithm, used to assign labels to data points based on learned probabilities."
+      },
+      {
+        "questionText": "Which Naive Bayes variant is best for continuous data?",
+        "answerOptions": [
+          { "answerText": "Multinomial Naive Bayes", "isCorrect": false },
+          { "answerText": "Bernoulli Naive Bayes", "isCorrect": false },
+          { "answerText": "Gaussian Naive Bayes", "isCorrect": true },
+          { "answerText": "Categorical Naive Bayes", "isCorrect": false }
+        ],
+        "explanation": "Gaussian Naive Bayes is used for continuous data that is assumed to be normally distributed."
+      },
+      {
+        "questionText": "Which probability is known as the prior in Bayes Theorem?",
+        "answerOptions": [
+          { "answerText": "P(D|h)", "isCorrect": false },
+          { "answerText": "P(h|D)", "isCorrect": false },
+          { "answerText": "P(h)", "isCorrect": true },
+          { "answerText": "P(D)", "isCorrect": false }
+        ],
+        "explanation": "P(h) is the prior probability of the hypothesis h being true before any data is observed."
+      },
+      {
+        "questionText": "What is the primary output of a Naive Bayes model?",
+        "answerOptions": [
+          { "answerText": "A numerical prediction value", "isCorrect": false },
+          { "answerText": "A probability distribution over classes", "isCorrect": true },
+          { "answerText": "A decision tree split", "isCorrect": false },
+          { "answerText": "A set of centroids", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes outputs a probability distribution over possible classes for a given input, and the class with the highest probability is selected."
+      },
+      {
+        "questionText": "Which of the following best describes P(D|h) in Bayes Theorem?",
+        "answerOptions": [
+          { "answerText": "Likelihood of data given the hypothesis", "isCorrect": true },
+          { "answerText": "Probability of hypothesis being true", "isCorrect": false },
+          { "answerText": "Posterior probability", "isCorrect": false },
+          { "answerText": "Joint probability of data and hypothesis", "isCorrect": false }
+        ],
+        "explanation": "P(D|h) is the likelihood, or the probability of observing the data D given that the hypothesis h is true."
+      },
+      {
+        "questionText": "Why is Naive Bayes considered fast and reliable?",
+        "answerOptions": [
+          { "answerText": "It uses deep learning techniques", "isCorrect": false },
+          { "answerText": "It ignores noisy data", "isCorrect": false },
+          { "answerText": "It calculates probabilities independently for each feature", "isCorrect": true },
+          { "answerText": "It uses ensemble methods", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes calculates the probability of each class independently based on the features, making it computationally efficient and effective."
+      },
+      {
+        "questionText": "What happens if a feature value does not occur with every class label in training data?",
+        "answerOptions": [
+          { "answerText": "The model discards the feature", "isCorrect": false },
+          { "answerText": "The probability becomes zero and affects the result", "isCorrect": true },
+          { "answerText": "The value is ignored in prediction", "isCorrect": false },
+          { "answerText": "The model assigns a random value", "isCorrect": false }
+        ],
+        "explanation": "If a feature value does not occur in the training data for a class, the probability becomes zero and can nullify the final result unless techniques like Laplace smoothing are used."
+      },
+      {
+        "questionText": "What is Laplace smoothing in Naive Bayes?",
+        "answerOptions": [
+          { "answerText": "A method to normalize all feature values", "isCorrect": false },
+          { "answerText": "A method to fill missing values", "isCorrect": false },
+          { "answerText": "A technique to avoid zero probability", "isCorrect": true },
+          { "answerText": "A way to weight features based on importance", "isCorrect": false }
+        ],
+        "explanation": "Laplace smoothing adds 1 to the count of each feature-class combination, ensuring no zero probabilities and improving model performance."
+      },
+      {
+        "questionText": "Which is a common application of Naive Bayes in business?",
+        "answerOptions": [
+          { "answerText": "Predicting next stock price", "isCorrect": false },
+          { "answerText": "Customer churn classification", "isCorrect": true },
+          { "answerText": "Creating image filters", "isCorrect": false },
+          { "answerText": "Generating marketing emails", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes is often used for customer churn prediction, identifying customers likely to leave a service or product."
+      },
+      {
+        "questionText": "Which of these distributions does Gaussian Naive Bayes assume for features?",
+        "answerOptions": [
+          { "answerText": "Binomial", "isCorrect": false },
+          { "answerText": "Multinomial", "isCorrect": false },
+          { "answerText": "Gaussian (Normal)", "isCorrect": true },
+          { "answerText": "Poisson", "isCorrect": false }
+        ],
+        "explanation": "Gaussian Naive Bayes assumes that the features follow a normal (Gaussian) distribution, making it suitable for continuous data."
+      },
+      {
+        "questionText": "What does the 'posterior probability' refer to in Naive Bayes?",
+        "answerOptions": [
+          { "answerText": "The prior probability of the data", "isCorrect": false },
+          { "answerText": "The likelihood of the data given the hypothesis", "isCorrect": false },
+          { "answerText": "The updated probability of the hypothesis given the data", "isCorrect": true },
+          { "answerText": "The frequency of the data in the training set", "isCorrect": false }
+        ],
+        "explanation": "Posterior probability is the updated probability of a hypothesis after observing the data, which is the core of the prediction in Naive Bayes."
+      },
+      {
+        "questionText": "Which type of Naive Bayes is suitable for binary features?",
+        "answerOptions": [
+          { "answerText": "Gaussian Naive Bayes", "isCorrect": false },
+          { "answerText": "Bernoulli Naive Bayes", "isCorrect": true },
+          { "answerText": "Multinomial Naive Bayes", "isCorrect": false },
+          { "answerText": "Continuous Naive Bayes", "isCorrect": false }
+        ],
+        "explanation": "Bernoulli Naive Bayes is best suited for binary/boolean features like 0 or 1."
+      },
+      {
+        "questionText": "What kind of output does Naive Bayes provide in a classification task?",
+        "answerOptions": [
+          { "answerText": "A distance to each class", "isCorrect": false },
+          { "answerText": "The probability of each class", "isCorrect": true },
+          { "answerText": "A decision tree split", "isCorrect": false },
+          { "answerText": "A regression line equation", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes provides probabilities for each possible class, from which the class with the highest probability is selected as the prediction."
+      },
+      {
+        "questionText": "What does the formula for Bayes Theorem combine to produce?",
+        "answerOptions": [
+          { "answerText": "Prior and likelihood to produce posterior", "isCorrect": true },
+          { "answerText": "Posterior and data to produce prior", "isCorrect": false },
+          { "answerText": "Likelihood and error to produce accuracy", "isCorrect": false },
+          { "answerText": "Data and variance to produce coefficient", "isCorrect": false }
+        ],
+        "explanation": "Bayes Theorem combines the prior probability and likelihood to produce the posterior probability, which forms the basis of Naive Bayes predictions."
+      }
+    ]
+  }
+  

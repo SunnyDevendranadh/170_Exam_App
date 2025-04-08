@@ -2,13 +2,21 @@ import React, { useState } from "react";
 import Quiz from "./components/Quiz";
 import { ConceptGuide } from "./components/ConceptGuide";
 
-// Import JSON data
+// Import JSON data for Quiz 1
 import decisionTreeData from "./data/decisionTree.json";
 import knnData from "./data/knn.json";
 import naiveBayesData from "./data/naiveBayes.json";
 import svmData from "./data/svm.json";
 import pcaData from "./data/pca.json";
 import regressionData from "./data/regression.json";
+
+// Import JSON data for Quiz 2
+import decisionTreeData2 from "./data/quiz_2/decisiontree2.json";
+import knnData2 from "./data/quiz_2/knn2.json";
+import naiveBayesData2 from "./data/quiz_2/naiveBayes2.json";
+import svmData2 from "./data/quiz_2/svm2.json";
+import pcaData2 from "./data/quiz_2/pca2.json";
+import regressionData2 from "./data/quiz_2/regression2.json";
 
 // Import concept guides
 import { conceptGuides } from "./data/conceptGuides";
@@ -56,6 +64,7 @@ interface RawTopicJsonData {
 interface TopicInfo {
   title: string;
   data: RawTopicJsonData;
+  data2: RawTopicJsonData;
 }
 
 // Define the possible keys for the topics explicitly
@@ -67,7 +76,8 @@ type TopicKey =
   | "pca"
   | "regression";
 
-type ViewMode = "topics" | "quiz" | "concepts";
+type ViewMode = "topics" | "quiz" | "concepts" | "quizSelection";
+type QuizSet = 1 | 2;
 
 // Topic icons and colors for improved UI
 const topicIcons: Record<TopicKey, { icon: string; description: string }> = {
@@ -110,26 +120,32 @@ const topicData: Record<TopicKey, TopicInfo> = {
   decisionTree: {
     title: "Decision Tree & Random Forest",
     data: decisionTreeData as unknown as RawTopicJsonData,
+    data2: decisionTreeData2 as unknown as RawTopicJsonData,
   },
   knn: {
     title: "K-Nearest Neighbors (KNN)",
     data: knnData as unknown as RawTopicJsonData,
+    data2: knnData2 as unknown as RawTopicJsonData,
   },
   naiveBayes: {
     title: "Naive Bayes",
     data: naiveBayesData as unknown as RawTopicJsonData,
+    data2: naiveBayesData2 as unknown as RawTopicJsonData,
   },
   svm: {
     title: "Support Vector Machines (SVM)",
     data: svmData as unknown as RawTopicJsonData,
+    data2: svmData2 as unknown as RawTopicJsonData,
   },
   pca: {
     title: "Principal Component Analysis (PCA)",
     data: pcaData as unknown as RawTopicJsonData,
+    data2: pcaData2 as unknown as RawTopicJsonData,
   },
   regression: {
     title: "Regression Models",
     data: regressionData as unknown as RawTopicJsonData,
+    data2: regressionData2 as unknown as RawTopicJsonData,
   },
 };
 
@@ -140,16 +156,23 @@ const App: React.FC = () => {
   // Type the state: it can be one of the TopicKeys or null
   const [selectedTopic, setSelectedTopic] = useState<TopicKey | null>(null);
   const [viewMode, setViewMode] = useState<ViewMode>("topics");
+  const [selectedQuizSet, setSelectedQuizSet] = useState<QuizSet>(1);
 
   // Add explicit void return type
   const handleBack = (): void => {
-    setSelectedTopic(null);
-    setViewMode("topics");
+    if (viewMode === "quizSelection") {
+      setViewMode("topics");
+      setSelectedTopic(null);
+    } else {
+      setSelectedTopic(null);
+      setViewMode("topics");
+      setSelectedQuizSet(1);
+    }
   };
 
   const handleStartQuiz = (topic: TopicKey): void => {
     setSelectedTopic(topic);
-    setViewMode("quiz");
+    setViewMode("quizSelection");
   };
 
   const handleReadConcepts = (topic: TopicKey): void => {
@@ -157,8 +180,20 @@ const App: React.FC = () => {
     setViewMode("concepts");
   };
 
+  const handleSelectQuiz = (quizSet: QuizSet): void => {
+    setSelectedQuizSet(quizSet);
+    setViewMode("quiz");
+  };
+
   // Get the keys strongly typed
   const availableTopics = Object.keys(topicData) as TopicKey[];
+
+  // Helper function to get quiz data
+  const getQuizData = (topic: TopicKey): RawTopicJsonData => {
+    return selectedQuizSet === 1
+      ? topicData[topic].data
+      : topicData[topic].data2;
+  };
 
   return (
     <div className="min-h-screen bg-gray-100 overflow-y-auto overflow-x-hidden">
@@ -192,8 +227,12 @@ const App: React.FC = () => {
                 </CardHeader>
                 <CardContent className="pb-0 pt-4">
                   <p className="text-sm text-gray-500">
-                    {topicData[topic].data.questions.length} questions to test
-                    your knowledge
+                    Multiple quizzes available with{" "}
+                    {Math.max(
+                      topicData[topic].data.questions.length,
+                      topicData[topic].data2.questions.length
+                    )}{" "}
+                    questions each
                   </p>
                 </CardContent>
                 <CardFooter className="pt-4 flex flex-col sm:flex-row gap-2">
@@ -215,6 +254,60 @@ const App: React.FC = () => {
               </Card>
             ))}
           </div>
+        ) : viewMode === "quizSelection" && selectedTopic ? (
+          <div className="max-w-4xl mx-auto">
+            <Button
+              onClick={handleBack}
+              className="mb-6 gap-2"
+              variant="default"
+            >
+              <span aria-hidden="true">←</span> Back to Topics
+            </Button>
+
+            <Card className="overflow-hidden shadow-lg bg-white border-none">
+              <CardHeader className="text-center pb-2 border-b">
+                <CardTitle className="text-xl sm:text-2xl md:text-3xl text-black">
+                  {topicData[selectedTopic].title} - Select Quiz
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Choose one of the available quiz sets
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <Card
+                  className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer bg-white border border-gray-200 hover:border-amber-500"
+                  onClick={() => handleSelectQuiz(1)}
+                >
+                  <CardHeader className="pb-3 text-center">
+                    <CardTitle className="text-xl text-black">Quiz 1</CardTitle>
+                    <CardDescription>
+                      {topicData[selectedTopic].data.questions.length} questions
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="text-center pb-6">
+                    <Button variant="default">Start Quiz 1</Button>
+                  </CardContent>
+                </Card>
+
+                <Card
+                  className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer bg-white border border-gray-200 hover:border-amber-500"
+                  onClick={() => handleSelectQuiz(2)}
+                >
+                  <CardHeader className="pb-3 text-center">
+                    <CardTitle className="text-xl text-black">Quiz 2</CardTitle>
+                    <CardDescription>
+                      {topicData[selectedTopic].data2.questions.length}{" "}
+                      questions
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="text-center pb-6">
+                    <Button variant="default">Start Quiz 2</Button>
+                  </CardContent>
+                </Card>
+              </CardContent>
+            </Card>
+          </div>
         ) : viewMode === "quiz" && selectedTopic ? (
           <div className="max-w-4xl mx-auto scroll-y-only">
             <Button
@@ -225,10 +318,8 @@ const App: React.FC = () => {
               <span aria-hidden="true">←</span> Back to Topics
             </Button>
             <Quiz
-              title={topicData[selectedTopic].title}
-              questions={processQuestions(
-                topicData[selectedTopic].data.questions
-              )}
+              title={`${topicData[selectedTopic].title} - Quiz ${selectedQuizSet}`}
+              questions={processQuestions(getQuizData(selectedTopic).questions)}
             />
           </div>
         ) : viewMode === "concepts" && selectedTopic ? (

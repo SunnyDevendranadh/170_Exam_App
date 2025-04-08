@@ -1,0 +1,305 @@
+{
+    "questions": [
+      {
+        "questionText": "What is the main purpose of Principal Component Analysis (PCA)?",
+        "answerOptions": [
+          { "answerText": "To classify data points into categories", "isCorrect": false },
+          { "answerText": "To improve model accuracy directly", "isCorrect": false },
+          { "answerText": "To reduce the number of features while retaining most variance", "isCorrect": true },
+          { "answerText": "To generate regression coefficients", "isCorrect": false }
+        ],
+        "explanation": "PCA is a dimensionality reduction technique that transforms data into a lower-dimensional space while preserving as much variance as possible."
+      },
+      {
+        "questionText": "What are principal components in PCA?",
+        "answerOptions": [
+          { "answerText": "Original input features", "isCorrect": false },
+          { "answerText": "Random projections of the data", "isCorrect": false },
+          { "answerText": "New features that are linear combinations of the original ones", "isCorrect": true },
+          { "answerText": "Outliers in the dataset", "isCorrect": false }
+        ],
+        "explanation": "Principal components are new variables formed as linear combinations of the original features, ordered by the variance they capture."
+      },
+      {
+        "questionText": "Why is PCA used before applying machine learning models?",
+        "answerOptions": [
+          { "answerText": "To normalize the target variable", "isCorrect": false },
+          { "answerText": "To avoid classification bias", "isCorrect": false },
+          { "answerText": "To simplify the model and improve computational efficiency", "isCorrect": true },
+          { "answerText": "To select the best hyperparameters", "isCorrect": false }
+        ],
+        "explanation": "PCA reduces dimensionality, which can simplify the model, speed up training, and reduce overfitting."
+      },
+      {
+        "questionText": "What mathematical technique is often used in PCA?",
+        "answerOptions": [
+          { "answerText": "Matrix inversion", "isCorrect": false },
+          { "answerText": "Singular Value Decomposition (SVD)", "isCorrect": true },
+          { "answerText": "Gradient descent", "isCorrect": false },
+          { "answerText": "K-means clustering", "isCorrect": false }
+        ],
+        "explanation": "PCA commonly employs Singular Value Decomposition (SVD) to compute the principal components."
+      },
+      {
+        "questionText": "What is the effect of standardizing data before applying PCA?",
+        "answerOptions": [
+          { "answerText": "It increases model complexity", "isCorrect": false },
+          { "answerText": "It ensures all features contribute equally to the PCA", "isCorrect": true },
+          { "answerText": "It changes the labels", "isCorrect": false },
+          { "answerText": "It increases variance", "isCorrect": false }
+        ],
+        "explanation": "Standardization puts features on a similar scale so that PCA does not get biased toward features with larger scales."
+      },
+      {
+        "questionText": "What does 'variance explained' mean in PCA?",
+        "answerOptions": [
+          { "answerText": "The proportion of total variance captured by a principal component", "isCorrect": true },
+          { "answerText": "The amount of noise removed from the dataset", "isCorrect": false },
+          { "answerText": "The number of original features used", "isCorrect": false },
+          { "answerText": "The error in the prediction model", "isCorrect": false }
+        ],
+        "explanation": "Variance explained is the proportion of the dataset's variability captured by a principal component."
+      },
+      {
+        "questionText": "How does PCA help reduce computational cost?",
+        "answerOptions": [
+          { "answerText": "By increasing the number of features", "isCorrect": false },
+          { "answerText": "By reducing the number of dimensions while retaining key information", "isCorrect": true },
+          { "answerText": "By removing outliers", "isCorrect": false },
+          { "answerText": "By normalizing the data", "isCorrect": false }
+        ],
+        "explanation": "PCA reduces the number of features, thereby lowering the computational resources required."
+      },
+      {
+        "questionText": "In PCA, what does each principal component represent?",
+        "answerOptions": [
+          { "answerText": "An original feature", "isCorrect": false },
+          { "answerText": "A new variable that is a linear combination of original features", "isCorrect": true },
+          { "answerText": "A raw measurement", "isCorrect": false },
+          { "answerText": "A noise element in the data", "isCorrect": false }
+        ],
+        "explanation": "Each principal component is a new feature derived from a linear combination of original features."
+      },
+      {
+        "questionText": "How is the percentage of total variation captured by a principal component determined?",
+        "answerOptions": [
+          { "answerText": "By calculating the sum of all eigenvalues", "isCorrect": false },
+          { "answerText": "By dividing the eigenvalue of the component by the sum of all eigenvalues", "isCorrect": true },
+          { "answerText": "By computing the squared loadings", "isCorrect": false },
+          { "answerText": "By normalizing the data", "isCorrect": false }
+        ],
+        "explanation": "The eigenvalue of a principal component divided by the total sum of eigenvalues gives the proportion of variance explained by that component."
+      },
+      {
+        "questionText": "Why is PCA considered an unsupervised learning technique?",
+        "answerOptions": [
+          { "answerText": "Because it uses labels to reduce dimensions", "isCorrect": false },
+          { "answerText": "Because it does not use any output labels to transform the data", "isCorrect": true },
+          { "answerText": "Because it clusters data points", "isCorrect": false },
+          { "answerText": "Because it uses regression for dimensionality reduction", "isCorrect": false }
+        ],
+        "explanation": "PCA is unsupervised as it only analyzes the input features without any reference to output labels."
+      },
+      {
+        "questionText": "What does a scree plot display in PCA?",
+        "answerOptions": [
+          { "answerText": "The relationship between two features", "isCorrect": false },
+          { "answerText": "The eigenvalues associated with each principal component", "isCorrect": true },
+          { "answerText": "The raw data distribution", "isCorrect": false },
+          { "answerText": "The model’s prediction accuracy", "isCorrect": false }
+        ],
+        "explanation": "A scree plot shows the eigenvalues of principal components, helping determine the number of components to retain."
+      },
+      {
+        "questionText": "How do you decide the number of principal components to keep?",
+        "answerOptions": [
+          { "answerText": "By keeping all components regardless of variance", "isCorrect": false },
+          { "answerText": "By selecting the components that capture a high percentage of total variance, often 80-95%", "isCorrect": true },
+          { "answerText": "By choosing the first two components only", "isCorrect": false },
+          { "answerText": "By selecting the components with the smallest eigenvalues", "isCorrect": false }
+        ],
+        "explanation": "The number of components is usually chosen based on a threshold of variance explained, such as 80% to 95%."
+      },
+      {
+        "questionText": "What role do eigenvalues play in PCA?",
+        "answerOptions": [
+          { "answerText": "They represent the direction of maximum variance", "isCorrect": false },
+          { "answerText": "They indicate the importance of each principal component", "isCorrect": true },
+          { "answerText": "They are used to scale the data", "isCorrect": false },
+          { "answerText": "They eliminate noise from the data", "isCorrect": false }
+        ],
+        "explanation": "Eigenvalues indicate how much variance is captured by each principal component, reflecting its importance."
+      },
+      {
+        "questionText": "What is the relationship between eigenvalues and variance explained in PCA?",
+        "answerOptions": [
+          { "answerText": "Eigenvalues are inversely proportional to variance explained", "isCorrect": false },
+          { "answerText": "Higher eigenvalues correspond to greater variance explained", "isCorrect": true },
+          { "answerText": "Eigenvalues do not affect variance", "isCorrect": false },
+          { "answerText": "Variance explained is the square of the eigenvalue", "isCorrect": false }
+        ],
+        "explanation": "Higher eigenvalues mean that the corresponding principal component captures a larger portion of the total variance."
+      },
+      {
+        "questionText": "How does PCA affect noise in the dataset?",
+        "answerOptions": [
+          { "answerText": "It increases the noise", "isCorrect": false },
+          { "answerText": "It often removes noise by discarding components with very low variance", "isCorrect": true },
+          { "answerText": "It retains most of the noise in the first components", "isCorrect": false },
+          { "answerText": "It converts noise into useful signals", "isCorrect": false }
+        ],
+        "explanation": "By discarding components that explain little variance (often attributed to noise), PCA can help reduce noise in the dataset."
+      },
+      {
+        "questionText": "Why is standardization important before applying PCA?",
+        "answerOptions": [
+          { "answerText": "It reduces the number of features", "isCorrect": false },
+          { "answerText": "It ensures all features contribute equally regardless of their scales", "isCorrect": true },
+          { "answerText": "It increases the variance", "isCorrect": false },
+          { "answerText": "It improves the correlation between features", "isCorrect": false }
+        ],
+        "explanation": "Standardizing the data prevents features with larger scales from dominating the PCA results."
+      },
+      {
+        "questionText": "What is a major drawback of PCA when applied to non-linear data?",
+        "answerOptions": [
+          { "answerText": "It removes all outliers", "isCorrect": false },
+          { "answerText": "It may not capture complex, non-linear relationships", "isCorrect": true },
+          { "answerText": "It always overfits", "isCorrect": false },
+          { "answerText": "It increases dimensionality", "isCorrect": false }
+        ],
+        "explanation": "PCA is a linear technique and can struggle to capture non-linear relationships in the data."
+      },
+      {
+        "questionText": "How is PCA different from feature selection methods?",
+        "answerOptions": [
+          { "answerText": "PCA selects a subset of the original features", "isCorrect": false },
+          { "answerText": "PCA creates new features that are linear combinations of the original ones", "isCorrect": true },
+          { "answerText": "Feature selection reduces overfitting, PCA does not", "isCorrect": false },
+          { "answerText": "There is no difference between PCA and feature selection", "isCorrect": false }
+        ],
+        "explanation": "Feature selection chooses a subset of original features, while PCA generates new, uncorrelated features (principal components) from linear combinations of the original features."
+      },
+      {
+        "questionText": "Which business application can benefit from PCA?",
+        "answerOptions": [
+          { "answerText": "Stock price prediction", "isCorrect": false },
+          { "answerText": "Customer segmentation by reducing high-dimensional data", "isCorrect": true },
+          { "answerText": "Real-time fraud detection", "isCorrect": false },
+          { "answerText": "Sentiment analysis of text", "isCorrect": false }
+        ],
+        "explanation": "PCA is commonly used in customer segmentation to simplify high-dimensional data into fewer components that capture essential behavior."
+      },
+      {
+        "questionText": "If PCA reduces a dataset from 12 dimensions to 3 dimensions with 75% variance explained, what does that mean?",
+        "answerOptions": [
+          { "answerText": "3 dimensions capture 75% of the original data's variability", "isCorrect": true },
+          { "answerText": "The data now has 75% more features", "isCorrect": false },
+          { "answerText": "75% of the data is lost", "isCorrect": false },
+          { "answerText": "The model is overfitting", "isCorrect": false }
+        ],
+        "explanation": "It means that 3 principal components capture 75% of the total variability in the original 12-dimensional dataset."
+      },
+      {
+        "questionText": "How are principal components ordered in PCA?",
+        "answerOptions": [
+          { "answerText": "Randomly", "isCorrect": false },
+          { "answerText": "By the order of original features", "isCorrect": false },
+          { "answerText": "By decreasing amount of variance they capture", "isCorrect": true },
+          { "answerText": "By increasing eigenvalue", "isCorrect": false }
+        ],
+        "explanation": "Principal components are ordered such that the first component captures the most variance, and each subsequent component captures progressively less."
+      },
+      {
+        "questionText": "What is the significance of the first principal component in PCA?",
+        "answerOptions": [
+          { "answerText": "It is the least important", "isCorrect": false },
+          { "answerText": "It captures the highest variance", "isCorrect": true },
+          { "answerText": "It is always equal to the sum of the remaining components", "isCorrect": false },
+          { "answerText": "It is used to normalize the data", "isCorrect": false }
+        ],
+        "explanation": "The first principal component is the most significant, capturing the largest portion of the variance in the data."
+      },
+      {
+        "questionText": "What does 'orthogonality' mean in the context of PCA?",
+        "answerOptions": [
+          { "answerText": "Principal components are correlated", "isCorrect": false },
+          { "answerText": "Principal components are independent and perpendicular to each other", "isCorrect": true },
+          { "answerText": "Principal components are always positive", "isCorrect": false },
+          { "answerText": "Principal components are clustered together", "isCorrect": false }
+        ],
+        "explanation": "Orthogonality in PCA means that the principal components are uncorrelated with each other; they are mathematically perpendicular in the feature space."
+      },
+      {
+        "questionText": "How does PCA assist in visualizing high-dimensional data?",
+        "answerOptions": [
+          { "answerText": "By converting data into a 3D scatter plot", "isCorrect": false },
+          { "answerText": "By reducing the dimensions to 2 or 3 principal components", "isCorrect": true },
+          { "answerText": "By increasing the number of features for visualization", "isCorrect": false },
+          { "answerText": "By clustering data points", "isCorrect": false }
+        ],
+        "explanation": "Reducing dimensions to 2 or 3 principal components allows for effective visualization of the data in scatter plots."
+      },
+      {
+        "questionText": "Which type of plot is commonly used to help decide the number of principal components to retain?",
+        "answerOptions": [
+          { "answerText": "Box plot", "isCorrect": false },
+          { "answerText": "Scree plot", "isCorrect": true },
+          { "answerText": "Histogram", "isCorrect": false },
+          { "answerText": "Scatter plot", "isCorrect": false }
+        ],
+        "explanation": "A scree plot displays the eigenvalues associated with each principal component and helps to identify the 'elbow' where additional components contribute little extra variance."
+      },
+      {
+        "questionText": "What is the impact of not standardizing your data before applying PCA?",
+        "answerOptions": [
+          { "answerText": "Features with larger scales dominate the results", "isCorrect": true },
+          { "answerText": "It has no impact", "isCorrect": false },
+          { "answerText": "It always improves the quality of PCA", "isCorrect": false },
+          { "answerText": "It reduces computation time significantly", "isCorrect": false }
+        ],
+        "explanation": "Without standardization, features with larger scales can dominate the principal components, which distorts the analysis."
+      },
+      {
+        "questionText": "What is an eigenvector in the context of PCA?",
+        "answerOptions": [
+          { "answerText": "A scalar value representing the weight of a feature", "isCorrect": false },
+          { "answerText": "A vector that defines the direction of a principal component", "isCorrect": true },
+          { "answerText": "A randomly generated vector", "isCorrect": false },
+          { "answerText": "A vector representing the error term", "isCorrect": false }
+        ],
+        "explanation": "In PCA, an eigenvector indicates the direction along which the data is most spread out, forming the basis of a principal component."
+      },
+      {
+        "questionText": "Why might one choose to use PCA even if it slightly reduces model accuracy?",
+        "answerOptions": [
+          { "answerText": "To improve interpretability and reduce overfitting", "isCorrect": true },
+          { "answerText": "Because PCA always increases accuracy", "isCorrect": false },
+          { "answerText": "To eliminate all noise", "isCorrect": false },
+          { "answerText": "To reduce training time to zero", "isCorrect": false }
+        ],
+        "explanation": "PCA simplifies the model and can help reduce overfitting, enhancing interpretability even if there's a small trade-off in accuracy."
+      },
+      {
+        "questionText": "What is the main benefit of dimensionality reduction through PCA in machine learning pipelines?",
+        "answerOptions": [
+          { "answerText": "It increases the number of features", "isCorrect": false },
+          { "answerText": "It reduces computational cost and mitigates the curse of dimensionality", "isCorrect": true },
+          { "answerText": "It always improves prediction accuracy", "isCorrect": false },
+          { "answerText": "It changes the data labels", "isCorrect": false }
+        ],
+        "explanation": "Reducing dimensions helps lower computational requirements and can improve a model’s performance by alleviating issues related to high-dimensional data."
+      },
+      {
+        "questionText": "How does PCA address the problem of multicollinearity?",
+        "answerOptions": [
+          { "answerText": "It increases the correlation between features", "isCorrect": false },
+          { "answerText": "It transforms correlated features into uncorrelated principal components", "isCorrect": true },
+          { "answerText": "It removes one of each pair of correlated features", "isCorrect": false },
+          { "answerText": "It does not address multicollinearity", "isCorrect": false }
+        ],
+        "explanation": "PCA transforms the original features into a new set of uncorrelated components, effectively dealing with multicollinearity."
+      }
+    ]
+  }
+  

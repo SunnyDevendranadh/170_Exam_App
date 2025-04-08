@@ -1,0 +1,205 @@
+{
+    "questions": [
+      {
+        "questionText": "What is the primary goal of Support Vector Machines (SVM)?",
+        "answerOptions": [
+          { "answerText": "To cluster similar data points together", "isCorrect": false },
+          { "answerText": "To find a hyperplane that best separates different classes", "isCorrect": true },
+          { "answerText": "To generate decision trees from features", "isCorrect": false },
+          { "answerText": "To reduce dimensionality of the dataset", "isCorrect": false }
+        ],
+        "explanation": "The core idea of SVM is to find a maximum margin hyperplane that best divides the dataset into different classes."
+      },
+      {
+        "questionText": "What is a hyperplane in SVM?",
+        "answerOptions": [
+          { "answerText": "A line that fits data in regression", "isCorrect": false },
+          { "answerText": "A surface that separates data into classes", "isCorrect": true },
+          { "answerText": "A 3D plot of input variables", "isCorrect": false },
+          { "answerText": "A clustering centroid", "isCorrect": false }
+        ],
+        "explanation": "A hyperplane in SVM is the decision boundary that separates different classes in the feature space."
+      },
+      {
+        "questionText": "What are support vectors in SVM?",
+        "answerOptions": [
+          { "answerText": "Data points that lie farthest from the hyperplane", "isCorrect": false },
+          { "answerText": "Centroids of each class", "isCorrect": false },
+          { "answerText": "Data points closest to the hyperplane", "isCorrect": true },
+          { "answerText": "Midpoints between classes", "isCorrect": false }
+        ],
+        "explanation": "Support vectors are the data points closest to the hyperplane and are critical in defining the margin and decision boundary."
+      },
+      {
+        "questionText": "What is the margin in SVM?",
+        "answerOptions": [
+          { "answerText": "The error between predicted and actual values", "isCorrect": false },
+          { "answerText": "The distance between support vectors and the hyperplane", "isCorrect": true },
+          { "answerText": "The maximum number of features used", "isCorrect": false },
+          { "answerText": "The distance between data clusters", "isCorrect": false }
+        ],
+        "explanation": "The margin is the distance from the hyperplane to the closest data points (support vectors). SVM maximizes this margin to improve classification performance."
+      },
+      {
+        "questionText": "What is the kernel trick in SVM?",
+        "answerOptions": [
+          { "answerText": "A way to handle missing values", "isCorrect": false },
+          { "answerText": "A method to convert categorical to numerical data", "isCorrect": false },
+          { "answerText": "A technique to enable SVM to classify non-linearly separable data", "isCorrect": true },
+          { "answerText": "A strategy to reduce dimensionality", "isCorrect": false }
+        ],
+        "explanation": "The kernel trick maps data into a higher-dimensional space where it becomes linearly separable, enabling SVMs to handle complex classification problems."
+      },
+      {
+        "questionText": "Which of the following is NOT a common kernel function used in SVM?",
+        "answerOptions": [
+          { "answerText": "Linear", "isCorrect": false },
+          { "answerText": "Polynomial", "isCorrect": false },
+          { "answerText": "Radial Basis Function (RBF)", "isCorrect": false },
+          { "answerText": "Fourier Transform", "isCorrect": true }
+        ],
+        "explanation": "Common kernel functions include linear, polynomial, RBF (Gaussian), and sigmoid. Fourier Transform is not used as an SVM kernel."
+      },
+      {
+        "questionText": "What is the main purpose of using kernels in SVM?",
+        "answerOptions": [
+          { "answerText": "To speed up model training", "isCorrect": false },
+          { "answerText": "To calculate feature importance", "isCorrect": false },
+          { "answerText": "To handle non-linearly separable data", "isCorrect": true },
+          { "answerText": "To normalize feature values", "isCorrect": false }
+        ],
+        "explanation": "Kernels help transform data into a higher-dimensional space where it becomes linearly separable."
+      },
+      {
+        "questionText": "What does the 'C' parameter control in SVM?",
+        "answerOptions": [
+          { "answerText": "Degree of the polynomial kernel", "isCorrect": false },
+          { "answerText": "Penalty for misclassified data points", "isCorrect": true },
+          { "answerText": "Number of features to use", "isCorrect": false },
+          { "answerText": "Number of support vectors", "isCorrect": false }
+        ],
+        "explanation": "The 'C' parameter controls the trade-off between maximizing the margin and minimizing the classification error."
+      },
+      {
+        "questionText": "What happens when you choose a very high value of C in SVM?",
+        "answerOptions": [
+          { "answerText": "The model underfits the data", "isCorrect": false },
+          { "answerText": "The model ignores margin width", "isCorrect": false },
+          { "answerText": "The model tries to classify all training points correctly", "isCorrect": true },
+          { "answerText": "The model increases the number of features", "isCorrect": false }
+        ],
+        "explanation": "A high value of C makes the SVM try harder to classify all training examples correctly, which can lead to overfitting."
+      },
+      {
+        "questionText": "What does a small margin in SVM imply?",
+        "answerOptions": [
+          { "answerText": "Better generalization", "isCorrect": false },
+          { "answerText": "More overfitting", "isCorrect": true },
+          { "answerText": "Underfitting", "isCorrect": false },
+          { "answerText": "More features", "isCorrect": false }
+        ],
+        "explanation": "A small margin often indicates overfitting, as the model is sensitive to the training data and may not generalize well."
+      },
+      {
+        "questionText": "Which method allows SVM to work with multi-class classification problems?",
+        "answerOptions": [
+          { "answerText": "Random sampling", "isCorrect": false },
+          { "answerText": "Boosting", "isCorrect": false },
+          { "answerText": "One-vs-One and One-vs-All", "isCorrect": true },
+          { "answerText": "Gradient descent", "isCorrect": false }
+        ],
+        "explanation": "SVM handles multi-class problems using strategies like One-vs-One (OvO) and One-vs-All (OvA), where binary classifiers are combined to make multi-class predictions."
+      },
+      {
+        "questionText": "How many binary classifiers are trained in One-vs-One (OvO) approach with 4 classes?",
+        "answerOptions": [
+          { "answerText": "4", "isCorrect": false },
+          { "answerText": "6", "isCorrect": true },
+          { "answerText": "8", "isCorrect": false },
+          { "answerText": "12", "isCorrect": false }
+        ],
+        "explanation": "In OvO, the number of classifiers is (n*(n-1))/2. For 4 classes, this results in 6 classifiers."
+      },
+      {
+        "questionText": "What is the voting mechanism in One-vs-One (OvO)?",
+        "answerOptions": [
+          { "answerText": "Each classifier votes for a class; class with most votes wins", "isCorrect": true },
+          { "answerText": "Each classifier returns probability scores", "isCorrect": false },
+          { "answerText": "Each classifier outputs distance from the hyperplane", "isCorrect": false },
+          { "answerText": "The classifier with the highest precision decides the output", "isCorrect": false }
+        ],
+        "explanation": "In OvO, each binary classifier votes, and the class with the majority of votes is chosen as the final prediction."
+      },
+      {
+        "questionText": "Which SVM technique is more scalable for problems with many classes?",
+        "answerOptions": [
+          { "answerText": "One-vs-One (OvO)", "isCorrect": false },
+          { "answerText": "One-vs-All (OvA)", "isCorrect": true },
+          { "answerText": "Random Forest", "isCorrect": false },
+          { "answerText": "Gradient Boosting", "isCorrect": false }
+        ],
+        "explanation": "One-vs-All is more scalable for many classes because it requires only one classifier per class."
+      },
+      {
+        "questionText": "In One-vs-All (OvA), how is the final class determined?",
+        "answerOptions": [
+          { "answerText": "Class with the highest accuracy", "isCorrect": false },
+          { "answerText": "Class with the highest confidence score or lowest distance", "isCorrect": true },
+          { "answerText": "Random selection among classes", "isCorrect": false },
+          { "answerText": "The class trained on the most data", "isCorrect": false }
+        ],
+        "explanation": "In OvA, each classifier produces a score, and the class with the highest score is selected as the final prediction."
+      },
+      {
+        "questionText": "What kernel should you try first in SVM before others?",
+        "answerOptions": [
+          { "answerText": "Sigmoid", "isCorrect": false },
+          { "answerText": "Polynomial", "isCorrect": false },
+          { "answerText": "Linear", "isCorrect": true },
+          { "answerText": "Gaussian", "isCorrect": false }
+        ],
+        "explanation": "The linear kernel is most common and should be tried first. If it doesn't perform adequately, then you can explore other kernels."
+      },
+      {
+        "questionText": "When should you use a Gaussian (RBF) kernel in SVM?",
+        "answerOptions": [
+          { "answerText": "When data is linearly separable", "isCorrect": false },
+          { "answerText": "When data has a complex non-linear decision boundary", "isCorrect": true },
+          { "answerText": "For very small datasets", "isCorrect": false },
+          { "answerText": "To handle missing values", "isCorrect": false }
+        ],
+        "explanation": "Gaussian (RBF) kernels are used when data is not linearly separable, as they allow SVM to capture non-linear relationships."
+      },
+      {
+        "questionText": "Which parameter adjusts the width of the Gaussian kernel?",
+        "answerOptions": [
+          { "answerText": "C", "isCorrect": false },
+          { "answerText": "gamma", "isCorrect": true },
+          { "answerText": "degree", "isCorrect": false },
+          { "answerText": "epsilon", "isCorrect": false }
+        ],
+        "explanation": "The gamma parameter defines how far the influence of a single training example reaches in an RBF kernel."
+      },
+      {
+        "questionText": "What can happen if gamma is set too high in an SVM with RBF kernel?",
+        "answerOptions": [
+          { "answerText": "Underfitting", "isCorrect": false },
+          { "answerText": "Overfitting", "isCorrect": true },
+          { "answerText": "Balanced accuracy", "isCorrect": false },
+          { "answerText": "Model crashes", "isCorrect": false }
+        ],
+        "explanation": "A very high gamma can lead the model to capture noise, resulting in overfitting."
+      },
+      {
+        "questionText": "Which sklearn method is used for SVM classification?",
+        "answerOptions": [
+          { "answerText": "SVC()", "isCorrect": true },
+          { "answerText": "LogisticRegression()", "isCorrect": false },
+          { "answerText": "DecisionTreeClassifier()", "isCorrect": false },
+          { "answerText": "GaussianNB()", "isCorrect": false }
+        ],
+        "explanation": "The SVC() method in scikit-learn is used to implement Support Vector Classification."
+      }
+    ]
+  }
+  

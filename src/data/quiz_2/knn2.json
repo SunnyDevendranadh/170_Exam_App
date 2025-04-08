@@ -1,0 +1,175 @@
+{
+    "questions": [
+      {
+        "questionText": "What is the main idea behind K-Nearest Neighbors (KNN)?",
+        "answerOptions": [
+          { "answerText": "It groups data into clusters", "isCorrect": false },
+          { "answerText": "It builds a decision tree from features", "isCorrect": false },
+          { "answerText": "It classifies a data point based on the majority vote of its neighbors", "isCorrect": true },
+          { "answerText": "It fits a linear function to the data", "isCorrect": false }
+        ],
+        "explanation": "KNN classifies a data point based on how its neighbors are labeled—the majority class among the K closest neighbors is selected."
+      },
+      {
+        "questionText": "What does 'K' represent in KNN?",
+        "answerOptions": [
+          { "answerText": "The number of classes", "isCorrect": false },
+          { "answerText": "The number of features", "isCorrect": false },
+          { "answerText": "The number of nearest neighbors to consider", "isCorrect": true },
+          { "answerText": "The number of clusters", "isCorrect": false }
+        ],
+        "explanation": "K is the number of nearest neighbors that the algorithm considers when making a prediction."
+      },
+      {
+        "questionText": "Why is an odd value of K often preferred in KNN classification?",
+        "answerOptions": [
+          { "answerText": "It increases training speed", "isCorrect": false },
+          { "answerText": "To avoid ties when voting", "isCorrect": true },
+          { "answerText": "It reduces dimensionality", "isCorrect": false },
+          { "answerText": "To ensure even spacing between points", "isCorrect": false }
+        ],
+        "explanation": "Using an odd K reduces the chance of a tie during the majority voting process in classification."
+      },
+      {
+        "questionText": "What is a major disadvantage of using a very small K value in KNN?",
+        "answerOptions": [
+          { "answerText": "It requires more memory", "isCorrect": false },
+          { "answerText": "It may lead to overfitting", "isCorrect": true },
+          { "answerText": "It cannot be used for regression", "isCorrect": false },
+          { "answerText": "It makes predictions slower", "isCorrect": false }
+        ],
+        "explanation": "A small K makes the model sensitive to noise in the training data, potentially leading to overfitting."
+      },
+      {
+        "questionText": "What happens if the K value in KNN is too large?",
+        "answerOptions": [
+          { "answerText": "The model becomes more accurate", "isCorrect": false },
+          { "answerText": "The model underfits the data", "isCorrect": true },
+          { "answerText": "Training time increases", "isCorrect": false },
+          { "answerText": "The model uses too many features", "isCorrect": false }
+        ],
+        "explanation": "A very large K value includes distant neighbors that may not be relevant, causing the model to underfit and lose local nuance."
+      },
+      {
+        "questionText": "What kind of algorithm is KNN?",
+        "answerOptions": [
+          { "answerText": "Unsupervised learning", "isCorrect": false },
+          { "answerText": "Reinforcement learning", "isCorrect": false },
+          { "answerText": "Supervised learning", "isCorrect": true },
+          { "answerText": "Dimensionality reduction", "isCorrect": false }
+        ],
+        "explanation": "KNN is a supervised learning algorithm that relies on labeled training data."
+      },
+      {
+        "questionText": "Which metric is commonly used to compute distance in KNN?",
+        "answerOptions": [
+          { "answerText": "Euclidean distance", "isCorrect": true },
+          { "answerText": "Entropy", "isCorrect": false },
+          { "answerText": "Variance", "isCorrect": false },
+          { "answerText": "Accuracy score", "isCorrect": false }
+        ],
+        "explanation": "Euclidean distance is the most frequently used metric to determine proximity between data points in KNN."
+      },
+      {
+        "questionText": "Which of the following is true about KNN?",
+        "answerOptions": [
+          { "answerText": "It builds a model during training", "isCorrect": false },
+          { "answerText": "It stores the entire training dataset and performs lazy evaluation", "isCorrect": true },
+          { "answerText": "It uses feature engineering to transform data", "isCorrect": false },
+          { "answerText": "It predicts based on random sampling", "isCorrect": false }
+        ],
+        "explanation": "KNN is a lazy learner that memorizes the training data and only computes distances during prediction."
+      },
+      {
+        "questionText": "How is prediction made in KNN for classification?",
+        "answerOptions": [
+          { "answerText": "By choosing the mode of the K closest neighbors", "isCorrect": true },
+          { "answerText": "By calculating the average of the K neighbors", "isCorrect": false },
+          { "answerText": "Using decision boundaries", "isCorrect": false },
+          { "answerText": "By calculating entropy of the labels", "isCorrect": false }
+        ],
+        "explanation": "KNN predicts the class by selecting the most frequent class (mode) among its K nearest neighbors."
+      },
+      {
+        "questionText": "What is one drawback of KNN?",
+        "answerOptions": [
+          { "answerText": "It cannot handle more than 2 classes", "isCorrect": false },
+          { "answerText": "It is computationally expensive at prediction time", "isCorrect": true },
+          { "answerText": "It cannot handle numerical data", "isCorrect": false },
+          { "answerText": "It requires a separate validation set", "isCorrect": false }
+        ],
+        "explanation": "Since KNN stores all training data and calculates distances during prediction, it can become slow, especially for large datasets."
+      },
+      {
+        "questionText": "What is a common use case of KNN in marketing?",
+        "answerOptions": [
+          { "answerText": "Image classification", "isCorrect": false },
+          { "answerText": "Churn analysis", "isCorrect": false },
+          { "answerText": "Customer segmentation", "isCorrect": true },
+          { "answerText": "Anomaly detection", "isCorrect": false }
+        ],
+        "explanation": "KNN is used in customer segmentation to group similar customers based on their behavior and demographics."
+      },
+      {
+        "questionText": "Which of the following is NOT a good scenario for using KNN?",
+        "answerOptions": [
+          { "answerText": "When the dataset is very large", "isCorrect": true },
+          { "answerText": "When features are continuous", "isCorrect": false },
+          { "answerText": "When data is labeled", "isCorrect": false },
+          { "answerText": "When classes are separable", "isCorrect": false }
+        ],
+        "explanation": "KNN can be computationally prohibitive for very large datasets because it needs to compute distances for every data point."
+      },
+      {
+        "questionText": "How is data typically preprocessed for KNN?",
+        "answerOptions": [
+          { "answerText": "By converting all features to categorical values", "isCorrect": false },
+          { "answerText": "By normalizing or scaling the features", "isCorrect": true },
+          { "answerText": "By reducing the number of training samples", "isCorrect": false },
+          { "answerText": "By removing duplicates only", "isCorrect": false }
+        ],
+        "explanation": "Normalizing or scaling ensures that features contribute equally to the distance calculations."
+      },
+      {
+        "questionText": "How is KNN different from K-Means?",
+        "answerOptions": [
+          { "answerText": "KNN is supervised, while K-Means is unsupervised", "isCorrect": true },
+          { "answerText": "Both use centroids to make decisions", "isCorrect": false },
+          { "answerText": "KNN clusters data points", "isCorrect": false },
+          { "answerText": "K-Means predicts class labels", "isCorrect": false }
+        ],
+        "explanation": "KNN uses labeled data for classification (supervised), while K-Means is an unsupervised clustering algorithm."
+      },
+      {
+        "questionText": "What is the effect of not standardizing your data before applying KNN?",
+        "answerOptions": [
+          { "answerText": "It improves the model's speed", "isCorrect": false },
+          { "answerText": "It can bias the distance metric towards features with larger scales", "isCorrect": true },
+          { "answerText": "It has no effect", "isCorrect": false },
+          { "answerText": "It increases prediction accuracy", "isCorrect": false }
+        ],
+        "explanation": "Without proper scaling, features with larger numerical ranges will dominate the distance calculations."
+      },
+      {
+        "questionText": "What is the primary computation KNN performs at prediction time?",
+        "answerOptions": [
+          { "answerText": "Training a new model", "isCorrect": false },
+          { "answerText": "Calculating distances between the query and training points", "isCorrect": true },
+          { "answerText": "Optimizing a cost function", "isCorrect": false },
+          { "answerText": "Clustering data points", "isCorrect": false }
+        ],
+        "explanation": "At prediction time, KNN calculates the distance between the input query and all stored training points to identify the nearest neighbors."
+      },
+      {
+        "questionText": "How does KNN aggregate predictions in regression tasks?",
+        "answerOptions": [
+          { "answerText": "By averaging the target values of the nearest neighbors", "isCorrect": true },
+          { "answerText": "By selecting the mode of the target values", "isCorrect": false },
+          { "answerText": "By summing the distances", "isCorrect": false },
+          { "answerText": "By using a decision tree", "isCorrect": false }
+        ],
+        "explanation": "For regression, KNN typically takes the average of the target values of the K nearest neighbors."
+      }
+    ]
+  }
+  
