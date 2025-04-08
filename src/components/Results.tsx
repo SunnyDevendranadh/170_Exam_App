@@ -44,14 +44,14 @@ export const Results = ({ score, questions, onRestart }: ResultsProps) => {
   }
 
   return (
-    <Card className="w-full shadow-sm border-none overflow-hidden">
+    <Card className="w-full shadow-sm border-none">
       <CardHeader className="text-center pb-1 sm:pb-2">
         <CardTitle className="text-xl sm:text-2xl md:text-3xl text-black whitespace-normal">
           Quiz Completed!
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="space-y-3 sm:space-y-4 md:space-y-6 px-3 sm:px-6 overflow-hidden">
+      <CardContent className="space-y-3 sm:space-y-4 md:space-y-6 px-3 sm:px-6">
         <div className="p-3 sm:p-4 md:p-6 bg-amber-50 rounded-lg border border-amber-500">
           <p className="text-lg md:text-xl mb-3 text-black text-center">
             You scored <span className="font-semibold">{score}</span> out of{" "}
@@ -93,7 +93,7 @@ export const Results = ({ score, questions, onRestart }: ResultsProps) => {
             You scored {score} out of {questions.length}
           </div>
 
-          <div className="space-y-4">
+          <div className="max-h-[50vh] overflow-y-auto pr-2 results-scroll space-y-4">
             {questions.map((question, index) => (
               <div key={index} className="flex items-start">
                 {question.userAnswer === question.correctAnswer ? (

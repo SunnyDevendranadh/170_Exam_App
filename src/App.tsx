@@ -154,8 +154,8 @@ const App: React.FC = () => {
   const availableTopics = Object.keys(topicData) as TopicKey[];
 
   return (
-    <div className="min-h-screen bg-gray-100 overflow-hidden">
-      <div className="container mx-auto px-2 sm:px-4 py-4 md:py-8 max-w-7xl overflow-x-hidden">
+    <div className="min-h-screen bg-gray-100 overflow-y-auto overflow-x-hidden">
+      <div className="container mx-auto px-2 sm:px-4 py-4 md:py-8 max-w-7xl">
         <header className="mb-4 md:mb-10 text-center py-3 md:py-6">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 md:mb-3 text-black">
             Machine Learning Quiz App
@@ -166,7 +166,7 @@ const App: React.FC = () => {
         </header>
 
         {selectedTopic ? (
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto scroll-y-only">
             <Button
               onClick={handleBack}
               className="mb-6 gap-2"
