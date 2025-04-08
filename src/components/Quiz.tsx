@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-// Assume these components are also TSX and accept the specified props
-import Question from "./Questions"; // Should accept QuestionComponentProps
-import AnswerOption from "./AnswerOption"; // Should accept AnswerOptionComponentProps
-import Explanation from "./Explanation"; // Should accept ExplanationComponentProps
-import Results from "./Results"; // Should accept ResultsComponentProps
+// Import the components
+import Question from "./Questions";
+import { AnswerOption } from "./AnswerOption";
+import Explanation from "./Explanation";
+import Results from "./Results";
 
 // --- Type Definitions (as defined above) ---
 interface AnswerOptionData {
@@ -25,7 +25,6 @@ interface QuizProps {
 }
 
 // --- Component Definition ---
-
 const Quiz: React.FC<QuizProps> = ({ title, questions }) => {
   // --- State Hooks with Types ---
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
@@ -89,8 +88,14 @@ const Quiz: React.FC<QuizProps> = ({ title, questions }) => {
 
   // --- Render Logic ---
   return (
-    <div className="bg-white rounded-lg shadow-lg p-3 sm:p-4 md:p-6 border-none overflow-hidden">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 md:mb-6 text-center text-black whitespace-normal">
+    <div
+      className="bg-white rounded-lg shadow-lg p-3 sm:p-4 md:p-6 border-none overflow-hidden"
+      aria-labelledby="quiz-title"
+    >
+      <h2
+        id="quiz-title"
+        className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 md:mb-6 text-center text-black whitespace-normal"
+      >
         {title} Quiz
       </h2>
 
@@ -112,7 +117,11 @@ const Quiz: React.FC<QuizProps> = ({ title, questions }) => {
       ) : (
         // Display quiz question view
         <>
-          <div className="mb-4 flex flex-col sm:flex-row justify-between items-center bg-gray-50 p-2 sm:p-3 rounded-lg border border-gray-200">
+          <div
+            className="mb-4 flex flex-col sm:flex-row justify-between items-center bg-gray-50 p-2 sm:p-3 rounded-lg border border-gray-200"
+            aria-live="polite"
+            role="status"
+          >
             <span className="text-sm sm:text-base md:text-lg font-semibold text-black mb-2 sm:mb-0">
               Question {currentQuestion + 1}/{questions.length}
             </span>
@@ -121,25 +130,38 @@ const Quiz: React.FC<QuizProps> = ({ title, questions }) => {
             </span>
           </div>
 
-          {/* Ensure Question component exists and accepts 'questionText' prop */}
+          {/* Question component */}
           <Question questionText={questions[currentQuestion].questionText} />
 
-          <div className="space-y-2 mt-4">
+          <div
+            className="space-y-2 mt-4"
+            role="listbox"
+            aria-labelledby="current-question"
+          >
             {/* Map over answer options for the current question */}
             {questions[currentQuestion].answerOptions.map(
               (answerOption, index) => (
-                // Ensure AnswerOption component exists and accepts these props
                 <AnswerOption
-                  key={index} // React key
-                  answerText={answerOption.answerText}
+                  key={index}
+                  option={answerOption.answerText}
+                  selected={selectedAnswers[currentQuestion] === index}
+                  answered={answeredQuestions.includes(currentQuestion)}
                   isCorrect={answerOption.isCorrect}
-                  // Pass necessary state for styling/logic in AnswerOption
-                  isSelected={selectedAnswers[currentQuestion] === index}
-                  isAnswered={answeredQuestions.includes(currentQuestion)}
-                  // Pass handler, providing necessary args (index and correctness)
                   onClick={() =>
                     handleAnswerOptionClick(index, answerOption.isCorrect)
                   }
+                  aria-label={`${answerOption.answerText}${
+                    answeredQuestions.includes(currentQuestion) &&
+                    answerOption.isCorrect
+                      ? ", correct answer"
+                      : ""
+                  }${
+                    answeredQuestions.includes(currentQuestion) &&
+                    selectedAnswers[currentQuestion] === index &&
+                    !answerOption.isCorrect
+                      ? ", incorrect answer"
+                      : ""
+                  }`}
                 />
               )
             )}
@@ -147,7 +169,6 @@ const Quiz: React.FC<QuizProps> = ({ title, questions }) => {
 
           {/* Conditionally render the explanation section */}
           {showExplanation && (
-            // Ensure Explanation component exists and accepts these props
             <Explanation
               explanation={questions[currentQuestion].explanation}
               onNext={handleNextQuestion}

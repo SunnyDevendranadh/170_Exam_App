@@ -14,13 +14,17 @@ const Question: React.FC<QuestionProps> = ({ questionText }) => {
     <Card className="mb-4 md:mb-6 shadow-sm border-none overflow-hidden">
       <CardContent className="p-4 md:p-6">
         <div className="flex items-start gap-2 md:gap-3">
-          <div className="flex-shrink-0 h-7 w-7 md:h-8 md:w-8 rounded-full bg-amber-50 text-amber-500 flex items-center justify-center">
+          <div
+            className="flex-shrink-0 h-7 w-7 md:h-8 md:w-8 rounded-full bg-amber-50 text-amber-500 flex items-center justify-center"
+            aria-hidden="true"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4 md:h-5 md:w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -35,6 +39,8 @@ const Question: React.FC<QuestionProps> = ({ questionText }) => {
               className={cn(
                 "text-base md:text-xl font-semibold text-black leading-snug break-words whitespace-normal"
               )}
+              aria-live="polite"
+              id="current-question"
             >
               {questionText}
             </h3>

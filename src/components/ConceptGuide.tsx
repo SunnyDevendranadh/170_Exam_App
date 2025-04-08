@@ -54,8 +54,9 @@ export const ConceptGuide = ({
           onClick={onBack}
           className="px-6 py-2 flex items-center gap-2"
           variant="default"
+          aria-label="Go back to topics"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <ArrowLeft className="w-4 h-4" aria-hidden="true" />
           Back to Topics
         </Button>
       </CardFooter>

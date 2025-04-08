@@ -24,10 +24,16 @@ const Explanation: React.FC<ExplanationProps> = ({
   return (
     <Card className="mt-4 md:mt-6 bg-amber-50 border-amber-300 shadow-sm overflow-hidden">
       <CardContent className="p-4 md:p-5 overflow-hidden">
-        <h3 className="font-semibold text-base md:text-lg mb-2 text-black">
+        <h3
+          className="font-semibold text-base md:text-lg mb-2 text-black"
+          id="explanation-heading"
+        >
           Explanation:
         </h3>
-        <p className="text-sm md:text-base text-black break-words whitespace-normal">
+        <p
+          className="text-sm md:text-base text-black break-words whitespace-normal"
+          aria-labelledby="explanation-heading"
+        >
           {explanation || "No explanation provided."}
         </p>
       </CardContent>
@@ -38,6 +44,7 @@ const Explanation: React.FC<ExplanationProps> = ({
             isLastQuestion ? "bg-green-600 hover:bg-green-700" : ""
           )}
           onClick={onNext}
+          aria-label={isLastQuestion ? "See results" : "Go to next question"}
         >
           {isLastQuestion ? "See Results" : "Next Question"}
         </Button>

@@ -93,13 +93,23 @@ export const Results = ({ score, questions, onRestart }: ResultsProps) => {
             You scored {score} out of {questions.length}
           </div>
 
-          <div className="max-h-[50vh] overflow-y-auto pr-2 results-scroll space-y-4">
+          <div
+            className="max-h-[50vh] overflow-y-auto pr-2 results-scroll space-y-4"
+            role="list"
+            aria-label="Quiz results"
+          >
             {questions.map((question, index) => (
-              <div key={index} className="flex items-start">
+              <div key={index} className="flex items-start" role="listitem">
                 {question.userAnswer === question.correctAnswer ? (
-                  <CheckCircle className="min-w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                  <CheckCircle
+                    className="min-w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0"
+                    aria-hidden="true"
+                  />
                 ) : (
-                  <XCircle className="min-w-5 h-5 text-red-500 mr-2 mt-1 flex-shrink-0" />
+                  <XCircle
+                    className="min-w-5 h-5 text-red-500 mr-2 mt-1 flex-shrink-0"
+                    aria-hidden="true"
+                  />
                 )}
                 <div className="text-sm md:text-base min-w-0 flex-1">
                   <p className="font-medium break-words whitespace-normal">
@@ -128,6 +138,7 @@ export const Results = ({ score, questions, onRestart }: ResultsProps) => {
           onClick={onRestart}
           className="px-6 py-2 md:px-8 md:py-6 text-base md:text-lg"
           size="lg"
+          aria-label="Restart Quiz"
         >
           Restart Quiz
         </Button>

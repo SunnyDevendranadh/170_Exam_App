@@ -208,15 +208,24 @@ const App: React.FC = () => {
         </header>
 
         {viewMode === "topics" ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+            role="list"
+          >
             {availableTopics.map((topic) => (
               <Card
                 key={topic}
                 className="overflow-hidden hover:shadow-lg transition-all duration-300 bg-white border-none shadow"
+                role="listitem"
               >
                 <CardHeader className="pb-3 border-b border-gray-100">
                   <CardTitle className="flex items-center gap-2 text-black">
-                    <span className="text-3xl" role="img" aria-hidden="true">
+                    <span
+                      className="text-3xl"
+                      role="img"
+                      aria-hidden="true"
+                      aria-label={topicIcons[topic].icon}
+                    >
                       {topicIcons[topic].icon}
                     </span>
                     {topicData[topic].title}
@@ -240,6 +249,7 @@ const App: React.FC = () => {
                     variant="default"
                     className="w-full sm:w-1/2"
                     onClick={() => handleStartQuiz(topic)}
+                    aria-label={`Start quiz for ${topicData[topic].title}`}
                   >
                     Start Quiz
                   </Button>
@@ -247,6 +257,7 @@ const App: React.FC = () => {
                     variant="outline"
                     className="w-full sm:w-1/2 border-amber-500 text-amber-700 hover:bg-amber-50"
                     onClick={() => handleReadConcepts(topic)}
+                    aria-label={`Read concepts for ${topicData[topic].title}`}
                   >
                     Read Concepts
                   </Button>
@@ -260,6 +271,7 @@ const App: React.FC = () => {
               onClick={handleBack}
               className="mb-6 gap-2"
               variant="default"
+              aria-label="Go back to topics"
             >
               <span aria-hidden="true">←</span> Back to Topics
             </Button>
@@ -275,36 +287,19 @@ const App: React.FC = () => {
               </CardHeader>
 
               <CardContent className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Card
-                  className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer bg-white border border-gray-200 hover:border-amber-500"
+                <QuizCard
+                  topic={selectedTopic}
                   onClick={() => handleSelectQuiz(1)}
-                >
-                  <CardHeader className="pb-3 text-center">
-                    <CardTitle className="text-xl text-black">Quiz 1</CardTitle>
-                    <CardDescription>
-                      {topicData[selectedTopic].data.questions.length} questions
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="text-center pb-6">
-                    <Button variant="default">Start Quiz 1</Button>
-                  </CardContent>
-                </Card>
+                  buttonText="Quiz 1"
+                  questions={topicData[selectedTopic].data.questions.length}
+                />
 
-                <Card
-                  className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer bg-white border border-gray-200 hover:border-amber-500"
+                <QuizCard
+                  topic={selectedTopic}
                   onClick={() => handleSelectQuiz(2)}
-                >
-                  <CardHeader className="pb-3 text-center">
-                    <CardTitle className="text-xl text-black">Quiz 2</CardTitle>
-                    <CardDescription>
-                      {topicData[selectedTopic].data2.questions.length}{" "}
-                      questions
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="text-center pb-6">
-                    <Button variant="default">Start Quiz 2</Button>
-                  </CardContent>
-                </Card>
+                  buttonText="Quiz 2"
+                  questions={topicData[selectedTopic].data2.questions.length}
+                />
               </CardContent>
             </Card>
           </div>
@@ -314,6 +309,7 @@ const App: React.FC = () => {
               onClick={handleBack}
               className="mb-6 gap-2"
               variant="default"
+              aria-label="Go back to topics"
             >
               <span aria-hidden="true">←</span> Back to Topics
             </Button>
@@ -344,5 +340,34 @@ const App: React.FC = () => {
     </div>
   );
 };
+
+const QuizCard: React.FC<{
+  topic: TopicKey;
+  onClick: () => void;
+  buttonText: string;
+  questions: number;
+}> = ({ onClick, buttonText, questions }) => (
+  <Card
+    className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer bg-white border border-gray-200 hover:border-amber-500"
+    onClick={onClick}
+    role="button"
+    aria-pressed="false"
+    tabIndex={0}
+    onKeyDown={(e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        onClick();
+        e.preventDefault();
+      }
+    }}
+  >
+    <CardHeader className="pb-3 text-center">
+      <CardTitle className="text-xl text-black">{buttonText}</CardTitle>
+      <CardDescription>{questions} questions</CardDescription>
+    </CardHeader>
+    <CardContent className="text-center pb-6">
+      <Button variant="default">Start {buttonText}</Button>
+    </CardContent>
+  </Card>
+);
 
 export default App;
