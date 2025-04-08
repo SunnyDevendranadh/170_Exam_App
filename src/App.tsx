@@ -18,6 +18,9 @@ import svmData2 from "./data/quiz_2/svm2.json";
 import pcaData2 from "./data/quiz_2/pca2.json";
 import regressionData2 from "./data/quiz_2/regression2.json";
 
+// Import cumilative quiz data
+import cumulativeData from "./data/cumilative.json";
+
 // Import concept guides
 import { conceptGuides } from "./data/conceptGuides";
 
@@ -76,7 +79,7 @@ type TopicKey =
   | "pca"
   | "regression";
 
-type ViewMode = "topics" | "quiz" | "concepts" | "quizSelection";
+type ViewMode = "topics" | "quiz" | "concepts" | "quizSelection" | "finalQuiz";
 type QuizSet = 1 | 2;
 
 // Topic icons and colors for improved UI
@@ -163,6 +166,8 @@ const App: React.FC = () => {
     if (viewMode === "quizSelection") {
       setViewMode("topics");
       setSelectedTopic(null);
+    } else if (viewMode === "finalQuiz") {
+      setViewMode("topics");
     } else {
       setSelectedTopic(null);
       setViewMode("topics");
@@ -173,6 +178,10 @@ const App: React.FC = () => {
   const handleStartQuiz = (topic: TopicKey): void => {
     setSelectedTopic(topic);
     setViewMode("quizSelection");
+  };
+
+  const handleStartFinalQuiz = (): void => {
+    setViewMode("finalQuiz");
   };
 
   const handleReadConcepts = (topic: TopicKey): void => {
@@ -208,62 +217,98 @@ const App: React.FC = () => {
         </header>
 
         {viewMode === "topics" ? (
-          <div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
-            role="list"
-          >
-            {availableTopics.map((topic) => (
-              <Card
-                key={topic}
-                className="overflow-hidden hover:shadow-lg transition-all duration-300 bg-white border-none shadow"
-                role="listitem"
-              >
-                <CardHeader className="pb-3 border-b border-gray-100">
-                  <CardTitle className="flex items-center gap-2 text-black">
-                    <span
-                      className="text-3xl"
-                      role="img"
-                      aria-hidden="true"
-                      aria-label={topicIcons[topic].icon}
-                    >
-                      {topicIcons[topic].icon}
+          <div>
+            {/* Final Quiz Card */}
+            <div className="mb-8">
+              <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 bg-amber-50 border-amber-200 shadow max-w-2xl mx-auto">
+                <CardHeader className="pb-3 border-b border-amber-100">
+                  <CardTitle className="flex items-center gap-2 text-black text-center">
+                    <span className="text-3xl mx-auto" role="img" aria-hidden="true">
+                      🏆
                     </span>
-                    {topicData[topic].title}
+                    <span className="mx-auto">Final Cumulative Quiz</span>
                   </CardTitle>
-                  <CardDescription className="text-gray-600">
-                    {topicIcons[topic].description}
+                  <CardDescription className="text-amber-700">
+                    Test your knowledge with questions from all topics
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="pb-0 pt-4">
-                  <p className="text-sm text-gray-500">
-                    Multiple quizzes available with{" "}
-                    {Math.max(
-                      topicData[topic].data.questions.length,
-                      topicData[topic].data2.questions.length
-                    )}{" "}
-                    questions each
+                  <p className="text-sm text-amber-700">
+                    A comprehensive assessment with {cumulativeData.questions.length} questions covering all machine learning concepts
                   </p>
                 </CardContent>
-                <CardFooter className="pt-4 flex flex-col sm:flex-row gap-2">
+                <CardFooter className="pt-4">
                   <Button
                     variant="default"
-                    className="w-full sm:w-1/2"
-                    onClick={() => handleStartQuiz(topic)}
-                    aria-label={`Start quiz for ${topicData[topic].title}`}
+                    className="w-full bg-amber-600 hover:bg-amber-700"
+                    onClick={handleStartFinalQuiz}
+                    aria-label="Start Final Quiz"
                   >
-                    Start Quiz
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="w-full sm:w-1/2 border-amber-500 text-amber-700 hover:bg-amber-50"
-                    onClick={() => handleReadConcepts(topic)}
-                    aria-label={`Read concepts for ${topicData[topic].title}`}
-                  >
-                    Read Concepts
+                    Start Final Quiz
                   </Button>
                 </CardFooter>
               </Card>
-            ))}
+            </div>
+
+            <h2 className="text-xl font-semibold mb-4 text-center">Topic Quizzes</h2>
+
+            <div
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+              role="list"
+            >
+              {availableTopics.map((topic) => (
+                <Card
+                  key={topic}
+                  className="overflow-hidden hover:shadow-lg transition-all duration-300 bg-white border-none shadow"
+                  role="listitem"
+                >
+                  <CardHeader className="pb-3 border-b border-gray-100">
+                    <CardTitle className="flex items-center gap-2 text-black">
+                      <span
+                        className="text-3xl"
+                        role="img"
+                        aria-hidden="true"
+                        aria-label={topicIcons[topic].icon}
+                      >
+                        {topicIcons[topic].icon}
+                      </span>
+                      {topicData[topic].title}
+                    </CardTitle>
+                    <CardDescription className="text-gray-600">
+                      {topicIcons[topic].description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="pb-0 pt-4">
+                    <p className="text-sm text-gray-500">
+                      Multiple quizzes available with{" "}
+                      {Math.max(
+                        topicData[topic].data.questions.length,
+                        topicData[topic].data2.questions.length
+                      )}{" "}
+                      questions each
+                    </p>
+                  </CardContent>
+                  <CardFooter className="pt-4 flex flex-col sm:flex-row gap-2">
+                    <Button
+                      variant="default"
+                      className="w-full sm:w-1/2"
+                      onClick={() => handleStartQuiz(topic)}
+                      aria-label={`Start quiz for ${topicData[topic].title}`}
+                    >
+                      Start Quiz
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="w-full sm:w-1/2 border-amber-500 text-amber-700 hover:bg-amber-50"
+                      onClick={() => handleReadConcepts(topic)}
+                      aria-label={`Read concepts for ${topicData[topic].title}`}
+                    >
+                      Read Concepts
+                    </Button>
+                  </CardFooter>
+                </Card>
+              ))}
+            </div>
           </div>
         ) : viewMode === "quizSelection" && selectedTopic ? (
           <div className="max-w-4xl mx-auto">
@@ -316,6 +361,21 @@ const App: React.FC = () => {
             <Quiz
               title={`${topicData[selectedTopic].title} - Quiz ${selectedQuizSet}`}
               questions={processQuestions(getQuizData(selectedTopic).questions)}
+            />
+          </div>
+        ) : viewMode === "finalQuiz" ? (
+          <div className="max-w-4xl mx-auto scroll-y-only">
+            <Button
+              onClick={handleBack}
+              className="mb-6 gap-2"
+              variant="default"
+              aria-label="Go back to topics"
+            >
+              <span aria-hidden="true">←</span> Back to Topics
+            </Button>
+            <Quiz
+              title="Final Cumulative Quiz"
+              questions={processQuestions(cumulativeData.questions)}
             />
           </div>
         ) : viewMode === "concepts" && selectedTopic ? (

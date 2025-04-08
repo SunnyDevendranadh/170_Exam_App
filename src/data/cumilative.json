@@ -1,0 +1,394 @@
+{
+    "questions": [
+      {
+        "questionText": "What is a decision tree?",
+        "answerOptions": [
+          { "answerText": "An algorithm that builds a flowchart by separating a dataset into two or more groups", "isCorrect": true },
+          { "answerText": "A network of interconnected neurons that learn from experience", "isCorrect": false },
+          { "answerText": "A mathematical function that maps inputs to outputs", "isCorrect": false },
+          { "answerText": "A clustering algorithm that groups similar data points", "isCorrect": false }
+        ],
+        "explanation": "A decision tree is an algorithm that builds a flowchart by separating a dataset into two groups and this separation process repeats until the dataset can't be separated to any meaningful smaller unit any further."
+      },
+      {
+        "questionText": "What is the main advantage of Random Forest over a single Decision Tree?",
+        "answerOptions": [
+          { "answerText": "Faster computation time", "isCorrect": false },
+          { "answerText": "Higher interpretability", "isCorrect": false },
+          { "answerText": "Reduced overfitting", "isCorrect": true },
+          { "answerText": "Simpler model structure", "isCorrect": false }
+        ],
+        "explanation": "Random Forest reduces overfitting by averaging multiple decision trees. Each tree is trained on a random subset of the data and features, which introduces diversity and reduces the model's sensitivity to noise in the training data."
+      },
+      {
+        "questionText": "What is K-Nearest Neighbors (KNN)?",
+        "answerOptions": [
+          { "answerText": "A supervised algorithm that classifies data based on the majority class of its nearest neighbors", "isCorrect": true },
+          { "answerText": "An unsupervised algorithm that clusters data into K groups", "isCorrect": false },
+          { "answerText": "A deep learning algorithm that uses neural networks", "isCorrect": false },
+          { "answerText": "A regression algorithm that predicts values based on linear relationships", "isCorrect": false }
+        ],
+        "explanation": "K-Nearest Neighbors (KNN) is a supervised algorithm that classifies a data point based on the classification of its nearest neighbors. It operates on the principle that similar data points tend to have similar outcomes."
+      },
+      {
+        "questionText": "How is the optimal K value determined in KNN?",
+        "answerOptions": [
+          { "answerText": "It is always chosen as an odd number", "isCorrect": false },
+          { "answerText": "It is selected based on domain knowledge", "isCorrect": false },
+          { "answerText": "Through trial and error, evaluating model performance with different K values", "isCorrect": true },
+          { "answerText": "It is calculated using a mathematical formula", "isCorrect": false }
+        ],
+        "explanation": "The optimal K value is determined through trial and error by testing different K values and selecting the one that gives the best performance on the validation data. Research has shown that there is no optimal K value that works for all datasets."
+      },
+      {
+        "questionText": "What is Naive Bayes?",
+        "answerOptions": [
+          { "answerText": "A deep learning algorithm based on neural networks", "isCorrect": false },
+          { "answerText": "A classification algorithm that uses Bayes theorem of probability", "isCorrect": true },
+          { "answerText": "A regression algorithm for predicting continuous values", "isCorrect": false },
+          { "answerText": "A clustering algorithm for grouping similar data points", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes is a classification algorithm that uses the Bayes theorem of probability to classify the target. It is considered to be one of the simplest supervised learning algorithms for classification tasks."
+      },
+      {
+        "questionText": "Why is Naive Bayes called 'naive'?",
+        "answerOptions": [
+          { "answerText": "Because it's not as sophisticated as other algorithms", "isCorrect": false },
+          { "answerText": "Because it's easy to implement", "isCorrect": false },
+          { "answerText": "Because it assumes features are independent of each other", "isCorrect": true },
+          { "answerText": "Because it's only suitable for simple classification tasks", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes is called 'naive' because it makes the simplifying assumption that features (independent variables) are independent of each other. In reality, features are often related, but this 'naive' assumption simplifies the calculations while still providing good results in many cases."
+      },
+      {
+        "questionText": "What is a Support Vector Machine (SVM)?",
+        "answerOptions": [
+          { "answerText": "A neural network architecture with support layers", "isCorrect": false },
+          { "answerText": "A classification approach that constructs a hyperplane to separate different classes", "isCorrect": true },
+          { "answerText": "A clustering algorithm that groups similar data points", "isCorrect": false },
+          { "answerText": "A dimensionality reduction technique", "isCorrect": false }
+        ],
+        "explanation": "Support Vector Machine (SVM) is considered to be a classification approach (but it can also be employed for regression problems). SVM constructs a hyperplane in multidimensional space to separate different classes. The core idea of SVM is to find a maximum marginal hyperplane (MMH) that best divides the dataset into classes."
+      },
+      {
+        "questionText": "What is the kernel trick in SVM?",
+        "answerOptions": [
+          { "answerText": "A technique to speed up SVM training", "isCorrect": false },
+          { "answerText": "A mathematical technique to transform data into a higher-dimensional space without explicitly calculating the coordinates", "isCorrect": true },
+          { "answerText": "A method to reduce the number of support vectors", "isCorrect": false },
+          { "answerText": "A way to determine the optimal hyperplane parameters", "isCorrect": false }
+        ],
+        "explanation": "The kernel trick is a mathematical technique that enables SVMs to handle non-linearly separable data by transforming it into a higher-dimensional space. This transformation allows SVMs to find complex decision boundaries without explicitly calculating the coordinates in the high-dimensional space, significantly reducing computational costs."
+      },
+      {
+        "questionText": "What is Principal Component Analysis (PCA)?",
+        "answerOptions": [
+          { "answerText": "A classification algorithm that predicts class labels", "isCorrect": false },
+          { "answerText": "A data dimension-reduction technique that captures the most variance in the data", "isCorrect": true },
+          { "answerText": "A clustering algorithm that groups similar data points", "isCorrect": false },
+          { "answerText": "A regression technique that predicts continuous values", "isCorrect": false }
+        ],
+        "explanation": "Principal Component Analysis (PCA) is a data dimension-reduction technique where the number of dimensions captures most of the variance of the data. The goal of PCA is to explain most of the variability in the data with a smaller number of variables than the original data."
+      },
+      {
+        "questionText": "What do principal components represent?",
+        "answerOptions": [
+          { "answerText": "The original features in the dataset", "isCorrect": false },
+          { "answerText": "The directions of maximum variance in the data", "isCorrect": true },
+          { "answerText": "The cluster centroids in the data", "isCorrect": false },
+          { "answerText": "The outliers in the dataset", "isCorrect": false }
+        ],
+        "explanation": "Principal components represent the directions of maximum variance in the data. They are vectors in the feature space that point in the directions where the data varies the most. Each principal component is orthogonal (perpendicular) to all others, ensuring they capture different aspects of the data's variance."
+      },
+      {
+        "questionText": "What is a regression model?",
+        "answerOptions": [
+          { "answerText": "A model that classifies data into categories", "isCorrect": false },
+          { "answerText": "A supervised algorithm that predicts a target value using feature values", "isCorrect": true },
+          { "answerText": "An unsupervised algorithm that groups similar data points", "isCorrect": false },
+          { "answerText": "A model that identifies anomalies in data", "isCorrect": false }
+        ],
+        "explanation": "A regression model is a supervised algorithm that allows you to predict a target value using feature values. Unlike classification models which predict categories, regression models predict continuous numerical values. This makes them useful for problems like price prediction, sales forecasting, and trend analysis."
+      },
+      {
+        "questionText": "What is logistic regression?",
+        "answerOptions": [
+          { "answerText": "A regression method used to predict continuous values", "isCorrect": false },
+          { "answerText": "A classification method that predicts the probability of a binary outcome", "isCorrect": true },
+          { "answerText": "A clustering technique for grouping similar observations", "isCorrect": false },
+          { "answerText": "A method for reducing the dimensionality of data", "isCorrect": false }
+        ],
+        "explanation": "Logistic regression is a classification method used to predict the probability of a binary outcome (e.g., yes/no, success/failure, 0/1). Unlike linear regression which outputs continuous values, logistic regression transforms its output using the logistic function to return a probability value between 0 and 1. This forms an S-shaped curve called the sigmoid function. It's widely used for binary classification problems in various domains."
+      },
+      {
+        "questionText": "In a decision tree, what does the root node represent?",
+        "answerOptions": [
+          { "answerText": "The final prediction", "isCorrect": false },
+          { "answerText": "The most important feature for splitting the dataset", "isCorrect": true },
+          { "answerText": "The error rate of the model", "isCorrect": false },
+          { "answerText": "The depth of the tree", "isCorrect": false }
+        ],
+        "explanation": "The root node represents the most important feature for splitting the dataset. It is the topmost node in a decision tree and is selected based on the lowest Gini impurity or highest information gain."
+      },
+      {
+        "questionText": "Which technique does Random Forest use to create diverse trees?",
+        "answerOptions": [
+          { "answerText": "Pruning each tree differently", "isCorrect": false },
+          { "answerText": "Using different splitting criteria for each tree", "isCorrect": false },
+          { "answerText": "Bootstrap sampling and random feature selection", "isCorrect": true },
+          { "answerText": "Using different tree depths for each tree", "isCorrect": false }
+        ],
+        "explanation": "Random Forest uses bootstrap sampling (randomly sampling with replacement from the training data) and random feature selection at each split to create diverse trees. This technique is also known as bagging (bootstrap aggregating)."
+      },
+      {
+        "questionText": "Why is an odd K value often preferred in KNN for binary classification?",
+        "answerOptions": [
+          { "answerText": "It makes the algorithm run faster", "isCorrect": false },
+          { "answerText": "To avoid tied votes in the decision-making process", "isCorrect": true },
+          { "answerText": "It reduces the computational complexity", "isCorrect": false },
+          { "answerText": "Because odd numbers are mathematically superior", "isCorrect": false }
+        ],
+        "explanation": "An odd K value is often preferred in KNN for binary classification problems to avoid tied votes. With an odd number of neighbors, there will always be a majority class, preventing the algorithm from getting stuck in a tie."
+      },
+      {
+        "questionText": "What is the key difference between KNN and K-means clustering?",
+        "answerOptions": [
+          { "answerText": "KNN uses Euclidean distance, while K-means uses Manhattan distance", "isCorrect": false },
+          { "answerText": "KNN is a supervised learning algorithm, while K-means is unsupervised", "isCorrect": true },
+          { "answerText": "KNN can only handle categorical data, while K-means works with numerical data", "isCorrect": false },
+          { "answerText": "KNN is for regression, while K-means is for classification", "isCorrect": false }
+        ],
+        "explanation": "The key difference between KNN and K-means clustering is that KNN is a supervised learning algorithm (data points are labeled), while K-means is an unsupervised learning algorithm (data points are NOT labeled). KNN classifies based on neighboring close proximity, while K-means clusters based on mean values (centroid)."
+      },
+      {
+        "questionText": "What is the Bayes Theorem of Probability?",
+        "answerOptions": [
+          { "answerText": "P(A|B) = P(B|A) × P(A) / P(B)", "isCorrect": true },
+          { "answerText": "P(A|B) = P(A) × P(B)", "isCorrect": false },
+          { "answerText": "P(A|B) = P(A) + P(B) - P(A∩B)", "isCorrect": false },
+          { "answerText": "P(A|B) = P(A) / P(B)", "isCorrect": false }
+        ],
+        "explanation": "The Bayes Theorem of Probability states that P(A|B) = P(B|A) × P(A) / P(B), where P(A|B) is the probability of hypothesis A given the data B, P(B|A) is the probability of data B given that hypothesis A was true, P(A) is the prior probability of hypothesis A, and P(B) is the prior probability of data B."
+      },
+      {
+        "questionText": "How does Naive Bayes handle the 'zero frequency' problem?",
+        "answerOptions": [
+          { "answerText": "By ignoring features with zero frequency", "isCorrect": false },
+          { "answerText": "By using Laplace smoothing (adding a small value to all counts)", "isCorrect": true },
+          { "answerText": "By replacing zeros with the mean value", "isCorrect": false },
+          { "answerText": "By removing the corresponding data points", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes handles the 'zero frequency' problem (when a class and feature value never occur together in the training data) using Laplace smoothing, also known as add-one smoothing. This technique adds a small value (typically 1) to all feature counts, ensuring that no probability is exactly zero."
+      },
+      {
+        "questionText": "What are support vectors in SVM?",
+        "answerOptions": [
+          { "answerText": "All the data points in the dataset", "isCorrect": false },
+          { "answerText": "The data points closest to the hyperplane that influence its position and orientation", "isCorrect": true },
+          { "answerText": "The mathematical vectors used in matrix calculations", "isCorrect": false },
+          { "answerText": "The points that are misclassified by the model", "isCorrect": false }
+        ],
+        "explanation": "Support vectors are the data points that are closest to the hyperplane. These points define the separating line better by calculating margins. They are the most relevant points to the construction of the classifier, as they directly influence the position and orientation of the hyperplane."
+      },
+      {
+        "questionText": "How does SVM handle multi-class classification?",
+        "answerOptions": [
+          { "answerText": "SVM cannot handle multi-class problems", "isCorrect": false },
+          { "answerText": "SVM naturally extends to multi-class problems", "isCorrect": false },
+          { "answerText": "Using approaches like One-vs-One or One-vs-All", "isCorrect": true },
+          { "answerText": "By creating a separate kernel for each class", "isCorrect": false }
+        ],
+        "explanation": "SVM is inherently a binary classifier, but it can handle multi-class problems using approaches like One-vs-One (OvO) or One-vs-All (OvA). In One-vs-One, SVM trains a separate classifier for each pair of classes. In One-vs-All, SVM trains one classifier per class, treating one class as positive and all others as negative."
+      },
+      {
+        "questionText": "How are principal components ordered?",
+        "answerOptions": [
+          { "answerText": "By their correlation with the target variable", "isCorrect": false },
+          { "answerText": "By their complexity, from simplest to most complex", "isCorrect": false },
+          { "answerText": "By the amount of variance they explain, from most to least", "isCorrect": true },
+          { "answerText": "Alphabetically by the name of the original features", "isCorrect": false }
+        ],
+        "explanation": "Principal components are ordered by the amount of variance they explain in the data, from the component that explains the most variance (the first principal component) to the one that explains the least. Each principal component represents a percentage of the total variation captured from the data."
+      },
+      {
+        "questionText": "Why is standardization (scaling) often applied before PCA?",
+        "answerOptions": [
+          { "answerText": "To make the algorithm run faster", "isCorrect": false },
+          { "answerText": "To ensure all features contribute equally regardless of their original scale", "isCorrect": true },
+          { "answerText": "To remove outliers from the dataset", "isCorrect": false },
+          { "answerText": "To make the data normally distributed", "isCorrect": false }
+        ],
+        "explanation": "Standardization (scaling) is often applied before PCA to ensure all features contribute equally regardless of their original scale. Without standardization, features with larger scales would dominate the variance calculations, and PCA would primarily capture the variance from these features while ignoring features with smaller scales. Standardization puts all features on an equal footing for PCA."
+      },
+      {
+        "questionText": "What is the basic form of a multivariate linear regression equation?",
+        "answerOptions": [
+          { "answerText": "y = B₀ + B₁X₁ + B₂X₂ + ... + BᵣXᵣ + error", "isCorrect": true },
+          { "answerText": "y = B₀ × B₁X₁ × B₂X₂ × ... × BᵣXᵣ + error", "isCorrect": false },
+          { "answerText": "y = B₀ + B₁X₁² + B₂X₂² + ... + BᵣXᵣ² + error", "isCorrect": false },
+          { "answerText": "y = (B₀ + B₁X₁ + B₂X₂ + ... + BᵣXᵣ)² + error", "isCorrect": false }
+        ],
+        "explanation": "The basic form of a multivariate linear regression equation is y = B₀ + B₁X₁ + B₂X₂ + ... + BᵣXᵣ + error, where y is the dependent variable (target), B₀ is the y-intercept, B₁ to Bᵣ are coefficients for the independent variables (features) X₁ to Xᵣ, and 'error' represents the random error term."
+      },
+      {
+        "questionText": "What is the sigmoid function in logistic regression?",
+        "answerOptions": [
+          { "answerText": "A function that transforms continuous input values to a value between 0 and 1", "isCorrect": true },
+          { "answerText": "A function that measures the error of the model", "isCorrect": false },
+          { "answerText": "A function that selects the optimal threshold for classification", "isCorrect": false },
+          { "answerText": "A function that computes the R² value", "isCorrect": false }
+        ],
+        "explanation": "The sigmoid function in logistic regression transforms continuous input values to a value between 0 and 1, representing a probability. It has an S-shaped curve and is defined as sigmoid(z) = 1/(1+e^(-z)). This transformation is crucial because it converts the linear predictor into a probability, which is appropriate for binary classification problems. The function approaches 0 for very negative inputs and approaches 1 for very positive inputs."
+      },
+      {
+        "questionText": "What measure is commonly used to determine the best feature to split on in a decision tree?",
+        "answerOptions": [
+          { "answerText": "Mean squared error", "isCorrect": false },
+          { "answerText": "Standard deviation", "isCorrect": false },
+          { "answerText": "Gini impurity", "isCorrect": true },
+          { "answerText": "Absolute difference", "isCorrect": false }
+        ],
+        "explanation": "Gini impurity is commonly used to measure the quality of a split in decision trees. It calculates the probability of a random sample being misclassified if it were randomly labeled according to the distribution of labels in the subset."
+      },
+      {
+        "questionText": "What Python library and function is commonly used to implement decision trees?",
+        "answerOptions": [
+          { "answerText": "TensorFlow - tf.DecisionTree()", "isCorrect": false },
+          { "answerText": "Pandas - pd.tree()", "isCorrect": false },
+          { "answerText": "Scikit-learn - DecisionTreeClassifier()", "isCorrect": true },
+          { "answerText": "NumPy - np.dtree()", "isCorrect": false }
+        ],
+        "explanation": "Scikit-learn's DecisionTreeClassifier() is commonly used to implement decision trees in Python. This function provides a comprehensive implementation with various parameters to control the tree's behavior."
+      },
+      {
+        "questionText": "What happens if you choose a very large K value in KNN?",
+        "answerOptions": [
+          { "answerText": "The model may become too complex and overfit", "isCorrect": false },
+          { "answerText": "The algorithm will run out of memory", "isCorrect": false },
+          { "answerText": "The model may be too simple and underfit", "isCorrect": true },
+          { "answerText": "The algorithm will become faster", "isCorrect": false }
+        ],
+        "explanation": "Choosing a very large K value may lead to a model that is too simple and prone to underfitting. With a large K, the model considers too many neighbors, which can smooth out the decision boundaries and miss important patterns in the data."
+      },
+      {
+        "questionText": "What is a potential application of KNN in finance?",
+        "answerOptions": [
+          { "answerText": "Image recognition for bank security", "isCorrect": false },
+          { "answerText": "Credit scoring", "isCorrect": true },
+          { "answerText": "Supply chain optimization", "isCorrect": false },
+          { "answerText": "Voice recognition for customer authentication", "isCorrect": false }
+        ],
+        "explanation": "Credit scoring is a common business application of KNN. Financial institutions can use KNN to predict the creditworthiness of loan applicants by comparing their profiles to those of past applicants whose creditworthiness was known."
+      },
+      {
+        "questionText": "What does GaussianNB function do in scikit-learn?",
+        "answerOptions": [
+          { "answerText": "It implements Naive Bayes for discrete features", "isCorrect": false },
+          { "answerText": "It implements Naive Bayes for continuous features assuming Gaussian distribution", "isCorrect": true },
+          { "answerText": "It implements a hybrid Naive Bayes model for mixed data types", "isCorrect": false },
+          { "answerText": "It implements Naive Bayes with advanced probability calculations", "isCorrect": false }
+        ],
+        "explanation": "GaussianNB is the scikit-learn function that implements Naive Bayes for continuous features, assuming that the values of each feature follow a Gaussian (normal) distribution. It's used when your features are continuous rather than categorical."
+      },
+      {
+        "questionText": "What is a common application of Naive Bayes?",
+        "answerOptions": [
+          { "answerText": "Image recognition", "isCorrect": false },
+          { "answerText": "Email spam filtering", "isCorrect": true },
+          { "answerText": "Time series forecasting", "isCorrect": false },
+          { "answerText": "Regression analysis", "isCorrect": false }
+        ],
+        "explanation": "Email spam filtering is a classic application of Naive Bayes. By analyzing the frequency of words and other characteristics in emails, Naive Bayes can classify incoming messages as spam or not spam with high accuracy, despite its simplifying assumptions."
+      },
+      {
+        "questionText": "What kernel should you try first when using SVM?",
+        "answerOptions": [
+          { "answerText": "Radial Basis Function (RBF) kernel", "isCorrect": false },
+          { "answerText": "Polynomial kernel", "isCorrect": false },
+          { "answerText": "Linear kernel", "isCorrect": true },
+          { "answerText": "Sigmoid kernel", "isCorrect": false }
+        ],
+        "explanation": "You should always try the linear kernel first when using SVM. If the linear kernel doesn't provide satisfactory results, then you can try other kernels like RBF (which is the second most popular choice). This follows the general principle of starting with the simplest model and only increasing complexity if necessary."
+      },
+      {
+        "questionText": "What is a potential application of SVM in computer vision?",
+        "answerOptions": [
+          { "answerText": "Image generation", "isCorrect": false },
+          { "answerText": "Face detection", "isCorrect": true },
+          { "answerText": "Video streaming", "isCorrect": false },
+          { "answerText": "Image storage optimization", "isCorrect": false }
+        ],
+        "explanation": "Face detection is a potential application of SVM in computer vision. SVM can be used to classify regions of an image as either containing a face or not. The algorithm can create a square box around faces in an environment by analyzing visual patterns and features that distinguish faces from the background or other objects."
+      },
+      {
+        "questionText": "What is the relationship between principal components?",
+        "answerOptions": [
+          { "answerText": "They are highly correlated with each other", "isCorrect": false },
+          { "answerText": "They are orthogonal (perpendicular) to each other", "isCorrect": true },
+          { "answerText": "They are parallel to each other", "isCorrect": false },
+          { "answerText": "They have no mathematical relationship", "isCorrect": false }
+        ],
+        "explanation": "Principal components are orthogonal (perpendicular) to each other. This means they are uncorrelated, and each component captures a unique direction of variance in the data. This orthogonality ensures that the information captured by one principal component is not redundant with any other component."
+      },
+      {
+        "questionText": "What is a common application of PCA in retail?",
+        "answerOptions": [
+          { "answerText": "Inventory management", "isCorrect": false },
+          { "answerText": "Price optimization", "isCorrect": false },
+          { "answerText": "Customer segmentation", "isCorrect": true },
+          { "answerText": "Store layout design", "isCorrect": false }
+        ],
+        "explanation": "Customer segmentation is a common application of PCA in retail. A retail company can use PCA to reduce a high-dimensional dataset with customer attributes (age, income, purchase history, website activity, feedback scores, etc.) into a smaller set of principal components that capture the most significant patterns in customer behavior. This simplifies the data while retaining the important information for segmentation analysis."
+      },
+      {
+        "questionText": "What does the coefficient (B₁) represent in a linear regression model?",
+        "answerOptions": [
+          { "answerText": "The expected value of y when all X values are zero", "isCorrect": false },
+          { "answerText": "The expected increase in y for a one-unit increase in X₁, holding all other variables constant", "isCorrect": true },
+          { "answerText": "The total error in the model", "isCorrect": false },
+          { "answerText": "The correlation between X₁ and y", "isCorrect": false }
+        ],
+        "explanation": "The coefficient B₁ in a linear regression model represents the expected increase in the dependent variable y for a one-unit increase in the independent variable X₁, holding all other variables constant. It indicates the slope of the relationship between X₁ and y, showing how much y changes when X₁ changes by one unit."
+      },
+      {
+        "questionText": "What is the coefficient of determination (R²) in regression?",
+        "answerOptions": [
+          { "answerText": "The square of the correlation coefficient between predicted and actual values", "isCorrect": true },
+          { "answerText": "The square root of the mean squared error", "isCorrect": false },
+          { "answerText": "The average error in the predictions", "isCorrect": false },
+          { "answerText": "The slope of the regression line", "isCorrect": false }
+        ],
+        "explanation": "The coefficient of determination (R²) is the square of the correlation coefficient between predicted and actual values. It indicates the proportion of the variance in the dependent variable that is predictable from the independent variables. R² ranges from 0 to 1, where 1 means all variance is explained by the model (perfect fit) and 0 means none is explained."
+      },
+      {
+        "questionText": "What is the difference between simple linear regression and multiple linear regression?",
+        "answerOptions": [
+          { "answerText": "Simple linear regression uses one independent variable, while multiple linear regression uses two or more", "isCorrect": true },
+          { "answerText": "Simple linear regression is for continuous targets, while multiple linear regression is for categorical targets", "isCorrect": false },
+          { "answerText": "Simple linear regression uses linear relationships, while multiple regression uses non-linear relationships", "isCorrect": false },
+          { "answerText": "Simple linear regression requires less data than multiple linear regression", "isCorrect": false }
+        ],
+        "explanation": "The main difference between simple linear regression and multiple linear regression is that simple linear regression uses one independent variable to predict the dependent variable, while multiple linear regression uses two or more independent variables. Both models assume linear relationships between the predictors and the target, and both are used for continuous target variables."
+      },
+      {
+        "questionText": "What is the 'max_depth' parameter in a decision tree?",
+        "answerOptions": [
+          { "answerText": "The maximum number of features to consider", "isCorrect": false },
+          { "answerText": "The maximum number of samples at leaf nodes", "isCorrect": false },
+          { "answerText": "The maximum depth of the tree", "isCorrect": true },
+          { "answerText": "The maximum number of trees in the forest", "isCorrect": false }
+        ],
+        "explanation": "The 'max_depth' parameter controls the maximum depth of the decision tree. It limits how deep the tree can grow, which can help prevent overfitting by creating simpler models."
+      },
+      {
+        "questionText": "How does KNN determine the 'nearest' neighbors?",
+        "answerOptions": [
+          { "answerText": "By random selection", "isCorrect": false },
+          { "answerText": "By calculating the mean of all data points", "isCorrect": false },
+          { "answerText": "By measuring the distance (often Euclidean) between data points", "isCorrect": true },
+          { "answerText": "By counting the frequency of each class", "isCorrect": false }
+        ],
+        "explanation": "By measuring the distance (often Euclidean) between data points, KNN determines the 'nearest' neighbors. It calculates the distance from the new data point (that needs to be classified) to all existing data points in the feature space. The K data points with the smallest distances are considered the nearest neighbors."
+      }
+    ]
+  }
