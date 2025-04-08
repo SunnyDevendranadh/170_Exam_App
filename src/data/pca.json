@@ -1,0 +1,244 @@
+{
+    "questions": [
+      {
+        "questionText": "What is Principal Component Analysis (PCA)?",
+        "answerOptions": [
+          { "answerText": "A classification algorithm that predicts class labels", "isCorrect": false },
+          { "answerText": "A data dimension-reduction technique that captures the most variance in the data", "isCorrect": true },
+          { "answerText": "A clustering algorithm that groups similar data points", "isCorrect": false },
+          { "answerText": "A regression technique that predicts continuous values", "isCorrect": false }
+        ],
+        "explanation": "Principal Component Analysis (PCA) is a data dimension-reduction technique where the number of dimensions captures most of the variance of the data. The goal of PCA is to explain most of the variability in the data with a smaller number of variables than the original data."
+      },
+      {
+        "questionText": "What is the main objective of PCA?",
+        "answerOptions": [
+          { "answerText": "To classify data points into categories", "isCorrect": false },
+          { "answerText": "To predict future values based on historical data", "isCorrect": false },
+          { "answerText": "To reduce dimensionality while preserving as much variance as possible", "isCorrect": true },
+          { "answerText": "To identify outliers in the dataset", "isCorrect": false }
+        ],
+        "explanation": "The main objective of PCA is to reduce the dimensionality of the data while preserving as much of the original variance as possible. It transforms the data into a new coordinate system where the new variables (principal components) are ordered by the amount of variance they explain in the data, allowing us to use fewer dimensions to represent the data."
+      },
+      {
+        "questionText": "What do principal components represent?",
+        "answerOptions": [
+          { "answerText": "The original features in the dataset", "isCorrect": false },
+          { "answerText": "The directions of maximum variance in the data", "isCorrect": true },
+          { "answerText": "The cluster centroids in the data", "isCorrect": false },
+          { "answerText": "The outliers in the dataset", "isCorrect": false }
+        ],
+        "explanation": "Principal components represent the directions of maximum variance in the data. They are vectors in the feature space that point in the directions where the data varies the most. Each principal component is orthogonal (perpendicular) to all others, ensuring they capture different aspects of the data's variance."
+      },
+      {
+        "questionText": "What properties do principal components have?",
+        "answerOptions": [
+          { "answerText": "They have both direction and magnitude", "isCorrect": true },
+          { "answerText": "They are always parallel to the original features", "isCorrect": false },
+          { "answerText": "They are weighted averages of the closest data points", "isCorrect": false },
+          { "answerText": "They are randomly selected from the dataset", "isCorrect": false }
+        ],
+        "explanation": "Principal components have both direction and magnitude. The direction represents across which principal axes the data is mostly spread out or has the most variance. The magnitude signifies the amount of variance that the principal component captures of the data when projected onto that axis."
+      },
+      {
+        "questionText": "How are principal components ordered?",
+        "answerOptions": [
+          { "answerText": "By their correlation with the target variable", "isCorrect": false },
+          { "answerText": "By their complexity, from simplest to most complex", "isCorrect": false },
+          { "answerText": "By the amount of variance they explain, from most to least", "isCorrect": true },
+          { "answerText": "Alphabetically by the name of the original features", "isCorrect": false }
+        ],
+        "explanation": "Principal components are ordered by the amount of variance they explain in the data, from the component that explains the most variance (the first principal component) to the one that explains the least. Each principal component represents a percentage of the total variation captured from the data."
+      },
+      {
+        "questionText": "What is the relationship between principal components?",
+        "answerOptions": [
+          { "answerText": "They are highly correlated with each other", "isCorrect": false },
+          { "answerText": "They are orthogonal (perpendicular) to each other", "isCorrect": true },
+          { "answerText": "They are parallel to each other", "isCorrect": false },
+          { "answerText": "They have no mathematical relationship", "isCorrect": false }
+        ],
+        "explanation": "Principal components are orthogonal (perpendicular) to each other. This means they are uncorrelated, and each component captures a unique direction of variance in the data. This orthogonality ensures that the information captured by one principal component is not redundant with any other component."
+      },
+      {
+        "questionText": "How do you determine how many principal components to keep?",
+        "answerOptions": [
+          { "answerText": "Always keep exactly half of the original dimensions", "isCorrect": false },
+          { "answerText": "Based on the cumulative variance explained and domain knowledge", "isCorrect": true },
+          { "answerText": "Always keep all principal components", "isCorrect": false },
+          { "answerText": "Always keep only the first principal component", "isCorrect": false }
+        ],
+        "explanation": "The number of principal components to keep is typically determined based on the cumulative variance explained and domain knowledge. Often, you would select enough components to explain a certain percentage of the total variance (e.g., 80%, 90%, or 95%) or use techniques like the elbow method or scree plot. Domain knowledge can also influence this decision based on the specific requirements of the problem."
+      },
+      {
+         "questionText": "Why can't the PCA algorithm recommend a component value for itself?",
+         "answerOptions": [
+           { "answerText": "Because it's computationally too expensive", "isCorrect": false },
+           { "answerText": "Because the optimal number depends on domain knowledge and specific thresholds", "isCorrect": true },
+           { "answerText": "Because PCA is an unsupervised algorithm", "isCorrect": false },
+           { "answerText": "Because the number of components must be specified by a human", "isCorrect": false }
+         ],
+         "explanation": "The PCA algorithm can't recommend a component value for itself because the optimal number depends on domain knowledge and specific thresholds. Often, your boss/clients have specific thresholds for the minimum acceptable variance (like, say, 95% of the total variance). Experts in a particular field might have insights into how many dimensions are meaningful with their data. The decision might also be influenced by computational efficiency considerations."
+      },
+      {
+         "questionText": "What is a common application of PCA in retail?",
+         "answerOptions": [
+           { "answerText": "Inventory management", "isCorrect": false },
+           { "answerText": "Price optimization", "isCorrect": false },
+           { "answerText": "Customer segmentation", "isCorrect": true },
+           { "answerText": "Store layout design", "isCorrect": false }
+         ],
+         "explanation": "Customer segmentation is a common application of PCA in retail. A retail company can use PCA to reduce a high-dimensional dataset with customer attributes (age, income, purchase history, website activity, feedback scores, etc.) into a smaller set of principal components that capture the most significant patterns in customer behavior. This simplifies the data while retaining the important information for segmentation analysis."
+      },
+      {
+         "questionText": "What is a common application of PCA in banking?",
+         "answerOptions": [
+           { "answerText": "Customer service automation", "isCorrect": false },
+           { "answerText": "Risk assessment using financial indicators", "isCorrect": true },
+           { "answerText": "Branch location optimization", "isCorrect": false },
+           { "answerText": "ATM cash demand forecasting", "isCorrect": false }
+         ],
+         "explanation": "Risk assessment using financial indicators is a common application of PCA in banking. Banks use various financial indicators to assess lending risk, such as credit score, debt-to-income ratio, employment history, and number of open accounts. PCA can simplify this high-dimensional data into principal components that capture the most critical aspects of financial risk."
+      },
+      {
+         "questionText": "What is a common application of PCA in manufacturing?",
+         "answerOptions": [
+           { "answerText": "Supply chain optimization", "isCorrect": false },
+           { "answerText": "Workforce scheduling", "isCorrect": false },
+           { "answerText": "Product quality control", "isCorrect": true },
+           { "answerText": "Machine maintenance prediction", "isCorrect": false }
+         ],
+         "explanation": "Product quality control is a common application of PCA in manufacturing. In a manufacturing process, there might be dozens of measurements and checks (like size, weight, color, strength, etc.). PCA can help in reducing these to a few principal components that are most indicative of overall product quality, making it easier to monitor and control the process."
+      },
+      {
+         "questionText": "What is a common application of PCA in e-commerce?",
+         "answerOptions": [
+           { "answerText": "Website design optimization", "isCorrect": false },
+           { "answerText": "Sales forecasting", "isCorrect": true },
+           { "answerText": "Cart abandonment reduction", "isCorrect": false },
+           { "answerText": "Email marketing optimization", "isCorrect": false }
+         ],
+         "explanation": "Sales forecasting is a common application of PCA in e-commerce. An e-commerce platform uses data such as past sales, customer reviews, pricing, marketing spend, and seasonal trends to forecast future sales. PCA can condense these features into fewer dimensions that encapsulate the key factors influencing sales, making the forecasting model simpler and potentially more accurate."
+      },
+      {
+         "questionText": "What is a common application of PCA in HR?",
+         "answerOptions": [
+           { "answerText": "Salary structure design", "isCorrect": false },
+           { "answerText": "Training program development", "isCorrect": false },
+           { "answerText": "Benefits package optimization", "isCorrect": false },
+           { "answerText": "Employee performance analysis", "isCorrect": true }
+         ],
+         "explanation": "Employee performance analysis is a common application of PCA in HR. Human Resources may analyze employee performance using a range of metrics such as project completion rate, peer reviews, punctuality, client feedback, and skill assessments. PCA can distill these into a smaller set of components that reflect the most significant aspects of employee performance."
+      },
+      {
+         "questionText": "How is PCA different from feature selection?",
+         "answerOptions": [
+           { "answerText": "PCA creates new features that are combinations of original features, while feature selection chooses a subset of original features", "isCorrect": true },
+           { "answerText": "PCA selects the most important original features, while feature selection creates new combined features", "isCorrect": false },
+           { "answerText": "PCA works only with categorical data, while feature selection works with numerical data", "isCorrect": false },
+           { "answerText": "PCA is supervised, while feature selection is unsupervised", "isCorrect": false }
+         ],
+         "explanation": "PCA differs from feature selection in that PCA creates new features (principal components) that are linear combinations of the original features, while feature selection chooses a subset of the original features without creating new ones. PCA transforms the feature space, whereas feature selection simply reduces it by eliminating less important features."
+      },
+      {
+         "questionText": "What mathematical technique is used to find principal components?",
+         "answerOptions": [
+           { "answerText": "Linear regression", "isCorrect": false },
+           { "answerText": "Decision tree splitting", "isCorrect": false },
+           { "answerText": "Eigenvector decomposition of the covariance matrix", "isCorrect": true },
+           { "answerText": "K-means clustering", "isCorrect": false }
+         ],
+         "explanation": "Principal components are found using eigenvector decomposition of the covariance matrix of the data. The eigenvectors of the covariance matrix point in the directions of maximum variance, and the corresponding eigenvalues indicate how much variance is explained along each direction. The eigenvectors are ordered by their eigenvalues to give the principal components in decreasing order of variance explained. Alternatively, Singular Value Decomposition (SVD) can also be used."
+      },
+      {
+         "questionText": "Why is standardization (scaling) often applied before PCA?",
+         "answerOptions": [
+           { "answerText": "To make the algorithm run faster", "isCorrect": false },
+           { "answerText": "To ensure all features contribute equally regardless of their original scale", "isCorrect": true },
+           { "answerText": "To remove outliers from the dataset", "isCorrect": false },
+           { "answerText": "To make the data normally distributed", "isCorrect": false }
+         ],
+         "explanation": "Standardization (scaling) is often applied before PCA to ensure all features contribute equally regardless of their original scale. Without standardization, features with larger scales would dominate the variance calculations, and PCA would primarily capture the variance from these features while ignoring features with smaller scales. Standardization puts all features on an equal footing for PCA."
+      },
+      {
+         "questionText": "What does it mean when a principal component explains 60% of the variance?",
+         "answerOptions": [
+           { "answerText": "60% of the data points are correctly represented by this component", "isCorrect": false },
+           { "answerText": "60% of the original features are included in this component", "isCorrect": false },
+           { "answerText": "This component captures 60% of the total variability in the dataset", "isCorrect": true },
+           { "answerText": "This component has a 60% accuracy in predicting the target variable", "isCorrect": false }
+         ],
+         "explanation": "When a principal component explains 60% of the variance, it means this component captures 60% of the total variability in the dataset. If you were to project the data onto just this one component, you would retain 60% of the information (variance) from the original high-dimensional data. The remaining 40% of the variance would be lost in this dimensionality reduction."
+      },
+      {
+         "questionText": "How does PCA handle categorical variables?",
+         "answerOptions": [
+           { "answerText": "It automatically converts them to numerical values", "isCorrect": false },
+           { "answerText": "It cannot handle categorical variables directly; they need to be encoded first", "isCorrect": true },
+           { "answerText": "It treats each category as a separate dimension", "isCorrect": false },
+           { "answerText": "It creates separate principal components for categorical and numerical variables", "isCorrect": false }
+         ],
+         "explanation": "PCA cannot handle categorical variables directly; they need to be encoded first. Since PCA is based on variance and covariance calculations, it requires numerical data. Categorical variables need to be converted to numerical form through techniques like one-hot encoding or ordinal encoding before applying PCA. After encoding, PCA can be applied to the transformed data."
+      },
+      {
+        "questionText": "What is a limitation of PCA?",
+        "answerOptions": [
+          { "answerText": "It can only handle small datasets", "isCorrect": false },
+          { "answerText": "It assumes linear relationships between features", "isCorrect": true },
+          { "answerText": "It requires labeled data (supervised learning)", "isCorrect": false },
+          { "answerText": "It can only reduce dimensions by 50% at most", "isCorrect": false }
+        ],
+        "explanation": "A limitation of PCA is that it assumes linear relationships between features. PCA looks for linear combinations of features that maximize variance, but it cannot capture non-linear relationships effectively. For datasets with complex, non-linear structures, non-linear dimensionality reduction techniques like t-SNE or UMAP might be more appropriate."
+      },
+      {
+         "questionText": "What is the 'explained variance ratio' in PCA?",
+         "answerOptions": [
+           { "answerText": "The ratio of original features to principal components", "isCorrect": false },
+           { "answerText": "The percentage of variance explained by each principal component", "isCorrect": true },
+           { "answerText": "The ratio of training time before and after applying PCA", "isCorrect": false },
+           { "answerText": "The ratio of correctly classified instances using PCA", "isCorrect": false }
+         ],
+         "explanation": "The explained variance ratio in PCA is the percentage of variance explained by each principal component. It indicates how much of the total variance in the dataset is captured by each component. The sum of all explained variance ratios equals 1 (or 100%), representing the total variance in the data. This ratio helps in deciding how many components to retain."
+      },
+      {
+         "questionText": "What is a scree plot in the context of PCA?",
+         "answerOptions": [
+           { "answerText": "A plot showing the distribution of data points in the PCA space", "isCorrect": false },
+           { "answerText": "A plot showing the relationship between the original features", "isCorrect": false },
+           { "answerText": "A plot showing the explained variance ratio for each principal component", "isCorrect": true },
+           { "answerText": "A plot showing the computational time required for PCA", "isCorrect": false }
+         ],
+         "explanation": "A scree plot in the context of PCA is a plot showing the explained variance ratio for each principal component. It typically has the principal components on the x-axis (ordered from 1 to n) and the explained variance ratio on the y-axis. The plot helps visualize how much variance each component explains and can assist in determining how many components to retain."
+      },
+      {
+        "questionText": "What is the 'elbow method' in PCA?",
+        "answerOptions": [
+          { "answerText": "A method to determine the optimal number of clusters in k-means", "isCorrect": false },
+          { "answerText": "A method to determine the optimal number of principal components to retain", "isCorrect": true },
+          { "answerText": "A method to measure the angle between principal components", "isCorrect": false },
+          { "answerText": "A method to calculate the covariance matrix", "isCorrect": false }
+        ],
+        "explanation": "The elbow method in PCA is a technique to determine the optimal number of principal components to retain. It involves plotting the explained variance (or cumulative explained variance) against the number of components and looking for an 'elbow' point where the rate of increase in explained variance significantly slows down. Components beyond this point typically add minimal information while increasing complexity."
+      },
+      {
+         "questionText": "How does PCA help with the 'curse of dimensionality'?",
+         "answerOptions": [
+           { "answerText": "By completely eliminating all dimensions", "isCorrect": false },
+           { "answerText": "By clustering similar dimensions together", "isCorrect": false },
+           { "answerText": "By reducing the number of dimensions while preserving most of the information", "isCorrect": true },
+           { "answerText": "By normalizing all dimensions to the same scale", "isCorrect": false }
+         ],
+         "explanation": "PCA helps with the 'curse of dimensionality' by reducing the number of dimensions while preserving most of the information in the data. The curse of dimensionality refers to various phenomena that arise when dealing with high-dimensional data, such as increased computational complexity and sparsity. By transforming the data to a lower-dimensional space, PCA makes algorithms more efficient and often improves their performance."
+      },
+      {
+        "questionText": "What is the relationship between PCA and Singular Value Decomposition (SVD)?",
+        "answerOptions": [
+          { "answerText": "They are completely different algorithms with no relationship", "isCorrect": false },
+          { "answerText": "PCA can be computed using SVD", "isCorrect": true },
+          { "answerText": "SVD can be computed using PCA", "isCorrect": false },
+          { "answerText": "They are the same algorithm with different names", "isCorrect": false }
+        ],
+        "explanation": "PCA can be computed using Singular Value Decomposition (SVD). In fact, SVD is often the preferred method to implement PCA in practice because it is more numerically stable than directly computing the eigendecomposition of the covariance matrix, especially for high-dimensional data. SVD directly gives the principal components without forming the covariance matrix."
+      }
+    ]
+  }

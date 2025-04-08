@@ -1,0 +1,394 @@
+{
+    "questions": [
+      {
+        "questionText": "What is K-Nearest Neighbors (KNN)?",
+        "answerOptions": [
+          { "answerText": "A supervised algorithm that classifies data based on the majority class of its nearest neighbors", "isCorrect": true },
+          { "answerText": "An unsupervised algorithm that clusters data into K groups", "isCorrect": false },
+          { "answerText": "A deep learning algorithm that uses neural networks", "isCorrect": false },
+          { "answerText": "A regression algorithm that predicts values based on linear relationships", "isCorrect": false }
+        ],
+        "explanation": "K-Nearest Neighbors (KNN) is a supervised algorithm that classifies a data point based on the classification of its nearest neighbors. It operates on the principle that similar data points tend to have similar outcomes."
+      },
+      {
+        "questionText": "In KNN, what does the 'K' represent?",
+        "answerOptions": [
+          { "answerText": "The number of neighbors to consider when making a prediction", "isCorrect": true },
+          { "answerText": "The number of clusters to create", "isCorrect": false },
+          { "answerText": "The number of features in the dataset", "isCorrect": false },
+          { "answerText": "The number of iterations in the algorithm", "isCorrect": false }
+        ],
+        "explanation": "In KNN, 'K' represents the number of neighbors to consider when making a prediction. The algorithm looks at the K closest data points and makes a decision based on their classifications."
+      },
+      {
+        "questionText": "How is the optimal K value determined in KNN?",
+        "answerOptions": [
+          { "answerText": "It is always chosen as an odd number", "isCorrect": false },
+          { "answerText": "It is selected based on domain knowledge", "isCorrect": false },
+          { "answerText": "Through trial and error, evaluating model performance with different K values", "isCorrect": true },
+          { "answerText": "It is calculated using a mathematical formula", "isCorrect": false }
+        ],
+        "explanation": "The optimal K value is determined through trial and error by testing different K values and selecting the one that gives the best performance on the validation data. Research has shown that there is no optimal K value that works for all datasets."
+      },
+      {
+        "questionText": "Why is an odd K value often preferred in KNN for binary classification?",
+        "answerOptions": [
+          { "answerText": "It makes the algorithm run faster", "isCorrect": false },
+          { "answerText": "To avoid tied votes in the decision-making process", "isCorrect": true },
+          { "answerText": "It reduces the computational complexity", "isCorrect": false },
+          { "answerText": "Because odd numbers are mathematically superior", "isCorrect": false }
+        ],
+        "explanation": "An odd K value is often preferred in KNN for binary classification problems to avoid tied votes. With an odd number of neighbors, there will always be a majority class, preventing the algorithm from getting stuck in a tie."
+      },
+      {
+        "questionText": "What are the potential issues with choosing a very small K value in KNN?",
+        "answerOptions": [
+          { "answerText": "The model may be too complex and prone to overfitting", "isCorrect": false },
+          { "answerText": "The model may be too sensitive to noise in the data", "isCorrect": true },
+          { "answerText": "The algorithm will become too slow", "isCorrect": false },
+          { "answerText": "The model will use too much memory", "isCorrect": false }
+        ],
+        "explanation": "Choosing a very small K value can make the model overly sensitive to noise in the data. With a small K, the prediction is based on just a few neighbors, so noisy or outlier data points can have a disproportionate influence on the classification."
+      },
+      {
+        "questionText": "What are the potential issues with choosing a very large K value in KNN?",
+        "answerOptions": [
+          { "answerText": "The model may be too simple and prone to underfitting", "isCorrect": true },
+          { "answerText": "The algorithm will run out of memory", "isCorrect": false },
+          { "answerText": "The model will become too sensitive to noise", "isCorrect": false },
+          { "answerText": "The algorithm will take too long to converge", "isCorrect": false }
+        ],
+        "explanation": "Choosing a very large K value may lead to a model that is too simple and prone to underfitting. With a large K, the model considers too many neighbors, which can smooth out the decision boundaries and miss important patterns in the data."
+      },
+      {
+        "questionText": "Which of the following is a common business application of KNN?",
+        "answerOptions": [
+          { "answerText": "Image recognition", "isCorrect": false },
+          { "answerText": "Customer segmentation", "isCorrect": true },
+          { "answerText": "Time series forecasting", "isCorrect": false },
+          { "answerText": "Natural language processing", "isCorrect": false }
+        ],
+        "explanation": "Customer segmentation is a common business application of KNN. Businesses can use KNN to group customers based on similarities in their demographics, purchase history, and engagement metrics, allowing for targeted marketing and personalized recommendations."
+      },
+      {
+        "questionText": "Which of the following is another common business application of KNN?",
+        "answerOptions": [
+          { "answerText": "Voice recognition", "isCorrect": false },
+          { "answerText": "Credit scoring", "isCorrect": true },
+          { "answerText": "Supply chain optimization", "isCorrect": false },
+          { "answerText": "Fraud detection", "isCorrect": false }
+        ],
+        "explanation": "Credit scoring is a common business application of KNN. Financial institutions can use KNN to predict the creditworthiness of loan applicants by comparing their profiles to those of past applicants whose creditworthiness was known."
+      },
+      {
+        "questionText": "What is a recommendation system in the context of KNN applications?",
+        "answerOptions": [
+          { "answerText": "A system that recommends the best K value to use", "isCorrect": false },
+          { "answerText": "A system that suggests products, content, or services based on user similarity", "isCorrect": true },
+          { "answerText": "A system that recommends when to use KNN versus other algorithms", "isCorrect": false },
+          { "answerText": "A system that automates the feature selection process", "isCorrect": false }
+        ],
+        "explanation": "In the context of KNN applications, a recommendation system suggests products, content, or services to users based on the preferences of similar users. For example, an online streaming service uses KNN to recommend movies or TV shows by finding users with similar tastes."
+      },
+      {
+        "questionText": "What is the key difference between KNN and K-means clustering?",
+        "answerOptions": [
+          { "answerText": "KNN uses Euclidean distance, while K-means uses Manhattan distance", "isCorrect": false },
+          { "answerText": "KNN is a supervised learning algorithm, while K-means is unsupervised", "isCorrect": true },
+          { "answerText": "KNN can only handle categorical data, while K-means works with numerical data", "isCorrect": false },
+          { "answerText": "KNN is for regression, while K-means is for classification", "isCorrect": false }
+        ],
+        "explanation": "The key difference between KNN and K-means clustering is that KNN is a supervised learning algorithm (data points are labeled), while K-means is an unsupervised learning algorithm (data points are NOT labeled). KNN classifies based on neighboring close proximity, while K-means clusters based on mean values (centroid)."
+      },
+      {
+        "questionText": "What role does the K value play in K-means clustering compared to KNN?",
+        "answerOptions": [
+          { "answerText": "In K-means, K defines the number of clusters; in KNN, K defines the number of neighbors", "isCorrect": true },
+          { "answerText": "In K-means, K must be odd; in KNN, K can be odd or even", "isCorrect": false },
+          { "answerText": "In K-means, K defines the distance metric; in KNN, K defines the number of iterations", "isCorrect": false },
+          { "answerText": "In K-means and KNN, K plays the same role", "isCorrect": false }
+        ],
+        "explanation": "In K-means clustering, the K value defines how many clustering groups to create. In KNN, the K value defines how many neighboring data points to consider when making a classification decision. This is a fundamental difference between these two algorithms."
+      },
+      {
+        "questionText": "How does KNN determine the 'nearest' neighbors?",
+        "answerOptions": [
+          { "answerText": "By random selection", "isCorrect": false },
+          { "answerText": "By calculating the mean of all data points", "isCorrect": false },
+          { "answerText": "By measuring the distance (often Euclidean) between data points", "isCorrect": true },
+          { "answerText": "By counting the frequency of each class", "isCorrect": false }
+        ],
+        "explanation": "KNN determines the 'nearest' neighbors by measuring the distance between data points in the feature space. Euclidean distance is commonly used, but other distance metrics like Manhattan distance or Minkowski distance can also be employed depending on the specific problem."
+      },
+      {
+        "questionText": "What is a common way to determine the optimal K value in KNN?",
+        "answerOptions": [
+          { "answerText": "Square root of the number of data points", "isCorrect": false },
+          { "answerText": "Cross-validation with different K values", "isCorrect": true },
+          { "answerText": "Using a fixed value of K=3 for all problems", "isCorrect": false },
+          { "answerText": "Always using the largest possible K value", "isCorrect": false }
+        ],
+        "explanation": "A common way to determine the optimal K value is through cross-validation. The dataset is split into training and validation sets, and the model is trained with different K values. The K value that gives the best performance on the validation set is chosen."
+      },
+      {
+        "questionText": "Which of the following statements about KNN is true?",
+        "answerOptions": [
+          { "answerText": "KNN is a parametric algorithm", "isCorrect": false },
+          { "answerText": "KNN builds a model during training", "isCorrect": false },
+          { "answerText": "KNN is an instance-based, lazy learning algorithm", "isCorrect": true },
+          { "answerText": "KNN can only handle binary classification problems", "isCorrect": false }
+        ],
+        "explanation": "KNN is an instance-based, lazy learning algorithm. It doesn't build a model during training; instead, it simply stores the training data and postpones computation until classification time. This is why it's called 'lazy' - it doesn't learn a discriminative function from the training data but memorizes the training dataset instead."
+      },
+      {
+        "questionText": "What preprocessing step is often important for KNN?",
+        "answerOptions": [
+          { "answerText": "One-hot encoding of categorical variables", "isCorrect": false },
+          { "answerText": "Feature scaling or normalization", "isCorrect": true },
+          { "answerText": "Principal Component Analysis (PCA)", "isCorrect": false },
+          { "answerText": "Logarithmic transformation", "isCorrect": false }
+        ],
+        "explanation": "Feature scaling or normalization is often important for KNN because the algorithm relies on distance calculations. Features with larger scales can dominate the distance calculation, potentially leading to poor performance. Scaling ensures all features contribute equally to the distance calculation."
+      },
+      {
+        "questionText": "What is the 'curse of dimensionality' in the context of KNN?",
+        "answerOptions": [
+          { "answerText": "The difficulty in finding an optimal K value", "isCorrect": false },
+          { "answerText": "The computational complexity of the algorithm", "isCorrect": false },
+          { "answerText": "The problem that as dimensions increase, the concept of 'nearest' becomes less meaningful", "isCorrect": true },
+          { "answerText": "The issue that KNN can only handle a limited number of dimensions", "isCorrect": false }
+        ],
+        "explanation": "The 'curse of dimensionality' refers to the problem that as the number of dimensions (features) increases, the concept of 'nearest' becomes less meaningful. In high-dimensional spaces, data points tend to be spread out, making it difficult to find truly 'close' neighbors, which can degrade the performance of KNN."
+      },
+      {
+        "questionText": "How does KNN perform prediction for a continuous target variable (regression)?",
+        "answerOptions": [
+          { "answerText": "By taking the majority class of the K nearest neighbors", "isCorrect": false },
+          { "answerText": "By averaging the values of the K nearest neighbors", "isCorrect": true },
+          { "answerText": "By selecting the value of the single nearest neighbor", "isCorrect": false },
+          { "answerText": "KNN cannot be used for regression problems", "isCorrect": false }
+        ],
+        "explanation": "For regression problems, KNN predicts the value of a continuous target variable by averaging the values of the K nearest neighbors. This is in contrast to classification, where KNN takes the majority class of the K nearest neighbors."
+      },
+      {
+        "questionText": "Which of the following is a limitation of KNN?",
+        "answerOptions": [
+          { "answerText": "It can only handle binary classification", "isCorrect": false },
+          { "answerText": "It requires labeled data", "isCorrect": false },
+          { "answerText": "It becomes computationally expensive with large datasets", "isCorrect": true },
+          { "answerText": "It can only handle numerical features", "isCorrect": false }
+        ],
+        "explanation": "A limitation of KNN is that it becomes computationally expensive with large datasets. Since KNN needs to calculate the distance between the new point and all existing points, the prediction time increases linearly with the size of the training set."
+      },
+      {
+        "questionText": "What is a weighted KNN?",
+        "answerOptions": [
+          { "answerText": "A variant where each feature is weighted differently", "isCorrect": false },
+          { "answerText": "A variant where closer neighbors have more influence on the prediction", "isCorrect": true },
+          { "answerText": "A variant where the K value changes dynamically", "isCorrect": false },
+          { "answerText": "A variant where multiple distance metrics are combined", "isCorrect": false }
+        ],
+        "explanation": "Weighted KNN is a variant where neighbors that are closer to the query point have more influence on the prediction than those that are further away. This can be implemented by assigning weights to neighbors based on their distance, with higher weights given to closer neighbors."
+      },
+      {
+        "questionText": "In what scenario might KNN outperform more complex models?",
+        "answerOptions": [
+          { "answerText": "When the dataset has many features", "isCorrect": false },
+          { "answerText": "When the dataset is very large", "isCorrect": false },
+          { "answerText": "When the decision boundary is complex but local patterns are simple", "isCorrect": true },
+          { "answerText": "When the target variable is continuous", "isCorrect": false }
+        ],
+        "explanation": "KNN might outperform more complex models when the decision boundary is complex but local patterns are simple. Since KNN makes decisions based on local neighborhoods, it can capture complex, non-linear decision boundaries without requiring the global structure to be simple."
+      },
+      {
+        "questionText": "What is the role of cross-validation in KNN?",
+        "answerOptions": [
+          { "answerText": "To determine the optimal distance metric", "isCorrect": false },
+          { "answerText": "To determine the optimal K value", "isCorrect": true },
+          { "answerText": "To determine the optimal feature set", "isCorrect": false },
+          { "answerText": "To determine the optimal algorithm variant", "isCorrect": false }
+        ],
+        "explanation": "Cross-validation in KNN is primarily used to determine the optimal K value. By training the model with different K values and evaluating its performance on a validation set, one can identify the K that gives the best balance between variance and bias."
+      },
+      {
+        "questionText": "How does KNN handle categorical features?",
+        "answerOptions": [
+          { "answerText": "By converting them to numerical values using ordinal encoding", "isCorrect": false },
+          { "answerText": "By using one-hot encoding to convert categories to binary features", "isCorrect": true },
+          { "answerText": "KNN cannot handle categorical features", "isCorrect": false },
+          { "answerText": "By treating each category as a separate dimension", "isCorrect": false }
+        ],
+        "explanation": "KNN handles categorical features by using one-hot encoding to convert them to binary features. Each category becomes a separate binary feature, with a value of 1 if the data point belongs to that category and 0 otherwise. This allows the distance calculation to work correctly."
+      },
+      {
+        "questionText": "What is the time complexity of KNN prediction?",
+        "answerOptions": [
+          { "answerText": "O(1)", "isCorrect": false },
+          { "answerText": "O(log n)", "isCorrect": false },
+          { "answerText": "O(n)", "isCorrect": true },
+          { "answerText": "O(n^2)", "isCorrect": false }
+        ],
+        "explanation": "The time complexity of KNN prediction is O(n), where n is the number of data points in the training set. This is because KNN needs to calculate the distance between the query point and all training points to find the K nearest neighbors."
+      },
+      {
+        "questionText": "What is a ballpark K value often tried first in KNN?",
+        "answerOptions": [
+          { "answerText": "Square root of the number of data points", "isCorrect": true },
+          { "answerText": "10% of the number of data points", "isCorrect": false },
+          { "answerText": "Always start with K=1", "isCorrect": false },
+          { "answerText": "Always start with K=10", "isCorrect": false }
+        ],
+        "explanation": "The square root of the number of data points is a ballpark K value often tried first in KNN. This is a rule of thumb that provides a reasonable starting point, although the optimal K should still be determined through methods like cross-validation."
+      },
+      {
+        "questionText": "Which of the following is true about K=1 in KNN?",
+        "answerOptions": [
+          { "answerText": "It always leads to better performance", "isCorrect": false },
+          { "answerText": "It results in a model that can be highly sensitive to noise", "isCorrect": true },
+          { "answerText": "It is the recommended default value", "isCorrect": false },
+          { "answerText": "It makes the algorithm run faster", "isCorrect": false }
+        ],
+        "explanation": "With K=1, KNN bases its prediction solely on the single nearest neighbor, which can make the model highly sensitive to noise. If the nearest neighbor happens to be an outlier or a noisy data point, it will directly affect the prediction."
+      },
+      {
+        "questionText": "How does KNN differ from most machine learning algorithms in terms of 'learning'?",
+        "answerOptions": [
+          { "answerText": "KNN learns faster than most algorithms", "isCorrect": false },
+          { "answerText": "KNN doesn't learn a model; it memorizes the training data", "isCorrect": true },
+          { "answerText": "KNN uses deep learning principles", "isCorrect": false },
+          { "answerText": "KNN learns a linear boundary between classes", "isCorrect": false }
+        ],
+        "explanation": "KNN differs from most machine learning algorithms in that it doesn't learn a model from the training data. Instead, it memorizes the entire training dataset and uses it directly during prediction time. This is why KNN is considered a 'lazy learning' algorithm."
+      },
+      {
+        "questionText": "What is the importance of feature selection in KNN?",
+        "answerOptions": [
+          { "answerText": "It helps reduce overfitting", "isCorrect": false },
+          { "answerText": "It improves the algorithm's speed", "isCorrect": false },
+          { "answerText": "It mitigates the curse of dimensionality", "isCorrect": true },
+          { "answerText": "It allows KNN to handle categorical features", "isCorrect": false }
+        ],
+        "explanation": "Feature selection is important in KNN as it helps mitigate the curse of dimensionality. By reducing the number of features to only those that are relevant to the target variable, the distance calculations become more meaningful, leading to better performance."
+      },
+      {
+        "questionText": "Which distance metric is commonly used in KNN?",
+        "answerOptions": [
+          { "answerText": "Euclidean distance", "isCorrect": true },
+          { "answerText": "Correlation distance", "isCorrect": false },
+          { "answerText": "Chi-square distance", "isCorrect": false },
+          { "answerText": "Jensen-Shannon divergence", "isCorrect": false }
+        ],
+        "explanation": "Euclidean distance is the most commonly used distance metric in KNN. It measures the straight-line distance between two points in the feature space and is calculated as the square root of the sum of squared differences between corresponding features."
+      },
+      {
+        "questionText": "What is the effect of increasing the K value in KNN?",
+        "answerOptions": [
+          { "answerText": "The decision boundary becomes smoother", "isCorrect": true },
+          { "answerText": "The decision boundary becomes more complex", "isCorrect": false },
+          { "answerText": "The algorithm becomes more sensitive to noise", "isCorrect": false },
+          { "answerText": "The prediction time decreases", "isCorrect": false }
+        ],
+        "explanation": "Increasing the K value in KNN makes the decision boundary smoother. With a larger K, the algorithm considers more neighbors in its decision, which tends to average out the influence of individual data points, resulting in a less complex, smoother decision boundary."
+      },
+      {
+        "questionText": "What is a potential drawback of using a very small K value in KNN?",
+        "answerOptions": [
+          { "answerText": "High bias", "isCorrect": false },
+          { "answerText": "High variance", "isCorrect": true },
+          { "answerText": "Slow prediction time", "isCorrect": false },
+          { "answerText": "Inability to handle categorical features", "isCorrect": false }
+        ],
+        "explanation": "A potential drawback of using a very small K value in KNN is high variance. With a small K, the model is more sensitive to the specific training examples it encounters, leading to potentially unstable and varying predictions for different training sets."
+      },
+      {
+        "questionText": "What is a potential drawback of using a very large K value in KNN?",
+        "answerOptions": [
+          { "answerText": "High bias", "isCorrect": true },
+          { "answerText": "High variance", "isCorrect": false },
+          { "answerText": "Slow training time", "isCorrect": false },
+          { "answerText": "Inability to handle numerical features", "isCorrect": false }
+        ],
+        "explanation": "A potential drawback of using a very large K value in KNN is high bias. With a large K, the model tends to smooth out the decision boundary too much, potentially missing important patterns and variations in the data."
+      },
+      {
+        "questionText": "How does KNN handle missing values?",
+        "answerOptions": [
+          { "answerText": "By replacing them with the mean", "isCorrect": false },
+          { "answerText": "By replacing them with the median", "isCorrect": false },
+          { "answerText": "By ignoring the data points with missing values", "isCorrect": false },
+          { "answerText": "KNN doesn't natively handle missing values; they need to be imputed beforehand", "isCorrect": true }
+        ],
+        "explanation": "KNN doesn't natively handle missing values in data. Missing values need to be imputed (filled in) beforehand using techniques like mean imputation, median imputation, or more sophisticated methods like k-nearest imputation."
+      },
+      {
+        "questionText": "What is the relationship between the K value and model complexity in KNN?",
+        "answerOptions": [
+          { "answerText": "Larger K values result in more complex models", "isCorrect": false },
+          { "answerText": "Smaller K values result in more complex models", "isCorrect": true },
+          { "answerText": "The K value has no effect on model complexity", "isCorrect": false },
+          { "answerText": "The relationship depends on the dataset", "isCorrect": false }
+        ],
+        "explanation": "In KNN, smaller K values result in more complex models with more flexible decision boundaries that can capture finer details in the data. Larger K values lead to simpler models with smoother decision boundaries that may miss finer patterns."
+      },
+      {
+        "questionText": "What is one advantage of KNN over other classification algorithms?",
+        "answerOptions": [
+          { "answerText": "It has better time complexity for prediction", "isCorrect": false },
+          { "answerText": "It can naturally handle categorical features", "isCorrect": false },
+          { "answerText": "It doesn't require any assumptions about the data distribution", "isCorrect": true },
+          { "answerText": "It is less prone to overfitting", "isCorrect": false }
+        ],
+        "explanation": "One advantage of KNN over other classification algorithms is that it doesn't require any assumptions about the data distribution. It is a non-parametric algorithm that can work with any type of distribution, unlike some algorithms that assume a specific distribution (like normal distribution)."
+      },
+      {
+        "questionText": "What is one disadvantage of KNN compared to other classification algorithms?",
+        "answerOptions": [
+          { "answerText": "It requires more memory to store the training data", "isCorrect": true },
+          { "answerText": "It can only handle binary classification problems", "isCorrect": false },
+          { "answerText": "It cannot handle continuous features", "isCorrect": false },
+          { "answerText": "It always overfits the training data", "isCorrect": false }
+        ],
+        "explanation": "One disadvantage of KNN is that it requires more memory to store the entire training dataset, as it needs to keep all the training examples in memory to make predictions. This is in contrast to some algorithms that learn a compact model from the data."
+      },
+      {
+        "questionText": "What is the concept of 'distance-weighted' KNN?",
+        "answerOptions": [
+          { "answerText": "Weighting features based on their importance", "isCorrect": false },
+          { "answerText": "Assigning higher weights to neighbors that are closer to the query point", "isCorrect": true },
+          { "answerText": "Calculating distance only for the most important features", "isCorrect": false },
+          { "answerText": "Using different distance metrics for different features", "isCorrect": false }
+        ],
+        "explanation": "Distance-weighted KNN is a variant where neighbors closer to the query point have more influence on the prediction than those that are farther away. This is achieved by assigning weights to each neighbor based on its distance, with higher weights given to closer neighbors."
+      },
+      {
+        "questionText": "How does KNN handle imbalanced datasets?",
+        "answerOptions": [
+          { "answerText": "KNN naturally handles imbalanced datasets well", "isCorrect": false },
+          { "answerText": "KNN can struggle with imbalanced datasets as it may be biased toward the majority class", "isCorrect": true },
+          { "answerText": "KNN is not affected by class imbalance", "isCorrect": false },
+          { "answerText": "KNN always performs better on imbalanced datasets", "isCorrect": false }
+        ],
+        "explanation": "KNN can struggle with imbalanced datasets as it may be biased toward the majority class. Since KNN makes decisions based on the majority class among the K nearest neighbors, if one class is predominant in the dataset, it is likely to be overrepresented among the neighbors."
+      },
+      {
+        "questionText": "What is the difference between KNN and radial basis function networks?",
+        "answerOptions": [
+          { "answerText": "RBF networks learn weights for the training examples, while KNN treats all examples equally", "isCorrect": true },
+          { "answerText": "RBF networks can only handle regression, while KNN can handle both classification and regression", "isCorrect": false },
+          { "answerText": "RBF networks use Euclidean distance, while KNN uses Manhattan distance", "isCorrect": false },
+          { "answerText": "RBF networks are supervised, while KNN is unsupervised", "isCorrect": false }
+        ],
+        "explanation": "While both KNN and radial basis function (RBF) networks use the concept of distance, RBF networks learn weights for the training examples (the centers and widths of the basis functions), adjusting the influence of each example. KNN, on the other hand, treats all examples within the K nearest neighbors equally (or based solely on their distance in weighted KNN)."
+      },
+      {
+        "questionText": "Which of the following is NOT a common application of KNN?",
+        "answerOptions": [
+          { "answerText": "Recommendation systems", "isCorrect": false },
+          { "answerText": "Credit scoring", "isCorrect": false },
+          { "answerText": "Natural language processing", "isCorrect": true },
+          { "answerText": "Anomaly detection", "isCorrect": false }
+        ],
+        "explanation": "Natural language processing is not a common application of KNN. While KNN can be used in some NLP tasks, it is not a standard approach due to the high dimensionality and sparsity of text data, which can make distance calculations less meaningful. More specialized algorithms like neural networks and transformer models are typically used for NLP tasks."
+      }
+    ]
+  }

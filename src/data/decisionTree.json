@@ -1,0 +1,404 @@
+{
+  "questions": [
+    {
+      "questionText": "What is a decision tree?",
+      "answerOptions": [
+        { "answerText": "An algorithm that builds a flowchart by separating a dataset into two or more groups", "isCorrect": true },
+        { "answerText": "A network of interconnected neurons that learn from experience", "isCorrect": false },
+        { "answerText": "A mathematical function that maps inputs to outputs", "isCorrect": false },
+        { "answerText": "A clustering algorithm that groups similar data points", "isCorrect": false }
+      ],
+      "explanation": "A decision tree is an algorithm that builds a flowchart by separating a dataset into two groups and this separation process repeats until the dataset can't be separated to any meaningful smaller unit any further."
+    },
+    {
+      "questionText": "What is a Random Forest?",
+      "answerOptions": [
+        { "answerText": "A collection of unrelated decision trees", "isCorrect": false },
+        { "answerText": "An algorithm that uses only one decision tree for prediction", "isCorrect": false },
+        { "answerText": "An algorithm that utilizes multiple decision trees for a better prediction model", "isCorrect": true },
+        { "answerText": "A visualization technique for tree-based models", "isCorrect": false }
+      ],
+      "explanation": "A random forest is an algorithm that utilizes multiple decision trees for a better prediction model. It combines the predictions from multiple decision trees to improve accuracy and reduce overfitting."
+    },
+    {
+      "questionText": "In a decision tree, what does the root node represent?",
+      "answerOptions": [
+        { "answerText": "The final prediction", "isCorrect": false },
+        { "answerText": "The most important feature for splitting the dataset", "isCorrect": true },
+        { "answerText": "The error rate of the model", "isCorrect": false },
+        { "answerText": "The depth of the tree", "isCorrect": false }
+      ],
+      "explanation": "The root node represents the most important feature for splitting the dataset. It is the topmost node in a decision tree and is selected based on the lowest Gini impurity or highest information gain."
+    },
+    {
+      "questionText": "What measure is commonly used to determine the best feature to split on in a decision tree?",
+      "answerOptions": [
+        { "answerText": "Mean squared error", "isCorrect": false },
+        { "answerText": "Standard deviation", "isCorrect": false },
+        { "answerText": "Gini impurity", "isCorrect": true },
+        { "answerText": "Absolute difference", "isCorrect": false }
+      ],
+      "explanation": "Gini impurity is commonly used to measure the quality of a split in decision trees. It calculates the probability of a random sample being misclassified if it were randomly labeled according to the distribution of labels in the subset."
+    },
+    {
+      "questionText": "What is the range of Gini impurity values?",
+      "answerOptions": [
+        { "answerText": "0 to 0.5", "isCorrect": true },
+        { "answerText": "0 to 1", "isCorrect": false },
+        { "answerText": "-1 to 1", "isCorrect": false },
+        { "answerText": "0 to infinity", "isCorrect": false }
+      ],
+      "explanation": "The Gini Index has values inside the interval [0, 0.5]. A value of 0 indicates perfect purity (all elements belong to a single class), while higher values indicate more impurity."
+    },
+    {
+      "questionText": "What does a Gini impurity value of 0 indicate in a decision tree node?",
+      "answerOptions": [
+        { "answerText": "The node contains an equal mix of all classes", "isCorrect": false },
+        { "answerText": "The node is completely pure (contains only one class)", "isCorrect": true },
+        { "answerText": "The node contains no data points", "isCorrect": false },
+        { "answerText": "The node has high variance", "isCorrect": false }
+      ],
+      "explanation": "A Gini impurity value of 0 indicates that the node is pure, meaning all the contained elements in the node are of one unique class. Therefore, this node will not be split again."
+    },
+    {
+      "questionText": "What is a leaf node in a decision tree?",
+      "answerOptions": [
+        { "answerText": "The node at the top of the tree", "isCorrect": false },
+        { "answerText": "A node that splits the data into two groups", "isCorrect": false },
+        { "answerText": "A node that contains only the feature values", "isCorrect": false },
+        { "answerText": "A terminal node that represents the outcome or class label", "isCorrect": true }
+      ],
+      "explanation": "A leaf node is a terminal node in a decision tree that represents the outcome or class label. It doesn't split the data further and provides the final prediction for the data points that reach it."
+    },
+    {
+      "questionText": "What is the main advantage of Random Forest over a single Decision Tree?",
+      "answerOptions": [
+        { "answerText": "Faster computation time", "isCorrect": false },
+        { "answerText": "Higher interpretability", "isCorrect": false },
+        { "answerText": "Reduced overfitting", "isCorrect": true },
+        { "answerText": "Simpler model structure", "isCorrect": false }
+      ],
+      "explanation": "Random Forest reduces overfitting by averaging multiple decision trees. Each tree is trained on a random subset of the data and features, which introduces diversity and reduces the model's sensitivity to noise in the training data."
+    },
+    {
+      "questionText": "Which technique does Random Forest use to create diverse trees?",
+      "answerOptions": [
+        { "answerText": "Pruning each tree differently", "isCorrect": false },
+        { "answerText": "Using different splitting criteria for each tree", "isCorrect": false },
+        { "answerText": "Bootstrap sampling and random feature selection", "isCorrect": true },
+        { "answerText": "Using different tree depths for each tree", "isCorrect": false }
+      ],
+      "explanation": "Random Forest uses bootstrap sampling (randomly sampling with replacement from the training data) and random feature selection at each split to create diverse trees. This technique is also known as bagging (bootstrap aggregating)."
+    },
+    {
+      "questionText": "What is the 'max_depth' parameter in a decision tree?",
+      "answerOptions": [
+        { "answerText": "The maximum number of features to consider", "isCorrect": false },
+        { "answerText": "The maximum number of samples at leaf nodes", "isCorrect": false },
+        { "answerText": "The maximum depth of the tree", "isCorrect": true },
+        { "answerText": "The maximum number of trees in the forest", "isCorrect": false }
+      ],
+      "explanation": "The 'max_depth' parameter controls the maximum depth of the decision tree. It limits how deep the tree can grow, which can help prevent overfitting by creating simpler models."
+    },
+    {
+      "questionText": "What is 'min_samples_leaf' in a decision tree?",
+      "answerOptions": [
+        { "answerText": "The minimum number of samples required to be at a leaf node", "isCorrect": true },
+        { "answerText": "The minimum number of samples before creating a split", "isCorrect": false },
+        { "answerText": "The minimum number of samples in the training data", "isCorrect": false },
+        { "answerText": "The minimum number of features to consider for splitting", "isCorrect": false }
+      ],
+      "explanation": "The 'min_samples_leaf' parameter specifies the minimum number of samples required to be at a leaf node. This can prevent the model from creating very small leaves that might overfit to noise in the training data."
+    },
+    {
+      "questionText": "In a decision tree, what does a branch represent?",
+      "answerOptions": [
+        { "answerText": "A feature in the dataset", "isCorrect": false },
+        { "answerText": "A decision rule", "isCorrect": true },
+        { "answerText": "The final outcome", "isCorrect": false },
+        { "answerText": "The error rate", "isCorrect": false }
+      ],
+      "explanation": "In a decision tree, a branch represents a decision rule. It determines the path taken based on the value of a feature, directing data points to different parts of the tree."
+    },
+    {
+      "questionText": "What is overfitting in the context of decision trees?",
+      "answerOptions": [
+        { "answerText": "When the tree is too shallow to capture patterns in the data", "isCorrect": false },
+        { "answerText": "When the tree perfectly fits the training data but performs poorly on new data", "isCorrect": true },
+        { "answerText": "When the tree is too computationally expensive to train", "isCorrect": false },
+        { "answerText": "When the tree uses too few features for splitting", "isCorrect": false }
+      ],
+      "explanation": "Overfitting occurs when a decision tree becomes too complex and fits the noise in the training data rather than the underlying pattern. This results in excellent performance on training data but poor generalization to new, unseen data."
+    },
+    {
+      "questionText": "What is one way to prevent overfitting in decision trees?",
+      "answerOptions": [
+        { "answerText": "Increasing the depth of the tree", "isCorrect": false },
+        { "answerText": "Pruning or limiting the depth of the tree", "isCorrect": true },
+        { "answerText": "Using more features for splitting", "isCorrect": false },
+        { "answerText": "Creating more leaf nodes", "isCorrect": false }
+      ],
+      "explanation": "Pruning or limiting the depth of the tree (setting a maximum depth) is an effective way to prevent overfitting in decision trees. This constrains the model's complexity and prevents it from learning noise in the training data."
+    },
+    {
+      "questionText": "What Python library and function is commonly used to implement decision trees?",
+      "answerOptions": [
+        { "answerText": "TensorFlow - tf.DecisionTree()", "isCorrect": false },
+        { "answerText": "Pandas - pd.tree()", "isCorrect": false },
+        { "answerText": "Scikit-learn - DecisionTreeClassifier()", "isCorrect": true },
+        { "answerText": "NumPy - np.dtree()", "isCorrect": false }
+      ],
+      "explanation": "Scikit-learn's DecisionTreeClassifier() is commonly used to implement decision trees in Python. This function provides a comprehensive implementation with various parameters to control the tree's behavior."
+    },
+    {
+      "questionText": "How does Random Forest make its final prediction in a classification problem?",
+      "answerOptions": [
+        { "answerText": "It uses the prediction of the deepest tree", "isCorrect": false },
+        { "answerText": "It uses the prediction of the most accurate tree", "isCorrect": false },
+        { "answerText": "It takes a majority vote from all trees", "isCorrect": true },
+        { "answerText": "It uses only the prediction of the first tree", "isCorrect": false }
+      ],
+      "explanation": "In a classification problem, Random Forest makes its final prediction by taking a majority vote from all the trees in the forest. Each tree 'votes' for a class, and the class with the most votes becomes the model's prediction."
+    },
+    {
+      "questionText": "What is the primary difference between Decision Trees and Random Forests in terms of feature usage?",
+      "answerOptions": [
+        { "answerText": "Decision Trees use all features, while Random Forests use only a subset of features", "isCorrect": false },
+        { "answerText": "Decision Trees consider all features for each split, while Random Forests consider a random subset of features for each split", "isCorrect": true },
+        { "answerText": "Decision Trees use numerical features only, while Random Forests can use both numerical and categorical features", "isCorrect": false },
+        { "answerText": "Decision Trees use one feature at a time, while Random Forests use multiple features simultaneously", "isCorrect": false }
+      ],
+      "explanation": "Decision Trees consider all available features when deciding on the best split at each node. In contrast, Random Forests consider only a random subset of features for each split, which introduces more diversity among the trees in the forest."
+    },
+    {
+      "questionText": "Which of the following is a business application of Decision Trees in finance?",
+      "answerOptions": [
+        { "answerText": "Image recognition for bank security", "isCorrect": false },
+        { "answerText": "Natural language processing for customer service", "isCorrect": false },
+        { "answerText": "Portfolio risk assessment using historical data", "isCorrect": true },
+        { "answerText": "Real-time transaction processing", "isCorrect": false }
+      ],
+      "explanation": "Portfolio risk assessment is a financial application of Decision Trees. Historical stock prices, company financials, and macroeconomic indicators can be used to assess the risk associated with different assets in a portfolio, helping investors make informed decisions about asset allocation."
+    },
+    {
+      "questionText": "Which of these is a common application of Decision Trees in marketing?",
+      "answerOptions": [
+        { "answerText": "Supply chain optimization", "isCorrect": false },
+        { "answerText": "Churn prediction", "isCorrect": true },
+        { "answerText": "Employee retention analysis", "isCorrect": false },
+        { "answerText": "Fraud detection", "isCorrect": false }
+      ],
+      "explanation": "Churn prediction is a common application of Decision Trees in marketing. It uses customer usage data, support interactions, feedback, and billing information to predict which customers are likely to stop using a service or product, enabling businesses to take proactive measures to retain them."
+    },
+    {
+      "questionText": "Which of the following is NOT a typical application of Decision Trees in business?",
+      "answerOptions": [
+        { "answerText": "Employee retention analysis", "isCorrect": false },
+        { "answerText": "Fraud detection", "isCorrect": false },
+        { "answerText": "Real-time video processing", "isCorrect": true },
+        { "answerText": "Economic policy impact analysis", "isCorrect": false }
+      ],
+      "explanation": "Real-time video processing is not a typical application of Decision Trees. Decision Trees are more commonly used for classification and regression tasks with structured data, while video processing typically requires more complex models like deep neural networks."
+    },
+    {
+      "questionText": "In the context of Random Forest, what is bootstrap sampling?",
+      "answerOptions": [
+        { "answerText": "Using a small subset of the data to train each tree", "isCorrect": false },
+        { "answerText": "Sampling with replacement from the original dataset to create training sets for each tree", "isCorrect": true },
+        { "answerText": "Selecting the most important features for each tree", "isCorrect": false },
+        { "answerText": "Retraining trees that perform poorly", "isCorrect": false }
+      ],
+      "explanation": "Bootstrap sampling in Random Forest involves randomly sampling data points with replacement from the original dataset to create the training set for each tree. This means some data points may be selected multiple times, while others may not be selected at all for a particular tree."
+    },
+    {
+      "questionText": "What is the main computational disadvantage of Random Forest compared to a single Decision Tree?",
+      "answerOptions": [
+        { "answerText": "Random Forests require more memory", "isCorrect": false },
+        { "answerText": "Random Forests are slower to train and predict", "isCorrect": true },
+        { "answerText": "Random Forests can only handle numerical data", "isCorrect": false },
+        { "answerText": "Random Forests have higher error rates", "isCorrect": false }
+      ],
+      "explanation": "Random Forests are slower to train and predict compared to a single Decision Tree because they involve training multiple trees and aggregating their predictions. This increased computational complexity is the trade-off for improved accuracy and reduced overfitting."
+    },
+    {
+      "questionText": "What happens to the interpretability when moving from a Decision Tree to a Random Forest?",
+      "answerOptions": [
+        { "answerText": "It increases due to the consensus of multiple trees", "isCorrect": false },
+        { "answerText": "It remains the same", "isCorrect": false },
+        { "answerText": "It decreases as the model becomes more complex", "isCorrect": true },
+        { "answerText": "It varies depending on the number of trees", "isCorrect": false }
+      ],
+      "explanation": "The interpretability decreases when moving from a Decision Tree to a Random Forest. A single decision tree can be visualized and interpreted easily, but a Random Forest combines multiple trees, making it harder to understand how specific predictions are made."
+    },
+    {
+      "questionText": "What is the jellybeans-in-a-jar analogy used to explain Random Forest?",
+      "answerOptions": [
+        { "answerText": "Each jellybean represents a feature in the dataset", "isCorrect": false },
+        { "answerText": "Multiple people guessing the number of jellybeans is like multiple trees making predictions", "isCorrect": true },
+        { "answerText": "The jar represents the boundary between classes", "isCorrect": false },
+        { "answerText": "The color of jellybeans represents different class labels", "isCorrect": false }
+      ],
+      "explanation": "The jellybeans-in-a-jar analogy explains that asking 100 different people to guess the number of jellybeans (each making their own guess) and then averaging those guesses is similar to how Random Forest works. Each tree makes its own prediction, and the final prediction is an aggregate of all individual tree predictions."
+    },
+    {
+      "questionText": "What is the 'criterion' parameter in scikit-learn's DecisionTreeClassifier?",
+      "answerOptions": [
+        { "answerText": "The maximum number of features to consider for splitting", "isCorrect": false },
+        { "answerText": "The minimum number of samples required for a split", "isCorrect": false },
+        { "answerText": "The measure used to evaluate the quality of a split (e.g., 'gini' or 'entropy')", "isCorrect": true },
+        { "answerText": "The algorithm used to find the best split", "isCorrect": false }
+      ],
+      "explanation": "The 'criterion' parameter in scikit-learn's DecisionTreeClassifier specifies the function used to measure the quality of a split. It allows users to choose between 'gini' (Gini impurity) and 'entropy' (information gain), with 'gini' being the default."
+    },
+    {
+      "questionText": "What makes Random Forest an 'ensemble' learning method?",
+      "answerOptions": [
+        { "answerText": "It uses a single complex tree with ensemble features", "isCorrect": false },
+        { "answerText": "It combines multiple models (trees) to improve prediction performance", "isCorrect": true },
+        { "answerText": "It ensembles data from multiple sources", "isCorrect": false },
+        { "answerText": "It processes all features simultaneously", "isCorrect": false }
+      ],
+      "explanation": "Random Forest is an ensemble learning method because it combines multiple models (decision trees) to improve prediction performance. The collective intelligence of many trees typically outperforms a single decision tree."
+    },
+    {
+      "questionText": "Which of the following best describes why Random Forest might be chosen over a single Decision Tree?",
+      "answerOptions": [
+        { "answerText": "Random Forest is always faster to train", "isCorrect": false },
+        { "answerText": "Random Forest is more interpretable", "isCorrect": false },
+        { "answerText": "Random Forest typically achieves higher accuracy and reduces overfitting", "isCorrect": true },
+        { "answerText": "Random Forest requires less data to train effectively", "isCorrect": false }
+      ],
+      "explanation": "Random Forest is typically chosen over a single Decision Tree because it achieves higher accuracy and reduces overfitting. By averaging the predictions of multiple diverse trees, Random Forest creates a more robust model that generalizes better to new data."
+    },
+    {
+      "questionText": "Why is a Gini value of 0 not always good in a decision tree?",
+      "answerOptions": [
+        { "answerText": "It indicates the tree is not learning anything", "isCorrect": false },
+        { "answerText": "It could be a sign of overfitting", "isCorrect": true },
+        { "answerText": "It means the tree is too shallow", "isCorrect": false },
+        { "answerText": "It indicates poor feature selection", "isCorrect": false }
+      ],
+      "explanation": "A Gini value of 0 means that the node is perfectly pure (contains samples of only one class), which could be a sign of overfitting. This indicates that the model likely learned the noise and specific quirks of the training set rather than the underlying pattern, potentially performing poorly on new data."
+    },
+    {
+      "questionText": "What is meant by 'binary split' in decision trees?",
+      "answerOptions": [
+        { "answerText": "The tree only works with binary (0/1) features", "isCorrect": false },
+        { "answerText": "The prediction outcomes are always binary (Yes/No)", "isCorrect": false },
+        { "answerText": "Each node splits the data into exactly two groups", "isCorrect": true },
+        { "answerText": "The tree has exactly two levels", "isCorrect": false }
+      ],
+      "explanation": "Binary split in decision trees means that each internal node splits the data into exactly two groups (hence 'binary'). This process repeats recursively, creating a tree structure where each non-leaf node has exactly two child nodes."
+    },
+    {
+      "questionText": "How does increasing the depth of a decision tree affect its tendency to overfit?",
+      "answerOptions": [
+        { "answerText": "Increasing depth decreases the risk of overfitting", "isCorrect": false },
+        { "answerText": "Increasing depth has no effect on overfitting", "isCorrect": false },
+        { "answerText": "Increasing depth increases the risk of overfitting", "isCorrect": true },
+        { "answerText": "The relationship between depth and overfitting is random", "isCorrect": false }
+      ],
+      "explanation": "Increasing the depth of a decision tree increases the risk of overfitting. Deeper trees can create more complex decision boundaries that might fit the training data perfectly (including its noise) but fail to generalize well to new data."
+    },
+    {
+      "questionText": "What is the difference between a simple model (underfitting) and a complex model (overfitting) in decision trees?",
+      "answerOptions": [
+        { "answerText": "Simple models perform poorly on both training and new data, while complex models perform well on training data but poorly on new data", "isCorrect": true },
+        { "answerText": "Simple models perform well on new data but poorly on training data, while complex models perform well on both", "isCorrect": false },
+        { "answerText": "Simple models perform well on both training and new data, while complex models perform poorly on both", "isCorrect": false },
+        { "answerText": "Simple models and complex models perform equally well but on different types of data", "isCorrect": false }
+      ],
+      "explanation": "Simple models (underfitting) don't capture the important patterns in the data and perform poorly on both training and new data, having high bias. Complex models (overfitting) fit the training data perfectly but perform poorly on new data, having high variance."
+    },
+    {
+      "questionText": "Which technique is used in Random Forest to ensure diverse trees?",
+      "answerOptions": [
+        { "answerText": "Using different algorithms for each tree", "isCorrect": false },
+        { "answerText": "Training each tree on different features", "isCorrect": false },
+        { "answerText": "Using a subset of features for splits in each tree", "isCorrect": true },
+        { "answerText": "Applying different loss functions to each tree", "isCorrect": false }
+      ],
+      "explanation": "Random Forest ensures diverse trees by using a random subset of features for splits in each tree. This technique is part of 'feature randomness' that creates decorrelated trees, improving the forest's overall performance."
+    },
+    {
+      "questionText": "How does Random Forest make predictions for regression problems?",
+      "answerOptions": [
+        { "answerText": "It takes the median of all tree predictions", "isCorrect": false },
+        { "answerText": "It takes the average of all tree predictions", "isCorrect": true },
+        { "answerText": "It takes the prediction from the most accurate tree", "isCorrect": false },
+        { "answerText": "It takes the mode of all tree predictions", "isCorrect": false }
+      ],
+      "explanation": "For regression problems, Random Forest makes its prediction by taking the average of all the individual tree predictions. Each tree predicts a continuous value, and the final prediction is the mean of these values."
+    },
+    {
+      "questionText": "In the game of 'Twenty Questions' analogy for decision trees, what does each question represent?",
+      "answerOptions": [
+        { "answerText": "A feature in the dataset", "isCorrect": false },
+        { "answerText": "A split in the decision tree", "isCorrect": true },
+        { "answerText": "A leaf node", "isCorrect": false },
+        { "answerText": "The final prediction", "isCorrect": false }
+      ],
+      "explanation": "In the 'Twenty Questions' analogy, each question represents a split in the decision tree. Just as each question in the game narrows down the possible answers, each split in a decision tree narrows down the possible classifications for a data point."
+    },
+    {
+      "questionText": "What is pruning in decision trees?",
+      "answerOptions": [
+        { "answerText": "Adding more branches to improve accuracy", "isCorrect": false },
+        { "answerText": "Removing branches that do not provide additional information gain", "isCorrect": true },
+        { "answerText": "Combining similar leaf nodes", "isCorrect": false },
+        { "answerText": "Splitting leaf nodes further", "isCorrect": false }
+      ],
+      "explanation": "Pruning in decision trees is the process of removing branches that do not provide additional information gain or do not improve the tree's predictive power. This technique helps prevent overfitting by simplifying the tree."
+    },
+    {
+      "questionText": "Which of the following is a key difference between Random Forest and Decision Trees?",
+      "answerOptions": [
+        { "answerText": "Random Forest can only handle categorical data", "isCorrect": false },
+        { "answerText": "Decision Trees can only handle numerical data", "isCorrect": false },
+        { "answerText": "Random Forest builds multiple trees and aggregates their predictions", "isCorrect": true },
+        { "answerText": "Decision Trees are unsupervised while Random Forest is supervised", "isCorrect": false }
+      ],
+      "explanation": "A key difference between Random Forest and Decision Trees is that Random Forest builds multiple trees and aggregates their predictions (through voting or averaging), while a Decision Tree builds just one tree. This ensemble approach helps Random Forest achieve better performance and reduce overfitting."
+    },
+    {
+      "questionText": "What is the ideal Gini impurity value for a leaf node in a decision tree?",
+      "answerOptions": [
+        { "answerText": "1", "isCorrect": false },
+        { "answerText": "0.5", "isCorrect": false },
+        { "answerText": "0", "isCorrect": true },
+        { "answerText": "As high as possible", "isCorrect": false }
+      ],
+      "explanation": "The ideal Gini impurity value for a leaf node is 0, which indicates that the node is completely pure (all samples belong to the same class). However, achieving 0 Gini impurity for all leaf nodes might indicate overfitting."
+    },
+    {
+      "questionText": "Which type of business problem is most suitable for decision trees and random forests?",
+      "answerOptions": [
+        { "answerText": "Image recognition", "isCorrect": false },
+        { "answerText": "Natural language processing", "isCorrect": false },
+        { "answerText": "Classification and regression with structured data", "isCorrect": true },
+        { "answerText": "Time series forecasting", "isCorrect": false }
+      ],
+      "explanation": "Decision trees and random forests are most suitable for classification and regression problems with structured data. They work well when the relationships between features and targets can be captured by hierarchical decision rules."
+    },
+    {
+      "questionText": "What is an advantage of Decision Trees over more complex models like neural networks?",
+      "answerOptions": [
+        { "answerText": "Decision Trees always have higher accuracy", "isCorrect": false },
+        { "answerText": "Decision Trees require less data to train", "isCorrect": false },
+        { "answerText": "Decision Trees are easier to interpret and explain", "isCorrect": true },
+        { "answerText": "Decision Trees can handle unstructured data better", "isCorrect": false }
+      ],
+      "explanation": "An advantage of Decision Trees over more complex models like neural networks is that they are easier to interpret and explain. The decision path can be visualized and understood, making them suitable for applications where model transparency is important."
+    },
+    {
+      "questionText": "What does the formula for Gini impurity calculation measure?",
+      "answerOptions": [
+        { "answerText": "The probability of a feature being selected for a split", "isCorrect": false },
+        { "answerText": "The probability of a random sample being correctly classified", "isCorrect": false },
+        { "answerText": "The frequency at which any element would be incorrectly labeled if randomly labeled according to the class distribution", "isCorrect": true },
+        { "answerText": "The average depth of the decision tree", "isCorrect": false }
+      ],
+      "explanation": "The Gini impurity measures the frequency at which any element of the dataset would be mislabelled when it is randomly labeled according to the distribution of labels in the subset. It helps identify the best features for splitting the data."
+    }
+  ]
+}

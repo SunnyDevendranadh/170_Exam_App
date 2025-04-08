@@ -1,0 +1,324 @@
+{
+    "questions": [
+      {
+        "questionText": "What is a Support Vector Machine (SVM)?",
+        "answerOptions": [
+          { "answerText": "A neural network architecture with support layers", "isCorrect": false },
+          { "answerText": "A classification approach that constructs a hyperplane to separate different classes", "isCorrect": true },
+          { "answerText": "A clustering algorithm that groups similar data points", "isCorrect": false },
+          { "answerText": "A dimensionality reduction technique", "isCorrect": false }
+        ],
+        "explanation": "Support Vector Machine (SVM) is considered to be a classification approach (but it can also be employed for regression problems). SVM constructs a hyperplane in multidimensional space to separate different classes. The core idea of SVM is to find a maximum marginal hyperplane (MMH) that best divides the dataset into classes."
+      },
+      {
+        "questionText": "What is the main objective of SVM?",
+        "answerOptions": [
+          { "answerText": "To cluster similar data points together", "isCorrect": false },
+          { "answerText": "To reduce the dimensionality of the data", "isCorrect": false },
+          { "answerText": "To find a hyperplane with the largest margin between classes", "isCorrect": true },
+          { "answerText": "To create a probability distribution of class membership", "isCorrect": false }
+        ],
+        "explanation": "The main objective of SVM is to find a maximum marginal hyperplane (MMH) that best divides the dataset into classes. SVM aims to create a decision boundary with the largest possible margin between data points of different classes, which helps in better generalization to unseen data."
+      },
+      {
+        "questionText": "What are support vectors in SVM?",
+        "answerOptions": [
+          { "answerText": "All the data points in the dataset", "isCorrect": false },
+          { "answerText": "The data points closest to the hyperplane that influence its position and orientation", "isCorrect": true },
+          { "answerText": "The mathematical vectors used in matrix calculations", "isCorrect": false },
+          { "answerText": "The points that are misclassified by the model", "isCorrect": false }
+        ],
+        "explanation": "Support vectors are the data points that are closest to the hyperplane. These points define the separating line better by calculating margins. They are the most relevant points to the construction of the classifier, as they directly influence the position and orientation of the hyperplane."
+      },
+      {
+        "questionText": "What is a hyperplane in the context of SVM?",
+        "answerOptions": [
+          { "answerText": "A complex curve that separates data points", "isCorrect": false },
+          { "answerText": "A decision plane that separates between sets of objects with different class memberships", "isCorrect": true },
+          { "answerText": "A plane that passes through all support vectors", "isCorrect": false },
+          { "answerText": "A visualization technique for high-dimensional data", "isCorrect": false }
+        ],
+        "explanation": "A hyperplane in the context of SVM is a decision plane which separates between sets of objects having different class memberships. In a 2-dimensional space, this hyperplane is a line. In 3 dimensions, it's a plane, and in higher dimensions, it becomes a hyperplane."
+      },
+      {
+        "questionText": "What is the margin in SVM?",
+        "answerOptions": [
+          { "answerText": "The distance between any two support vectors", "isCorrect": false },
+          { "answerText": "The gap between the two lines on the closest class points (support vectors)", "isCorrect": true },
+          { "answerText": "The accuracy of the model on test data", "isCorrect": false },
+          { "answerText": "The boundary around each class cluster", "isCorrect": false }
+        ],
+        "explanation": "The margin in SVM is the gap between the two lines on the closest class points. It is calculated as the perpendicular distance from the hyperplane to the support vectors (the closest points). A larger margin between classes is considered to be a good margin, while a smaller margin is considered a bad margin."
+      },
+      {
+        "questionText": "What happens when data is not linearly separable in SVM?",
+        "answerOptions": [
+          { "answerText": "SVM cannot be used", "isCorrect": false },
+          { "answerText": "SVM introduces a penalty for misclassification (soft margin)", "isCorrect": false },
+          { "answerText": "SVM uses the kernel trick to transform data to a higher dimension where it might be separable", "isCorrect": true },
+          { "answerText": "SVM creates multiple hyperplanes", "isCorrect": false }
+        ],
+        "explanation": "When data is not linearly separable, SVM uses the kernel trick to transform the data into a higher-dimensional space where it might be linearly separable. This allows SVM to find a hyperplane in this transformed space, which corresponds to a non-linear decision boundary in the original space. The soft margin (penalty parameter C) also helps by allowing some misclassifications."
+      },
+      {
+        "questionText": "What is the kernel trick in SVM?",
+        "answerOptions": [
+          { "answerText": "A technique to speed up SVM training", "isCorrect": false },
+          { "answerText": "A mathematical technique to transform data into a higher-dimensional space without explicitly calculating the coordinates", "isCorrect": true },
+          { "answerText": "A method to reduce the number of support vectors", "isCorrect": false },
+          { "answerText": "A way to determine the optimal hyperplane parameters", "isCorrect": false }
+        ],
+        "explanation": "The kernel trick is a mathematical technique that enables SVMs to handle non-linearly separable data by transforming it into a higher-dimensional space. This transformation allows SVMs to find complex decision boundaries without explicitly calculating the coordinates in the high-dimensional space, significantly reducing computational costs."
+      },
+      {
+        "questionText": "Which of the following is a common kernel used in SVM?",
+        "answerOptions": [
+          { "answerText": "Square kernel", "isCorrect": false },
+          { "answerText": "Exponential kernel", "isCorrect": false },
+          { "answerText": "Radial Basis Function (RBF) kernel", "isCorrect": true },
+          { "answerText": "Triangular kernel", "isCorrect": false }
+        ],
+        "explanation": "The Radial Basis Function (RBF) kernel, also known as the Gaussian kernel, is one of the most commonly used kernels in SVM. Other common kernels include the linear kernel, polynomial kernel, and sigmoid kernel. The RBF kernel is particularly useful for non-linear classification problems."
+      },
+      {
+        "questionText": "What kernel should you try first when using SVM?",
+        "answerOptions": [
+          { "answerText": "Radial Basis Function (RBF) kernel", "isCorrect": false },
+          { "answerText": "Polynomial kernel", "isCorrect": false },
+          { "answerText": "Linear kernel", "isCorrect": true },
+          { "answerText": "Sigmoid kernel", "isCorrect": false }
+        ],
+        "explanation": "You should always try the linear kernel first when using SVM. If the linear kernel doesn't provide satisfactory results, then you can try other kernels like RBF (which is the second most popular choice). This follows the general principle of starting with the simplest model and only increasing complexity if necessary."
+      },
+      {
+        "questionText": "What is the C parameter in SVM?",
+        "answerOptions": [
+          { "answerText": "The cost parameter that controls the trade-off between having a smooth decision boundary and classifying training points correctly", "isCorrect": true },
+          { "answerText": "The number of clusters to create", "isCorrect": false },
+          { "answerText": "The convergence criterion for the algorithm", "isCorrect": false },
+          { "answerText": "The count of support vectors", "isCorrect": false }
+        ],
+        "explanation": "The C parameter in SVM is the cost parameter that controls the trade-off between having a smooth decision boundary and classifying training points correctly. A small value of C will generate a smoother decision surface but may misclassify more training points, while a large value of C aims to classify all training points correctly but might lead to overfitting."
+      },
+      {
+        "questionText": "What is the gamma parameter in SVM with RBF kernel?",
+        "answerOptions": [
+          { "answerText": "The learning rate of the algorithm", "isCorrect": false },
+          { "answerText": "The number of iterations for training", "isCorrect": false },
+          { "answerText": "A parameter that defines how far the influence of a single training example reaches", "isCorrect": true },
+          { "answerText": "The regularization parameter", "isCorrect": false }
+        ],
+        "explanation": "The gamma parameter in SVM with RBF kernel defines how far the influence of a single training example reaches. Low values mean 'far' and high values mean 'close'. In other words, with low gamma, points far from the decision boundary also play a role in shaping it, while with high gamma, only nearby points affect the decision boundary."
+      },
+      {
+        "questionText": "How does SVM handle multi-class classification?",
+        "answerOptions": [
+          { "answerText": "SVM cannot handle multi-class problems", "isCorrect": false },
+          { "answerText": "SVM naturally extends to multi-class problems", "isCorrect": false },
+          { "answerText": "Using approaches like One-vs-One or One-vs-All", "isCorrect": true },
+          { "answerText": "By creating a separate kernel for each class", "isCorrect": false }
+        ],
+        "explanation": "SVM is inherently a binary classifier, but it can handle multi-class problems using approaches like One-vs-One (OvO) or One-vs-All (OvA). In One-vs-One, SVM trains a separate classifier for each pair of classes. In One-vs-All, SVM trains one classifier per class, treating one class as positive and all others as negative."
+      },
+      {
+         "questionText": "What is One-vs-One (OvO) approach in multi-class SVM?",
+         "answerOptions": [
+           { "answerText": "Training one classifier for all classes simultaneously", "isCorrect": false },
+           { "answerText": "Training one classifier for each class against all other classes combined", "isCorrect": false },
+           { "answerText": "Training one classifier for each pair of classes", "isCorrect": true },
+           { "answerText": "Training one classifier for each feature", "isCorrect": false }
+         ],
+         "explanation": "In the One-vs-One (OvO) approach for multi-class SVM, one classifier is trained for each pair of classes. For n classes, this requires n(n-1)/2 binary classifiers. During classification, each classifier votes for one of the two classes it distinguishes, and the class with the most votes is the predicted class."
+      },
+      {
+         "questionText": "What is One-vs-All (OvA) approach in multi-class SVM?",
+         "answerOptions": [
+           { "answerText": "Training one classifier for all classes simultaneously", "isCorrect": false },
+           { "answerText": "Training one classifier for each class against all other classes combined", "isCorrect": true },
+           { "answerText": "Training one classifier for each pair of classes", "isCorrect": false },
+           { "answerText": "Training one classifier for each feature", "isCorrect": false }
+         ],
+         "explanation": "In the One-vs-All (OvA) approach for multi-class SVM, one classifier is trained for each class against all other classes combined. For n classes, this requires n binary classifiers. During classification, each classifier produces a confidence score for its class, and the class with the highest confidence score is the predicted class."
+      },
+      {
+         "questionText": "When would you choose One-vs-One (OvO) over One-vs-All (OvA) in SVM?",
+         "answerOptions": [
+           { "answerText": "When you have a small to medium number of classes and potentially imbalanced data", "isCorrect": true },
+           { "answerText": "When you have a large number of classes", "isCorrect": false },
+           { "answerText": "When computational resources are limited", "isCorrect": false },
+           { "answerText": "When you need faster prediction times", "isCorrect": false }
+         ],
+         "explanation": "You would choose One-vs-One (OvO) over One-vs-All (OvA) when you have a small to medium number of classes (e.g., less than 10) and potentially imbalanced data. OvO works better with imbalanced datasets since each binary classifier is trained on a more balanced subset of the data. However, OvO requires more classifiers (n(n-1)/2 vs n), which can be computationally expensive with many classes."
+      },
+      {
+         "questionText": "When would you choose One-vs-All (OvA) over One-vs-One (OvO) in SVM?",
+         "answerOptions": [
+           { "answerText": "When you have a small number of classes", "isCorrect": false },
+           { "answerText": "When you have imbalanced data", "isCorrect": false },
+           { "answerText": "When you have a large number of classes and need faster training and prediction times", "isCorrect": true },
+           { "answerText": "When you need higher accuracy regardless of computational cost", "isCorrect": false }
+         ],
+         "explanation": "You would choose One-vs-All (OvA) over One-vs-One (OvO) when you have a large number of classes (e.g., 10 or more) and need faster training and prediction times. OvA requires fewer classifiers (n vs n(n-1)/2), making it more scalable for problems with many classes. It's also often the default choice when using linear classifiers in scikit-learn."
+      },
+      {
+        "questionText": "What is a soft margin in SVM?",
+        "answerOptions": [
+          { "answerText": "A margin that is calculated using a different formula", "isCorrect": false },
+          { "answerText": "A margin that allows some misclassifications to achieve better overall generalization", "isCorrect": true },
+          { "answerText": "A margin that is smaller than the hard margin", "isCorrect": false },
+          { "answerText": "A margin that is adjusted during the testing phase", "isCorrect": false }
+        ],
+        "explanation": "A soft margin in SVM allows some misclassifications or points to be within the margin to achieve better overall generalization. This is controlled by the C parameter, which determines the trade-off between having a smooth decision boundary and classifying all training points correctly. A soft margin is useful when dealing with noisy data or when classes are not perfectly separable."
+      },
+      {
+         "questionText": "What is the primary advantage of SVM over logistic regression?",
+         "answerOptions": [
+           { "answerText": "SVM is always faster to train", "isCorrect": false },
+           { "answerText": "SVM provides probability estimates directly", "isCorrect": false },
+           { "answerText": "SVM works well with small training datasets and in high-dimensional spaces", "isCorrect": true },
+           { "answerText": "SVM is always more accurate", "isCorrect": false }
+         ],
+         "explanation": "A primary advantage of SVM over logistic regression is that SVM works well with small training datasets and in high-dimensional spaces. Since SVM focuses on the support vectors (the points closest to the decision boundary) rather than all data points, it can create an effective model even with limited data. SVM also handles the 'curse of dimensionality' better than many other algorithms."
+      },
+      {
+        "questionText": "Which of the following is a limitation of SVM?",
+        "answerOptions": [
+          { "answerText": "SVMs do not scale well to large datasets", "isCorrect": true },
+          { "answerText": "SVMs can only handle binary classification", "isCorrect": false },
+          { "answerText": "SVMs cannot handle non-linear decision boundaries", "isCorrect": false },
+          { "answerText": "SVMs require categorical features", "isCorrect": false }
+        ],
+        "explanation": "A limitation of SVM is that it does not scale well to large datasets. The training complexity of SVM is between O(n²) and O(n³), where n is the number of training samples. This makes it computationally expensive for large datasets. Additionally, SVM doesn't directly provide probability estimates, and the appropriate choice of kernel and hyperparameters can be challenging."
+      },
+      {
+         "questionText": "What is a potential application of SVM in computer vision?",
+         "answerOptions": [
+           { "answerText": "Image generation", "isCorrect": false },
+           { "answerText": "Face detection by creating a box around faces in an environment", "isCorrect": true },
+           { "answerText": "Video streaming", "isCorrect": false },
+           { "answerText": "Image storage optimization", "isCorrect": false }
+         ],
+         "explanation": "Face detection is a potential application of SVM in computer vision. SVM can be used to classify regions of an image as either containing a face or not. The algorithm can create a square box around faces in an environment by analyzing visual patterns and features that distinguish faces from the background or other objects."
+      },
+      {
+         "questionText": "What is a potential application of SVM in bioinformatics?",
+         "answerOptions": [
+           { "answerText": "Gene sequencing", "isCorrect": false },
+           { "answerText": "DNA synthesis", "isCorrect": false },
+           { "answerText": "Gene classification to identify proteins and cancer cells", "isCorrect": true },
+           { "answerText": "Genetic engineering", "isCorrect": false }
+         ],
+         "explanation": "Gene classification is a potential application of SVM in bioinformatics. SVM can be used to differentiate between various proteins and identify biological problems and cancer cells. By analyzing genetic data and biological markers, SVM can help researchers classify genes into different categories based on their functions or associations with diseases."
+      },
+      {
+         "questionText": "What is a potential application of SVM in text categorization?",
+         "answerOptions": [
+           { "answerText": "Text generation", "isCorrect": false },
+           { "answerText": "Classifying documents into categories based on content", "isCorrect": true },
+           { "answerText": "Text translation", "isCorrect": false },
+           { "answerText": "Grammar correction", "isCorrect": false }
+         ],
+         "explanation": "A potential application of SVM in text categorization is classifying documents into different categories based on their content, score, types, and other threshold values. SVM can be used to analyze the features of text documents (such as word frequencies) and assign them to predefined categories, which is useful for organizing large collections of documents."
+      },
+      {
+         "questionText": "What is a potential application of SVM in image classification?",
+         "answerOptions": [
+           { "answerText": "Image compression", "isCorrect": false },
+           { "answerText": "Image generation", "isCorrect": false },
+           { "answerText": "Classifying images into categories based on their features", "isCorrect": true },
+           { "answerText": "Image encryption", "isCorrect": false }
+         ],
+         "explanation": "A potential application of SVM in image classification is categorizing images based on various features. Compared to traditional query-based searching techniques, SVM has better accuracy when it comes to searching and classifying images based on visual characteristics, making it useful for content-based image retrieval systems."
+      },
+      {
+        "questionText": "How do SVMs handle outliers?",
+        "answerOptions": [
+          { "answerText": "SVMs are highly sensitive to outliers", "isCorrect": false },
+          { "answerText": "SVMs completely ignore outliers", "isCorrect": false },
+          { "answerText": "SVMs can be robust to outliers by using an appropriate C parameter", "isCorrect": true },
+          { "answerText": "SVMs require preprocessing to remove all outliers", "isCorrect": false }
+        ],
+        "explanation": "SVMs can be robust to outliers by using an appropriate C parameter. The C parameter controls the trade-off between maximizing the margin and minimizing the classification error. A smaller C value makes the model more tolerant to errors (and thus outliers), creating a smoother decision boundary but potentially misclassifying some points. This allows SVM to focus on the general pattern rather than being heavily influenced by individual outliers."
+      },
+      {
+        "questionText": "What does it mean when we say SVM is a maximum margin classifier?",
+        "answerOptions": [
+          { "answerText": "It maximizes the number of support vectors", "isCorrect": false },
+          { "answerText": "It maximizes the width of the margin between the decision boundary and the nearest training samples", "isCorrect": true },
+          { "answerText": "It maximizes the accuracy on the training data", "isCorrect": false },
+          { "answerText": "It maximizes the computational efficiency", "isCorrect": false }
+        ],
+        "explanation": "When we say SVM is a maximum margin classifier, it means that SVM aims to maximize the width of the margin between the decision boundary and the nearest training samples (the support vectors). This approach helps to create a decision boundary that has the greatest possible distance from the data points of different classes, which often leads to better generalization to unseen data."
+      },
+      {
+         "questionText": "How does SVM differ from k-Nearest Neighbors (kNN)?",
+         "answerOptions": [
+           { "answerText": "SVM creates a decision boundary, while kNN makes predictions based on the most similar training examples", "isCorrect": true },
+           { "answerText": "SVM is supervised, while kNN is unsupervised", "isCorrect": false },
+           { "answerText": "SVM can only handle binary classification, while kNN can handle multi-class", "isCorrect": false },
+           { "answerText": "SVM requires more training data than kNN", "isCorrect": false }
+         ],
+         "explanation": "SVM differs from k-Nearest Neighbors (kNN) in that SVM creates a decision boundary during training, while kNN makes predictions based on the most similar training examples at prediction time. SVM is a parametric model that learns parameters to define the decision boundary, whereas kNN is a non-parametric, instance-based method that doesn't learn a model but memorizes the training data."
+      },
+      {
+        "questionText": "How does SVM handle feature scaling?",
+        "answerOptions": [
+          { "answerText": "SVM automatically scales all features", "isCorrect": false },
+          { "answerText": "SVM is not affected by feature scaling", "isCorrect": false },
+          { "answerText": "SVM benefits from feature scaling, especially when using certain kernels", "isCorrect": true },
+          { "answerText": "SVM requires binary features only", "isCorrect": false }
+        ],
+        "explanation": "SVM benefits from feature scaling, especially when using kernels like RBF. Feature scaling ensures that all features contribute equally to the distance calculations, which is important for SVM as it relies on the distance between data points. Without scaling, features with larger ranges might dominate the distance calculation, potentially leading to suboptimal performance."
+      },
+      {
+         "questionText": "What is the effect of increasing the C parameter in SVM?",
+         "answerOptions": [
+           { "answerText": "Increases the margin width, making the model more regularized", "isCorrect": false },
+           { "answerText": "Decreases the margin width, potentially leading to overfitting", "isCorrect": true },
+           { "answerText": "Increases the number of support vectors", "isCorrect": false },
+           { "answerText": "Has no effect on the model", "isCorrect": false }
+         ],
+         "explanation": "Increasing the C parameter in SVM decreases the margin width, potentially leading to overfitting. A larger C puts more emphasis on classifying all training points correctly by allowing a smaller margin or more misclassification penalties. This can result in a more complex decision boundary that fits the training data very well but may not generalize well to unseen data."
+      },
+      {
+         "questionText": "What is the effect of increasing the gamma parameter in RBF kernel SVM?",
+         "answerOptions": [
+           { "answerText": "Increases the influence range of each example, leading to a smoother decision boundary", "isCorrect": false },
+           { "answerText": "Decreases the influence range of each example, potentially leading to overfitting", "isCorrect": true },
+           { "answerText": "Has no effect on the model's performance", "isCorrect": false },
+           { "answerText": "Always improves the model's accuracy", "isCorrect": false }
+         ],
+         "explanation": "Increasing the gamma parameter in RBF kernel SVM decreases the influence range of each example, potentially leading to overfitting. A larger gamma means the influence of each training example reaches less far, resulting in a more complex decision boundary that fits the training data more closely. This can lead to excellent performance on the training data but poor generalization to unseen data."
+      },
+      {
+         "questionText": "What type of decision boundary can SVM with a linear kernel create?",
+         "answerOptions": [
+           { "answerText": "Only straight lines in 2D space", "isCorrect": true },
+           { "answerText": "Curved lines in 2D space", "isCorrect": false },
+           { "answerText": "Circles in 2D space", "isCorrect": false },
+           { "answerText": "Any arbitrary shape", "isCorrect": false }
+         ],
+         "explanation": "SVM with a linear kernel can only create straight lines as decision boundaries in 2D space (or hyperplanes in higher dimensions). It is not able to create non-linear decision boundaries like curves or circles. If the data is not linearly separable, a linear kernel may not provide good classification performance, and a non-linear kernel would be more appropriate."
+      },
+      {
+        "questionText": "What type of decision boundary can SVM with a RBF kernel create?",
+        "answerOptions": [
+          { "answerText": "Only straight lines in 2D space", "isCorrect": false },
+          { "answerText": "Only circles in 2D space", "isCorrect": false },
+          { "answerText": "Only ellipses in 2D space", "isCorrect": false },
+          { "answerText": "Flexible non-linear boundaries, including closed curves", "isCorrect": true }
+        ],
+        "explanation": "SVM with a Radial Basis Function (RBF) kernel can create flexible non-linear boundaries, including closed curves like circles or more complex shapes. This is because the RBF kernel transforms the data into a higher-dimensional space where it may be linearly separable, which corresponds to a non-linear decision boundary in the original space."
+      },
+      {
+         "questionText": "How does SVM compare to Decision Trees in terms of handling non-linear relationships?",
+         "answerOptions": [
+           { "answerText": "SVM with linear kernel handles non-linear relationships better than Decision Trees", "isCorrect": false },
+           { "answerText": "SVM with appropriate non-linear kernels can handle complex non-linear relationships similar to Decision Trees", "isCorrect": true },
+           { "answerText": "Decision Trees always handle non-linear relationships better than SVM", "isCorrect": false },
+           { "answerText": "Neither algorithm can handle non-linear relationships", "isCorrect": false }
+         ],
+         "explanation": "SVM with appropriate non-linear kernels (like RBF) can handle complex non-linear relationships similar to Decision Trees, which create non-linear boundaries by partitioning the feature space into rectangular regions. The choice between them may depend on the specific dataset and problem structure."
+      }
+    ]
+  }

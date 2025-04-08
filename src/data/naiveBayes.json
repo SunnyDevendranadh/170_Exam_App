@@ -1,0 +1,434 @@
+{
+    "questions": [
+      {
+        "questionText": "What does Gaussian Naive Bayes assume about continuous features?",
+        "answerOptions": [
+          { "answerText": "Features follow a Gaussian (normal) distribution", "isCorrect": true },
+          { "answerText": "Features follow a uniform distribution", "isCorrect": false },
+          { "answerText": "Features follow a multinomial distribution", "isCorrect": false },
+          { "answerText": "Features follow a Poisson distribution", "isCorrect": false }
+        ],
+        "explanation": "Gaussian Naive Bayes assumes that the continuous features for each class follow a Gaussian (normal) distribution. It calculates the mean and variance of each feature for each class and uses these parameters to compute the probability density function when making predictions."
+      },
+      {
+        "questionText": "Which of these tasks would Naive Bayes NOT be suitable for?",
+        "answerOptions": [
+          { "answerText": "Email spam detection", "isCorrect": false },
+          { "answerText": "Sentiment analysis of text reviews", "isCorrect": false },
+          { "answerText": "Disease diagnosis based on symptoms", "isCorrect": false },
+          { "answerText": "Precise house price prediction", "isCorrect": true }
+        ],
+        "explanation": "Naive Bayes would not be suitable for precise house price prediction, which is a regression task requiring exact numerical predictions. Naive Bayes is primarily a classification algorithm designed to predict categorical outcomes, not continuous values with high precision. For house price prediction, algorithms like linear regression, random forests, or gradient boosting would be more appropriate."
+      },
+      {
+        "questionText": "What is the formula to calculate P(Yes|overcast) using Bayes' theorem?",
+        "answerOptions": [
+          { "answerText": "P(Yes|overcast) = P(Yes) × P(overcast|Yes)", "isCorrect": false },
+          { "answerText": "P(Yes|overcast) = P(overcast|Yes) × P(Yes) / P(overcast)", "isCorrect": true },
+          { "answerText": "P(Yes|overcast) = P(overcast|Yes) / P(Yes)", "isCorrect": false },
+          { "answerText": "P(Yes|overcast) = P(overcast) × P(Yes|overcast)", "isCorrect": false }
+        ],
+        "explanation": "The formula to calculate P(Yes|overcast) using Bayes' theorem is: P(Yes|overcast) = P(overcast|Yes) × P(Yes) / P(overcast). This formula calculates the posterior probability of 'Yes' given 'overcast' by multiplying the likelihood P(overcast|Yes) with the prior probability P(Yes) and dividing by the evidence P(overcast)."
+      },
+      {
+        "questionText": "If P(overcast|Yes) = 4/9, P(Yes) = 9/14, and P(overcast) = 4/14, what is P(Yes|overcast)?",
+        "answerOptions": [
+          { "answerText": "0.44", "isCorrect": false },
+          { "answerText": "0.64", "isCorrect": false },
+          { "answerText": "0.98 (or 1.0)", "isCorrect": true },
+          { "answerText": "1.0", "isCorrect": true }
+        ],
+        "explanation": "Using Bayes' theorem: P(Yes|overcast) = P(overcast|Yes) × P(Yes) / P(overcast) = (4/9) × (9/14) / (4/14) = (4/9) × (9/14) × (14/4) = (4 × 9 × 14) / (9 × 14 × 4) = 1. This indicates that when the weather is overcast, the probability of 'Yes' is 1."
+      },
+      {
+         "questionText": "What is Naive Bayes?",
+         "answerOptions": [
+           { "answerText": "A deep learning algorithm based on neural networks", "isCorrect": false },
+           { "answerText": "A classification algorithm that uses Bayes theorem of probability", "isCorrect": true },
+           { "answerText": "A regression algorithm for predicting continuous values", "isCorrect": false },
+           { "answerText": "A clustering algorithm for grouping similar data points", "isCorrect": false }
+         ],
+         "explanation": "Naive Bayes is a classification algorithm that uses the Bayes theorem of probability to classify the target. It is considered to be one of the simplest supervised learning algorithms for classification tasks."
+      },
+      {
+        "questionText": "Why is Naive Bayes called 'naive'?",
+        "answerOptions": [
+          { "answerText": "Because it's not as sophisticated as other algorithms", "isCorrect": false },
+          { "answerText": "Because it's easy to implement", "isCorrect": false },
+          { "answerText": "Because it assumes features are independent of each other", "isCorrect": true },
+          { "answerText": "Because it's only suitable for simple classification tasks", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes is called 'naive' because it makes the simplifying assumption that features (independent variables) are independent of each other. In reality, features are often related, but this 'naive' assumption simplifies the calculations while still providing good results in many cases."
+      },
+      {
+        "questionText": "What is the Bayes Theorem of Probability?",
+        "answerOptions": [
+          { "answerText": "P(A|B) = P(B|A) × P(A) / P(B)", "isCorrect": true },
+          { "answerText": "P(A|B) = P(A) × P(B)", "isCorrect": false },
+          { "answerText": "P(A|B) = P(A) + P(B) - P(A∩B)", "isCorrect": false },
+          { "answerText": "P(A|B) = P(A) / P(B)", "isCorrect": false }
+        ],
+        "explanation": "The Bayes Theorem of Probability states that P(A|B) = P(B|A) × P(A) / P(B), where P(A|B) is the probability of hypothesis A given the data B, P(B|A) is the probability of data B given that hypothesis A was true, P(A) is the prior probability of hypothesis A, and P(B) is the prior probability of data B."
+      },
+      {
+         "questionText": "In the context of Naive Bayes for email spam detection, what does P(Spam|Words) represent?",
+         "answerOptions": [
+           { "answerText": "The probability of detecting spam words", "isCorrect": false },
+           { "answerText": "The probability that an email is spam given the words it contains", "isCorrect": true },
+           { "answerText": "The probability of finding certain words in all emails", "isCorrect": false },
+           { "answerText": "The probability of finding certain words in spam emails", "isCorrect": false }
+         ],
+         "explanation": "In the context of spam detection, P(Spam|Words) represents the probability that an email is spam given the specific words it contains. This is the posterior probability that Naive Bayes calculates to classify an email as spam or not spam."
+      },
+      {
+        "questionText": "What are the key advantages of Naive Bayes?",
+        "answerOptions": [
+          { "answerText": "High accuracy and complex modeling capabilities", "isCorrect": false },
+          { "answerText": "Fast, efficient, and performs well with small training datasets", "isCorrect": true },
+          { "answerText": "Deep learning capabilities and parallel processing", "isCorrect": false },
+          { "answerText": "Advanced feature selection and hyperparameter tuning", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes is fast, accurate, and reliable. It works well even with small training datasets, is computationally efficient, and can handle high-dimensional data. Despite its 'naive' assumption of feature independence, it often performs surprisingly well in real-world applications."
+      },
+      {
+         "questionText": "In a Naive Bayes calculation example with weather data, if P(Yes) = 9/14 and P(overcast|Yes) = 4/9, what are we calculating?",
+         "answerOptions": [
+           { "answerText": "The probability of the weather being overcast", "isCorrect": false },
+           { "answerText": "The probability of the weather being overcast given that the answer is Yes", "isCorrect": false },
+           { "answerText": "The probability of the answer being Yes given that the weather is overcast", "isCorrect": true },
+           { "answerText": "The joint probability of the weather being overcast and the answer being Yes", "isCorrect": false }
+         ],
+         "explanation": "In this example, we are calculating P(Yes|overcast), which is the probability of the answer being Yes given that the weather is overcast. Using Bayes' theorem: P(Yes|overcast) = P(overcast|Yes) × P(Yes) / P(overcast)."
+      },
+      {
+         "questionText": "How does Naive Bayes handle continuous features?",
+         "answerOptions": [
+           { "answerText": "It cannot handle continuous features", "isCorrect": false },
+           { "answerText": "By discretizing them into categories", "isCorrect": false },
+           { "answerText": "By assuming they follow a normal distribution (Gaussian Naive Bayes)", "isCorrect": true },
+           { "answerText": "By converting them to binary features", "isCorrect": false }
+         ],
+         "explanation": "For continuous features, Naive Bayes typically assumes that the values follow a normal (Gaussian) distribution. This variant is called Gaussian Naive Bayes. It calculates the mean and variance of each feature for each class and uses these to compute the probabilities."
+      },
+      {
+         "questionText": "What does the GaussianNB function do in scikit-learn?",
+         "answerOptions": [
+           { "answerText": "It implements Naive Bayes for discrete features", "isCorrect": false },
+           { "answerText": "It implements Naive Bayes for continuous features assuming Gaussian distribution", "isCorrect": true },
+           { "answerText": "It implements a hybrid Naive Bayes model for mixed data types", "isCorrect": false },
+           { "answerText": "It implements Naive Bayes with advanced probability calculations", "isCorrect": false }
+         ],
+         "explanation": "GaussianNB is the scikit-learn function that implements Naive Bayes for continuous features, assuming that the values of each feature follow a Gaussian (normal) distribution. It's used when your features are continuous rather than categorical."
+      },
+      {
+        "questionText": "In Naive Bayes, when calculating P(Yes|overcast, mild) with multiple features, what assumption is made?",
+        "answerOptions": [
+          { "answerText": "Features are combined using complex interactions", "isCorrect": false },
+          { "answerText": "Only the most important feature is considered", "isCorrect": false },
+          { "answerText": "Features are weighted based on their importance", "isCorrect": false },
+          { "answerText": "Features are conditionally independent given the class", "isCorrect": true }
+        ],
+        "explanation": "When calculating P(Yes|overcast, mild) in Naive Bayes, we assume that the features 'overcast' and 'mild' are conditionally independent given the class (Yes). This means P(overcast, mild|Yes) = P(overcast|Yes) × P(mild|Yes). This is the 'naive' assumption that simplifies the calculation."
+      },
+      {
+         "questionText": "Which of these is NOT a common type of Naive Bayes classifier?",
+         "answerOptions": [
+           { "answerText": "Gaussian Naive Bayes", "isCorrect": false },
+           { "answerText": "Multinomial Naive Bayes", "isCorrect": false },
+           { "answerText": "Bernoulli Naive Bayes", "isCorrect": false },
+           { "answerText": "Logarithmic Naive Bayes", "isCorrect": true }
+         ],
+         "explanation": "Logarithmic Naive Bayes is not a standard type of Naive Bayes classifier. The common types are Gaussian Naive Bayes (for continuous data), Multinomial Naive Bayes (for discrete count data), and Bernoulli Naive Bayes (for binary feature data)."
+      },
+      {
+         "questionText": "What is a common application of Naive Bayes in finance?",
+         "answerOptions": [
+           { "answerText": "Portfolio optimization", "isCorrect": false },
+           { "answerText": "Stock price prediction", "isCorrect": false },
+           { "answerText": "Fraud detection in financial statements", "isCorrect": true },
+           { "answerText": "High-frequency trading", "isCorrect": false }
+         ],
+         "explanation": "Fraud detection in financial statements is a common application of Naive Bayes in finance. The algorithm can be employed to analyze patterns in financial data that are commonly associated with fraud, such as certain combinations of financial ratios or irregular transaction patterns."
+      },
+      {
+         "questionText": "What is a common application of Naive Bayes in marketing?",
+         "answerOptions": [
+           { "answerText": "Designing marketing campaigns from scratch", "isCorrect": false },
+           { "answerText": "Customer purchase prediction", "isCorrect": true },
+           { "answerText": "Setting optimal product pricing", "isCorrect": false },
+           { "answerText": "Creating advertising content", "isCorrect": false }
+         ],
+         "explanation": "Customer purchase prediction is a common application of Naive Bayes in marketing. The algorithm can analyze patterns in customer data to predict whether a customer will purchase a specific product, based on demographic factors and past buying behavior."
+      },
+      {
+         "questionText": "What is a common application of Naive Bayes in HR?",
+         "answerOptions": [
+           { "answerText": "Automated salary determination", "isCorrect": false },
+           { "answerText": "Performance review writing", "isCorrect": false },
+           { "answerText": "Employee attrition prediction", "isCorrect": true },
+           { "answerText": "Office space allocation", "isCorrect": false }
+         ],
+         "explanation": "Employee attrition prediction is a common application of Naive Bayes in HR. The algorithm can analyze various employee attributes and their correlation with attrition rates to predict which employees are most likely to leave the company."
+      },
+      {
+        "questionText": "How does Naive Bayes handle the 'zero frequency' problem?",
+        "answerOptions": [
+          { "answerText": "By ignoring features with zero frequency", "isCorrect": false },
+          { "answerText": "By using Laplace smoothing (adding a small value to all counts)", "isCorrect": true },
+          { "answerText": "By replacing zeros with the mean value", "isCorrect": false },
+          { "answerText": "By removing the corresponding data points", "isCorrect": false }
+        ],
+        "explanation": "Naive Bayes handles the 'zero frequency' problem (when a class and feature value never occur together in the training data) using Laplace smoothing, also known as add-one smoothing. This technique adds a small value (typically 1) to all feature counts, ensuring that no probability is exactly zero."
+      },
+      {
+        "questionText": "What is a limitation of Naive Bayes?",
+        "answerOptions": [
+          { "answerText": "It requires large amounts of training data", "isCorrect": false },
+          { "answerText": "It is too computationally intensive for real-time applications", "isCorrect": false },
+          { "answerText": "It assumes feature independence, which is often not the case in real data", "isCorrect": true },
+          { "answerText": "It can only handle binary classification problems", "isCorrect": false }
+        ],
+        "explanation": "A major limitation of Naive Bayes is its assumption that features are independent given the class, which is often not the case in real-world data. Features frequently interact with each other, and this 'naive' assumption can lead to suboptimal performance in some scenarios."
+      },
+      {
+         "questionText": "In Naive Bayes, what is the role of the prior probability?",
+         "answerOptions": [
+           { "answerText": "It is the initial probability of a class before seeing any evidence", "isCorrect": true },
+           { "answerText": "It is the probability of the evidence given the class", "isCorrect": false },
+           { "answerText": "It is the final probability after all calculations", "isCorrect": false },
+           { "answerText": "It is the probability of a feature occurring in the dataset", "isCorrect": false }
+         ],
+         "explanation": "The prior probability in Naive Bayes is the initial probability of a class before seeing any evidence (features). For example, P(Spam) and P(Not Spam) are prior probabilities in an email classification task. These are typically calculated as the proportion of each class in the training data."
+      },
+      {
+         "questionText": "What does P(D|h) represent in Bayes' theorem?",
+         "answerOptions": [
+           { "answerText": "The probability of hypothesis h being true regardless of the data", "isCorrect": false },
+           { "answerText": "The probability of the data regardless of the hypothesis", "isCorrect": false },
+           { "answerText": "The probability of hypothesis h given the data D", "isCorrect": false },
+           { "answerText": "The probability of data D given that hypothesis h is true", "isCorrect": true }
+         ],
+         "explanation": "In Bayes' theorem, P(D|h) represents the likelihood - the probability of observing the data D given that the hypothesis h is true. This term helps adjust our belief in the hypothesis based on how well it explains the observed data."
+      },
+      {
+         "questionText": "How does Naive Bayes perform with small training datasets compared to other algorithms?",
+         "answerOptions": [
+           { "answerText": "Poorly, it requires large amounts of data", "isCorrect": false },
+           { "answerText": "Average, similar to most algorithms", "isCorrect": false },
+           { "answerText": "Well, it can work effectively even with limited data", "isCorrect": true },
+           { "answerText": "It completely fails with small datasets", "isCorrect": false }
+         ],
+         "explanation": "Naive Bayes generally performs well with small training datasets compared to many other algorithms. This is because it doesn't need to estimate many parameters and its 'naive' assumption of feature independence simplifies the learning task, making it less prone to overfitting with limited data."
+      },
+      {
+         "questionText": "What kind of probability does Naive Bayes calculate?",
+         "answerOptions": [
+           { "answerText": "Joint probability", "isCorrect": false },
+           { "answerText": "Prior probability", "isCorrect": false },
+           { "answerText": "Likelihood", "isCorrect": false },
+           { "answerText": "Posterior probability", "isCorrect": true }
+         ],
+         "explanation": "Naive Bayes calculates the posterior probability, which is the probability of a class given the observed features. For example, in spam detection, it calculates P(Spam|Words), the probability that an email is spam given the words it contains."
+      },
+      {
+         "questionText": "Which of these is a common preprocessing step for text data before applying Naive Bayes?",
+         "answerOptions": [
+           { "answerText": "Converting all text to images", "isCorrect": false },
+           { "answerText": "Converting text to a bag-of-words representation", "isCorrect": true },
+           { "answerText": "Applying Fourier transforms to the text", "isCorrect": false },
+           { "answerText": "Encrypting the text for security", "isCorrect": false }
+         ],
+         "explanation": "Converting text to a bag-of-words representation is a common preprocessing step before applying Naive Bayes to text data. This involves counting the frequency of each word in a document, ignoring grammar and word order but retaining multiplicity."
+      },
+      {
+         "questionText": "What is Multinomial Naive Bayes commonly used for?",
+         "answerOptions": [
+           { "answerText": "Continuous data with normal distribution", "isCorrect": false },
+           { "answerText": "Binary data (presence/absence features)", "isCorrect": false },
+           { "answerText": "Text classification and document categorization", "isCorrect": true },
+           { "answerText": "Image recognition tasks", "isCorrect": false }
+         ],
+         "explanation": "Multinomial Naive Bayes is commonly used for text classification and document categorization. It's suitable for data represented as word counts or TF-IDF features, where each feature represents the frequency or importance of a word in a document."
+      },
+      {
+         "questionText": "What is Bernoulli Naive Bayes best suited for?",
+         "answerOptions": [
+           { "answerText": "Continuous data with normal distribution", "isCorrect": false },
+           { "answerText": "Binary data (presence/absence features)", "isCorrect": true },
+           { "answerText": "Count data like word frequencies", "isCorrect": false },
+           { "answerText": "Multi-class classification with many classes", "isCorrect": false }
+         ],
+         "explanation": "Bernoulli Naive Bayes is best suited for binary data where features represent presence or absence (1 or 0). In text classification, it focuses on whether a word appears in a document, not how many times it appears. This makes it useful for short texts or when only the presence of specific terms matters."
+      },
+      {
+         "questionText": "In text classification using Naive Bayes, what does the 'bag-of-words' model assume?",
+         "answerOptions": [
+           { "answerText": "Word order and grammar are important", "isCorrect": false },
+           { "answerText": "Only certain keywords matter for classification", "isCorrect": false },
+           { "answerText": "The position of a word in a document doesn't matter", "isCorrect": true },
+           { "answerText": "Words should be grouped into phrases for better results", "isCorrect": false }
+         ],
+         "explanation": "In the 'bag-of-words' model used with Naive Bayes for text classification, it is assumed that the position of a word in a document doesn't matter. The model only considers word frequencies or presence/absence, disregarding grammar, word order, and text structure."
+      },
+      {
+         "questionText": "What is a benefit of using Naive Bayes for text classification?",
+         "answerOptions": [
+           { "answerText": "It captures complex word interactions and context", "isCorrect": false },
+           { "answerText": "It's efficient with high-dimensional data (many features)", "isCorrect": true },
+           { "answerText": "It automatically selects the most relevant words", "isCorrect": false },
+           { "answerText": "It performs deep semantic analysis", "isCorrect": false }
+         ],
+         "explanation": "A major benefit of using Naive Bayes for text classification is its efficiency with high-dimensional data. Text data often has thousands of features (words), and many algorithms struggle with this, but Naive Bayes handles it well due to its simple computational approach and the independence assumption."
+      },
+      {
+         "questionText": "How does Naive Bayes deal with class imbalance?",
+         "answerOptions": [
+           { "answerText": "It automatically balances classes during training", "isCorrect": false },
+           { "answerText": "It's not affected by class imbalance", "isCorrect": false },
+           { "answerText": "It can be biased towards the majority class", "isCorrect": true },
+           { "answerText": "It gives higher weights to minority classes", "isCorrect": false }
+         ],
+         "explanation": "Naive Bayes can be biased towards the majority class in imbalanced datasets. Since the prior probability of a class is based on its frequency in the training data, the algorithm may favor the more common class. Techniques like adjusting prior probabilities or using sampling methods can help address this issue."
+      },
+      {
+         "questionText": "In spam filtering using Naive Bayes, how are attachments typically handled?",
+         "answerOptions": [
+           { "answerText": "They are opened and their content is analyzed", "isCorrect": false },
+           { "answerText": "The presence and type of attachments are used as features", "isCorrect": true },
+           { "answerText": "Attachments are ignored completely", "isCorrect": false },
+           { "answerText": "Only attachments from trusted sources are considered", "isCorrect": false }
+         ],
+         "explanation": "In spam filtering with Naive Bayes, the presence and type of attachments are typically used as features. For security reasons, attachments are not usually opened and analyzed, but information like file type, size, and whether an attachment exists can be valuable predictive features."
+      },
+      {
+         "questionText": "How does Naive Bayes compare to logistic regression for text classification?",
+         "answerOptions": [
+           { "answerText": "Naive Bayes is always more accurate", "isCorrect": false },
+           { "answerText": "Naive Bayes is typically faster to train but may be less accurate", "isCorrect": true },
+           { "answerText": "Logistic regression is always faster but less accurate", "isCorrect": false },
+           { "answerText": "They perform exactly the same in most cases", "isCorrect": false }
+         ],
+         "explanation": "Naive Bayes is typically faster to train than logistic regression, especially with large datasets, but may be less accurate in some cases. This is because Naive Bayes makes strong independence assumptions that may not hold in practice, while logistic regression can learn feature interactions if properly regularized."
+      },
+      {
+         "questionText": "Which of these scenarios would Naive Bayes be well-suited for?",
+         "answerOptions": [
+           { "answerText": "Complex image recognition with subtle visual patterns", "isCorrect": false },
+           { "answerText": "Recommending products based on thousands of user interactions", "isCorrect": false },
+           { "answerText": "Classifying emails as spam or not spam based on their content", "isCorrect": true },
+           { "answerText": "Predicting exact stock prices based on market indicators", "isCorrect": false }
+         ],
+         "explanation": "Naive Bayes is well-suited for classifying emails as spam or not spam based on their content. This is a classic application where the features (words and other email characteristics) can be reasonably assumed to be independent, and the task is a straightforward binary classification."
+      },
+      {
+         "questionText": "What happens if a feature value never occurs with a particular class in the training data?",
+         "answerOptions": [
+           { "answerText": "The algorithm crashes due to a division by zero", "isCorrect": false },
+           { "answerText": "That feature is ignored for that class", "isCorrect": false },
+           { "answerText": "The probability becomes zero, potentially causing incorrect classifications", "isCorrect": true },
+           { "answerText": "The probability defaults to 0.5", "isCorrect": false }
+         ],
+         "explanation": "If a feature value never occurs with a particular class in the training data, its conditional probability will be zero. This can be problematic because when multiplying probabilities in Naive Bayes, a single zero will make the entire probability zero. This 'zero frequency' problem is typically addressed using smoothing techniques."
+      },
+      {
+         "questionText": "What is Laplace smoothing in the context of Naive Bayes?",
+         "answerOptions": [
+           { "answerText": "A technique to speed up calculations", "isCorrect": false },
+           { "answerText": "A method to reduce overfitting", "isCorrect": false },
+           { "answerText": "A way to handle the zero frequency problem by adding a small count to all feature values", "isCorrect": true },
+           { "answerText": "A preprocessing step to normalize feature values", "isCorrect": false }
+         ],
+         "explanation": "Laplace smoothing (or additive smoothing) is a technique used in Naive Bayes to handle the zero frequency problem. It adds a small count (typically 1) to all feature/class combinations, ensuring that no probability is exactly zero. This prevents a single unseen feature from dominating the calculation."
+      },
+      {
+         "questionText": "Why might Naive Bayes perform well even when the independence assumption is violated?",
+         "answerOptions": [
+           { "answerText": "Because it secretly detects and accounts for dependencies", "isCorrect": false },
+           { "answerText": "Because the classification still works if the estimated probabilities lead to correct class decisions", "isCorrect": true },
+           { "answerText": "Because features are usually independent in most real datasets", "isCorrect": false },
+           { "answerText": "Because it uses advanced statistical corrections", "isCorrect": false }
+         ],
+         "explanation": "Naive Bayes can perform well even when the independence assumption is violated because what matters for classification is not getting the exact probabilities right, but rather getting the class ordering right. Even with incorrect probability estimates, the algorithm can still assign the highest probability to the correct class."
+      },
+      {
+         "questionText": "What is an advantage of Naive Bayes compared to more complex models like neural networks?",
+         "answerOptions": [
+           { "answerText": "Naive Bayes is always more accurate", "isCorrect": false },
+           { "answerText": "Naive Bayes can model more complex relationships", "isCorrect": false },
+           { "answerText": "Naive Bayes is simpler, faster, and requires less data", "isCorrect": true },
+           { "answerText": "Naive Bayes automatically selects the best features", "isCorrect": false }
+         ],
+         "explanation": "An advantage of Naive Bayes compared to more complex models like neural networks is that it is simpler, faster to train and apply, and requires less data to perform well. While neural networks may achieve higher accuracy with sufficient data and tuning, Naive Bayes provides a good baseline with minimal computational resources."
+      },
+      {
+         "questionText": "How does Naive Bayes handle irrelevant features?",
+         "answerOptions": [
+           { "answerText": "It automatically identifies and removes them", "isCorrect": false },
+           { "answerText": "It assigns them lower weights", "isCorrect": false },
+           { "answerText": "Irrelevant features may still influence predictions, potentially reducing accuracy", "isCorrect": true },
+           { "answerText": "It clusters similar features together", "isCorrect": false }
+         ],
+         "explanation": "Naive Bayes does not automatically identify and remove irrelevant features. All features are considered in the probability calculation, and irrelevant features may still influence predictions, potentially reducing accuracy. This is why feature selection can be an important preprocessing step when using Naive Bayes."
+      },
+      {
+         "questionText": "How does Naive Bayes compare to Decision Trees in terms of interpretability?",
+         "answerOptions": [
+           { "answerText": "Both are equally difficult to interpret", "isCorrect": false },
+           { "answerText": "Naive Bayes provides probability estimates but may be harder to interpret than Decision Trees", "isCorrect": true },
+           { "answerText": "Naive Bayes is always more interpretable than Decision Trees", "isCorrect": false },
+           { "answerText": "Neither algorithm provides interpretable models", "isCorrect": false }
+         ],
+         "explanation": "Naive Bayes provides probability estimates for its predictions, which can be useful, but the model itself may be harder to interpret than Decision Trees, especially with many features. Decision Trees create an explicit hierarchy of decisions that can be visualized and followed, making them generally more interpretable for humans."
+      },
+      {
+         "questionText": "What is the relationship between Naive Bayes and Maximum Likelihood Estimation?",
+         "answerOptions": [
+           { "answerText": "They are completely unrelated approaches", "isCorrect": false },
+           { "answerText": "Naive Bayes uses Maximum Likelihood Estimation to learn probabilities from data", "isCorrect": true },
+           { "answerText": "Maximum Likelihood Estimation is a special case of Naive Bayes", "isCorrect": false },
+           { "answerText": "Naive Bayes replaces Maximum Likelihood Estimation with Bayesian estimation", "isCorrect": false }
+         ],
+         "explanation": "Naive Bayes uses Maximum Likelihood Estimation (MLE) to learn probabilities from the training data. For example, the conditional probability of a feature given a class is typically estimated as the frequency of that feature-class combination divided by the total frequency of the class in the training data."
+      },
+      {
+         "questionText": "In what situation might Naive Bayes be preferred over more complex algorithms?",
+         "answerOptions": [
+           { "answerText": "When extremely high accuracy is the top priority", "isCorrect": false },
+           { "answerText": "When modeling complex non-linear relationships", "isCorrect": false },
+           { "answerText": "When computational resources are limited or real-time prediction is needed", "isCorrect": true },
+           { "answerText": "When working with image or audio data", "isCorrect": false }
+         ],
+         "explanation": "Naive Bayes might be preferred when computational resources are limited or real-time prediction is needed. Its simplicity and efficiency make it suitable for applications with constraints on processing power or where fast predictions are required, such as real-time spam filtering or text classification on mobile devices."
+      },
+      {
+         "questionText": "How is log transformation often used with Naive Bayes?",
+         "answerOptions": [
+           { "answerText": "To transform non-normal features into a normal distribution", "isCorrect": false },
+           { "answerText": "To prevent numerical underflow when multiplying many small probabilities", "isCorrect": true },
+           { "answerText": "To convert probability values into more interpretable scores", "isCorrect": false },
+           { "answerText": "To speed up the training process significantly", "isCorrect": false }
+         ],
+         "explanation": "In practice, log transformation is often used with Naive Bayes to prevent numerical underflow when multiplying many small probabilities. Instead of multiplying probabilities directly, the logarithms of the probabilities are added. This is mathematically equivalent but numerically more stable, especially with many features."
+      },
+      {
+         "questionText": "What is the role of 'evidence' P(D) in the Bayes theorem as used in Naive Bayes?",
+         "answerOptions": [
+           { "answerText": "It directly determines the class prediction", "isCorrect": false },
+           { "answerText": "It acts as a normalizing constant and can be ignored for classification", "isCorrect": true },
+           { "answerText": "It represents the prior probability of the class", "isCorrect": false },
+           { "answerText": "It represents the likelihood of the features given the class", "isCorrect": false }
+         ],
+         "explanation": "In the Bayes theorem as used in Naive Bayes, P(D) represents the evidence or the probability of observing the data regardless of the class. For classification purposes, it acts as a normalizing constant that ensures probabilities sum to 1. Since it's the same for all classes, it can be ignored when determining which class has the highest probability."
+      },
+      {
+        "questionText": "What assumption does Gaussian Naive Bayes make about the distribution of features?",
+        "answerOptions": [
+          { "answerText": "Features follow a binomial distribution", "isCorrect": false },
+          { "answerText": "Features follow a Gaussian (normal) distribution", "isCorrect": true },
+          { "answerText": "Features follow a uniform distribution", "isCorrect": false },
+          { "answerText": "Features follow a multinomial distribution", "isCorrect": false }
+        ],
+        "explanation": "Gaussian Naive Bayes specifically assumes that continuous features associated with each class are distributed according to a Gaussian (normal) distribution."
+      }
+    ]
+  }
