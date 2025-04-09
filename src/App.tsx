@@ -20,6 +20,7 @@ import regressionData2 from "./data/quiz_2/regression2.json";
 
 // Import cumilative quiz data
 import cumulativeData from "./data/cumilative.json";
+import cumulativeData2 from "./data/cumilative_2.json";
 
 // Import concept guides
 import { conceptGuides } from "./data/conceptGuides";
@@ -79,7 +80,13 @@ type TopicKey =
   | "pca"
   | "regression";
 
-type ViewMode = "topics" | "quiz" | "concepts" | "quizSelection" | "finalQuiz";
+type ViewMode =
+  | "topics"
+  | "quiz"
+  | "concepts"
+  | "quizSelection"
+  | "finalQuiz"
+  | "finalQuizSelection";
 type QuizSet = 1 | 2;
 
 // Topic icons and colors for improved UI
@@ -163,11 +170,11 @@ const App: React.FC = () => {
 
   // Add explicit void return type
   const handleBack = (): void => {
-    if (viewMode === "quizSelection") {
+    if (viewMode === "quizSelection" || viewMode === "finalQuizSelection") {
       setViewMode("topics");
       setSelectedTopic(null);
     } else if (viewMode === "finalQuiz") {
-      setViewMode("topics");
+      setViewMode("finalQuizSelection");
     } else {
       setSelectedTopic(null);
       setViewMode("topics");
@@ -181,7 +188,7 @@ const App: React.FC = () => {
   };
 
   const handleStartFinalQuiz = (): void => {
-    setViewMode("finalQuiz");
+    setViewMode("finalQuizSelection");
   };
 
   const handleReadConcepts = (topic: TopicKey): void => {
@@ -194,6 +201,11 @@ const App: React.FC = () => {
     setViewMode("quiz");
   };
 
+  const handleSelectFinalQuiz = (quizSet: QuizSet): void => {
+    setSelectedQuizSet(quizSet);
+    setViewMode("finalQuiz");
+  };
+
   // Get the keys strongly typed
   const availableTopics = Object.keys(topicData) as TopicKey[];
 
@@ -202,6 +214,19 @@ const App: React.FC = () => {
     return selectedQuizSet === 1
       ? topicData[topic].data
       : topicData[topic].data2;
+  };
+
+  // Helper function to get cumulative quiz data
+  const getFinalQuizData = (): RawTopicJsonData => {
+    if (selectedQuizSet === 1) {
+      return cumulativeData as unknown as RawTopicJsonData;
+    } else {
+      // Handle the different structure of cumilative_2.json
+      const conceptQuestions = cumulativeData2.concept_quiz.flatMap(
+        (topic) => topic.questions
+      );
+      return { questions: conceptQuestions } as unknown as RawTopicJsonData;
+    }
   };
 
   return (
@@ -220,10 +245,14 @@ const App: React.FC = () => {
           <div>
             {/* Final Quiz Card */}
             <div className="mb-8">
-              <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 bg-amber-50 border-amber-200 shadow max-w-2xl mx-auto">
+              <Card className="flex flex-col items-center overflow-hidden hover:shadow-lg transition-all duration-300 bg-amber-50 border-amber-200 shadow max-w-2xl mx-auto">
                 <CardHeader className="pb-3 border-b border-amber-100">
                   <CardTitle className="flex items-center gap-2 text-black text-center">
-                    <span className="text-3xl mx-auto" role="img" aria-hidden="true">
+                    <span
+                      className="text-3xl mx-auto"
+                      role="img"
+                      aria-hidden="true"
+                    >
                       🏆
                     </span>
                     <span className="mx-auto">Final Cumulative Quiz</span>
@@ -234,7 +263,9 @@ const App: React.FC = () => {
                 </CardHeader>
                 <CardContent className="pb-0 pt-4">
                   <p className="text-sm text-amber-700">
-                    A comprehensive assessment with {cumulativeData.questions.length} questions covering all machine learning concepts
+                    A comprehensive assessment with{" "}
+                    {cumulativeData.questions.length} questions covering all
+                    machine learning concepts
                   </p>
                 </CardContent>
                 <CardFooter className="pt-4">
@@ -250,7 +281,9 @@ const App: React.FC = () => {
               </Card>
             </div>
 
-            <h2 className="text-xl font-semibold mb-4 text-center">Topic Quizzes</h2>
+            <h2 className="text-xl font-semibold mb-4 text-center">
+              Topic Quizzes
+            </h2>
 
             <div
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
@@ -363,8 +396,8 @@ const App: React.FC = () => {
               questions={processQuestions(getQuizData(selectedTopic).questions)}
             />
           </div>
-        ) : viewMode === "finalQuiz" ? (
-          <div className="max-w-4xl mx-auto scroll-y-only">
+        ) : viewMode === "finalQuizSelection" ? (
+          <div className="max-w-4xl mx-auto">
             <Button
               onClick={handleBack}
               className="mb-6 gap-2"
@@ -373,9 +406,50 @@ const App: React.FC = () => {
             >
               <span aria-hidden="true">←</span> Back to Topics
             </Button>
+
+            <Card className="overflow-hidden shadow-lg bg-amber-50 border-amber-200">
+              <CardHeader className="text-center pb-2 border-b border-amber-100">
+                <CardTitle className="text-xl sm:text-2xl md:text-3xl text-black">
+                  Final Cumulative Quiz - Select Version
+                </CardTitle>
+                <CardDescription className="text-amber-700">
+                  Choose one of the available quiz sets
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <QuizCard
+                  topic="decisionTree" // Just to satisfy the type, not actually used
+                  onClick={() => handleSelectFinalQuiz(1)}
+                  buttonText="Cumulative Quiz 1"
+                  questions={cumulativeData.questions.length}
+                />
+
+                <QuizCard
+                  topic="decisionTree" // Just to satisfy the type, not actually used
+                  onClick={() => handleSelectFinalQuiz(2)}
+                  buttonText="Cumulative Quiz 2"
+                  questions={cumulativeData2.concept_quiz.reduce(
+                    (total, topic) => total + topic.questions.length,
+                    0
+                  )}
+                />
+              </CardContent>
+            </Card>
+          </div>
+        ) : viewMode === "finalQuiz" ? (
+          <div className="max-w-4xl mx-auto scroll-y-only">
+            <Button
+              onClick={handleBack}
+              className="mb-6 gap-2"
+              variant="default"
+              aria-label="Go back to quiz selection"
+            >
+              <span aria-hidden="true">←</span> Back
+            </Button>
             <Quiz
-              title="Final Cumulative Quiz"
-              questions={processQuestions(cumulativeData.questions)}
+              title={`Final Cumulative Quiz ${selectedQuizSet}`}
+              questions={processQuestions(getFinalQuizData().questions)}
             />
           </div>
         ) : viewMode === "concepts" && selectedTopic ? (

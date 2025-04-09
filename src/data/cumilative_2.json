@@ -1,0 +1,404 @@
+{
+    "concept_quiz": [
+      {
+        "algorithm": "K-Nearest Neighbors (kNN)",
+        "questions": [
+          {
+            "questionText": "According to the lecture slides[cite: 1], what type of learning algorithm is kNN?",
+            "answerOptions": [
+              {"answerText": "Unsupervised Learning", "isCorrect": false},
+              {"answerText": "Supervised Learning", "isCorrect": true},
+              {"answerText": "Reinforcement Learning", "isCorrect": false},
+              {"answerText": "Semi-Supervised Learning", "isCorrect": false}
+            ],
+            "explanation": "The slides state kNN is a supervised algorithm that classifies based on labeled neighbors[cite: 2]."
+          },
+          {
+            "questionText": "What is the core principle behind kNN classification?",
+            "answerOptions": [
+              {"answerText": "Finding the mean point of clusters", "isCorrect": false},
+              {"answerText": "Building a probabilistic model", "isCorrect": false},
+              {"answerText": "Classifying based on the majority class of the 'K' nearest neighbors [cite: 4]", "isCorrect": true},
+              {"answerText": "Reducing the dimensionality of the data", "isCorrect": false}
+            ],
+            "explanation": "kNN classifies a data point based on the classification of its 'K' nearest neighbors[cite: 4]."
+          },
+          {
+            "questionText": "What kind of dataset is typically suitable for kNN?",
+            "answerOptions": [
+              {"answerText": "Unlabeled data requiring dimensionality reduction", "isCorrect": false},
+              {"answerText": "Labeled data where feature 'nearness' corresponds to class similarity [cite: 2, 3]", "isCorrect": true},
+              {"answerText": "Data primarily used for predicting continuous numerical values", "isCorrect": false},
+              {"answerText": "Text data requiring probabilistic analysis", "isCorrect": false}
+            ],
+            "explanation": "kNN is supervised (needs labels) and relies on the concept that similar inputs (nearby points) have similar outputs[cite: 2, 3]. Feature values usually need to be numeric or encoded for distance calculation[cite: 33]."
+          },
+           {
+            "questionText": "What is a potential drawback of choosing a very small K value in kNN[cite: 11]?",
+            "answerOptions": [
+              {"answerText": "High computational cost", "isCorrect": false},
+              {"answerText": "Model becomes too simple (underfitting)", "isCorrect": false},
+              {"answerText": "Increased sensitivity to noise", "isCorrect": true},
+              {"answerText": "Inability to handle categorical data", "isCorrect": false}
+            ],
+            "explanation": "The slides caution that a smaller K value may attract background noise[cite: 11]."
+          },
+          {
+            "questionText": "Which of these is listed as a business application of kNN in the slides[cite: 1]?",
+            "answerOptions": [
+              {"answerText": "Dimensionality reduction for images", "isCorrect": false},
+              {"answerText": "Predicting stock market prices", "isCorrect": false},
+              {"answerText": "Credit Scoring based on applicant profiles [cite: 16]", "isCorrect": true},
+              {"answerText": "Generating new text content", "isCorrect": false}
+            ],
+            "explanation": "Credit Scoring using past applicant profiles is listed as a business example for kNN[cite: 16]."
+          },
+          {
+            "questionText": "Compared to K-Means Clustering, kNN is described as[cite: 28]:",
+            "answerOptions": [
+              {"answerText": "Unsupervised, cluster-based, K defines number of clusters", "isCorrect": false},
+              {"answerText": "Supervised, neighbor-based, K impacts classification", "isCorrect": true},
+              {"answerText": "Supervised, centroid-based, K is always odd", "isCorrect": false},
+              {"answerText": "Unsupervised, proximity-based, K is always even", "isCorrect": false}
+            ],
+            "explanation": "The slides explicitly contrast kNN (supervised, neighbor-based) with K-Means (unsupervised, mean-based)[cite: 28]."
+          }
+        ]
+      },
+      {
+        "algorithm": "Naive Bayes",
+        "questions": [
+          {
+            "questionText": "What fundamental theorem does the Naive Bayes algorithm use for classification[cite: 40]?",
+            "answerOptions": [
+              {"answerText": "Central Limit Theorem", "isCorrect": false},
+              {"answerText": "Pythagorean Theorem", "isCorrect": false},
+              {"answerText": "Bayes' Theorem of Probability [cite: 42]", "isCorrect": true},
+              {"answerText": "Noether's Theorem", "isCorrect": false}
+            ],
+            "explanation": "Naive Bayes classifies the target by using the Bayes theorem of probability[cite: 40, 42]."
+          },
+          {
+            "questionText": "What does the 'naive' assumption in Naive Bayes refer to[cite: 41]?",
+            "answerOptions": [
+              {"answerText": "It assumes the data is normally distributed", "isCorrect": false},
+              {"answerText": "It assumes all features are independent of each other", "isCorrect": true},
+              {"answerText": "It assumes the target variable is continuous", "isCorrect": false},
+              {"answerText": "It assumes the dataset is small", "isCorrect": false}
+            ],
+            "explanation": "It's called naive because it does NOT consider the interdependency between the features (assumes independence)[cite: 41]."
+          },
+          {
+            "questionText": "What kind of dataset is Naive Bayes often suitable for, particularly considering its 'naive' assumption?",
+            "answerOptions": [
+              {"answerText": "Datasets where features are highly correlated and interdependent", "isCorrect": false},
+              {"answerText": "Datasets with primarily categorical features where feature independence is a reasonable simplification [cite: 41, 46]", "isCorrect": true},
+              {"answerText": "Unlabeled datasets requiring clustering", "isCorrect": false},
+              {"answerText": "Datasets requiring prediction of continuous values", "isCorrect": false}
+            ],
+            "explanation": "Naive Bayes works well with categorical data [cite: 46] and performs well even if the independence assumption [cite: 41] isn't perfectly met. GaussianNB handles numerical features[cite: 70]."
+          },
+          {
+            "questionText": "In the Bayes' Theorem formula P(h|D) = [P(D|h) * P(h)] / P(D), what does P(h|D) represent[cite: 44]?",
+            "answerOptions": [
+              {"answerText": "Prior probability of the hypothesis", "isCorrect": false},
+              {"answerText": "Prior probability of the data", "isCorrect": false},
+              {"answerText": "Probability of data given hypothesis", "isCorrect": false},
+              {"answerText": "Posterior probability of the hypothesis given the data", "isCorrect": true}
+            ],
+            "explanation": "P(h|D) is the probability of hypothesis h given the data D, known as posterior probability[cite: 44]."
+          },
+          {
+            "questionText": "How does Naive Bayes typically handle classification with multiple features?",
+            "answerOptions": [
+              {"answerText": "It selects only the single best feature", "isCorrect": false},
+              {"answerText": "It combines features using complex interactions", "isCorrect": false},
+              {"answerText": "It multiplies the conditional probabilities of each feature (due to independence assumption) [cite: 54]", "isCorrect": true},
+              {"answerText": "It requires dimensionality reduction first", "isCorrect": false}
+            ],
+            "explanation": "When multiple features (D) are involved, P(D|h) is calculated by multiplying the probabilities of each feature given the hypothesis, relying on the independence assumption[cite: 54]."
+          },
+          {
+            "questionText": "Which application was mentioned for Naive Bayes in the lecture slides[cite: 38]?",
+            "answerOptions": [
+              {"answerText": "Predicting continuous stock prices", "isCorrect": false},
+              {"answerText": "Employee Attrition Prediction using HR data [cite: 67, 68]", "isCorrect": true},
+              {"answerText": "Image classification", "isCorrect": false},
+              {"answerText": "Dimensionality reduction", "isCorrect": false}
+            ],
+            "explanation": "Employee Attrition Prediction using HR datasets was listed as an application[cite: 67, 68]."
+          }
+        ]
+      },
+      {
+        "algorithm": "Support Vector Machines (SVM)",
+        "questions": [
+          {
+            "questionText": "What is the primary goal of SVM in classification[cite: 161]?",
+            "answerOptions": [
+              {"answerText": "To find the centroid of data clusters", "isCorrect": false},
+              {"answerText": "To model the probability distribution of classes", "isCorrect": false},
+              {"answerText": "To construct an optimal hyperplane separating classes [cite: 162, 165]", "isCorrect": true},
+              {"answerText": "To reduce the number of features", "isCorrect": false}
+            ],
+            "explanation": "SVM constructs a hyperplane in multidimensional space to separate different classes[cite: 161, 162, 165]."
+          },
+           {
+            "questionText": "What kind of dataset characteristics make SVM a suitable choice, especially considering its use of kernels?",
+            "answerOptions": [
+              {"answerText": "Low-dimensional datasets where classes overlap significantly", "isCorrect": false},
+              {"answerText": "High-dimensional datasets, and data that may not be linearly separable [cite: 161, 204, 206]", "isCorrect": true},
+              {"answerText": "Unlabeled datasets requiring cluster analysis", "isCorrect": false},
+              {"answerText": "Datasets where feature independence is crucial", "isCorrect": false}
+            ],
+            "explanation": "SVM works well in high dimensions [cite: 161] and can handle non-linearly separable data via the kernel trick[cite: 204, 206]."
+          },
+          {
+            "questionText": "What are 'support vectors' in SVM[cite: 180]?",
+            "answerOptions": [
+              {"answerText": "All data points used for training", "isCorrect": false},
+              {"answerText": "Misclassified data points", "isCorrect": false},
+              {"answerText": "The data points closest to the hyperplane [cite: 181]", "isCorrect": true},
+              {"answerText": "The data points farthest from the hyperplane", "isCorrect": false}
+            ],
+            "explanation": "Support vectors are the data points which are closest to the hyperplane and define the separating line by calculating margins[cite: 180, 181]."
+          },
+          {
+            "questionText": "What technique allows SVMs to handle non-linearly separable data[cite: 204]?",
+            "answerOptions": [
+              {"answerText": "Feature scaling", "isCorrect": false},
+              {"answerText": "The Kernel trick [cite: 205]", "isCorrect": true},
+              {"answerText": "Naive Bayes assumption", "isCorrect": false},
+              {"answerText": "Dimensionality reduction via PCA", "isCorrect": false}
+            ],
+            "explanation": "The kernel trick enables SVMs to handle non-linearly separable data by transforming it into a higher-dimensional space[cite: 204, 205]."
+          },
+          {
+            "questionText": "Which kernel function is mentioned as the 'most common' and should usually be tried first[cite: 208]?",
+            "answerOptions": [
+              {"answerText": "Polynomial", "isCorrect": false},
+              {"answerText": "Gaussian (RBF)", "isCorrect": false},
+              {"answerText": "Sigmoid", "isCorrect": false},
+              {"answerText": "Linear", "isCorrect": true}
+            ],
+            "explanation": "The slides mention linear as the most common kernel, advising to always try linear first[cite: 208]."
+          },
+          {
+            "questionText": "What is the 'One-vs-One' (OvO) strategy used for in SVM[cite: 188]?",
+            "answerOptions": [
+              {"answerText": "Optimizing the margin size", "isCorrect": false},
+              {"answerText": "Handling datasets with only one feature", "isCorrect": false},
+              {"answerText": "Extending binary SVM to multi-class problems by training a classifier for each pair of classes [cite: 189]", "isCorrect": true},
+              {"answerText": "Selecting the best kernel automatically", "isCorrect": false}
+            ],
+            "explanation": "OvO is a method for multi-class classification where n(n-1)/2 binary classifiers are trained, each distinguishing a pair of classes[cite: 188, 189]."
+          },
+          {
+            "questionText": "Which application was mentioned for SVM in the lecture slides[cite: 159]?",
+            "answerOptions": [
+              {"answerText": "Predicting continuous temperature values", "isCorrect": false},
+              {"answerText": "Dimensionality reduction", "isCorrect": false},
+              {"answerText": "Bioinformatics (e.g., gene classification) [cite: 167]", "isCorrect": true},
+              {"answerText": "Customer segmentation based on centroids", "isCorrect": false}
+            ],
+            "explanation": "Bioinformatics (gene classification, identifying biological problems) is listed as an application for SVMs[cite: 167]."
+          }
+        ]
+      },
+      {
+        "algorithm": "Regression Analysis",
+        "questions": [
+          {
+            "questionText": "What is the primary goal of Regression Analysis as described in the slides[cite: 109]?",
+            "answerOptions": [
+              {"answerText": "To group similar data points together", "isCorrect": false},
+              {"answerText": "To predict a new target value using feature values [cite: 110]", "isCorrect": true},
+              {"answerText": "To reduce the number of features", "isCorrect": false},
+              {"answerText": "To find the optimal separating hyperplane", "isCorrect": false}
+            ],
+            "explanation": "Regression is a supervised algorithm that allows you to predict a new target value using feature values[cite: 109, 110]."
+          },
+          {
+            "questionText": "What kind of dataset is suitable for standard Linear or Polynomial Regression?",
+            "answerOptions": [
+              {"answerText": "Unlabeled data requiring cluster identification", "isCorrect": false},
+              {"answerText": "Labeled data where the target variable is categorical (e.g., Yes/No)", "isCorrect": false},
+              {"answerText": "Labeled data where the target variable is continuous/numerical [cite: 109]", "isCorrect": true},
+              {"answerText": "High-dimensional data requiring feature reduction before modeling", "isCorrect": false}
+            ],
+            "explanation": "Linear and Polynomial Regression are used to predict continuous target values based on features[cite: 109]."
+          },
+           {
+            "questionText": "What kind of dataset is suitable for Logistic Regression?",
+            "answerOptions": [
+              {"answerText": "Datasets requiring prediction of a continuous value (e.g., house price)", "isCorrect": false},
+              {"answerText": "Labeled data where the target variable is categorical (usually binary, e.g., Yes/No, 0/1) [cite: 146, 156]", "isCorrect": true},
+              {"answerText": "Unlabeled datasets used for dimensionality reduction", "isCorrect": false},
+              {"answerText": "Time series data for forecasting future values", "isCorrect": false}
+            ],
+            "explanation": "Logistic Regression is a classification algorithm used when the target is categorical, often binary[cite: 146]. The slides explicitly mention using it when data is binary (0/1, True/False, Yes/No)[cite: 156]."
+          },
+          {
+            "questionText": "What does the R-squared (Coefficient of Determination) value indicate about a regression model[cite: 122]?",
+            "answerOptions": [
+              {"answerText": "The average error of predictions", "isCorrect": false},
+              {"answerText": "The number of features used", "isCorrect": false},
+              {"answerText": "How strong the linear relationship is / goodness of fit [cite: 123, 125]", "isCorrect": true},
+              {"answerText": "Whether the relationship is linear or non-linear", "isCorrect": false}
+            ],
+            "explanation": "R² tells you how strong of a linear relationship there is [cite: 122] and indicates the goodness of fit for the model[cite: 125]."
+          },
+          {
+            "questionText": "When would you typically use Polynomial Regression instead of Linear Regression[cite: 127]?",
+            "answerOptions": [
+              {"answerText": "When the target variable is categorical", "isCorrect": false},
+              {"answerText": "When the relationship between independent and dependent variables is non-linear (curved) [cite: 129]", "isCorrect": true},
+              {"answerText": "When there are many independent variables", "isCorrect": false},
+              {"answerText": "When the dataset is very large", "isCorrect": false}
+            ],
+            "explanation": "Polynomial Regression models the relationship using a polynomial function, operating on a non-linear curve[cite: 129], suitable when linear models don't fit."
+          },
+          {
+            "questionText": "Which type of regression involves modeling the relationship between two or more independent variables and one dependent variable using a linear equation[cite: 126]?",
+            "answerOptions": [
+              {"answerText": "Polynomial Regression", "isCorrect": false},
+              {"answerText": "Logistic Regression", "isCorrect": false},
+              {"answerText": "Multivariate Regression", "isCorrect": true},
+              {"answerText": "Simple Linear Regression", "isCorrect": false}
+            ],
+            "explanation": "Multivariate Regression involves linear relationships between two or more independent variables and one dependent variable[cite: 126]."
+          }
+        ]
+      },
+      {
+        "algorithm": "Decision Tree / Random Forest",
+        "questions": [
+          {
+            "questionText": "What type of dataset is commonly used with Decision Trees and Random Forests?",
+            "answerOptions": [
+              {"answerText": "Unlabeled image data", "isCorrect": false},
+              {"answerText": "Time series data for forecasting", "isCorrect": false},
+              {"answerText": "Structured, tabular data with a mix of numerical and categorical features", "isCorrect": true},
+              {"answerText": "High-dimensional data requiring kernel transformations", "isCorrect": false}
+            ],
+            "explanation": "Decision Trees and Random Forests work well with standard tabular datasets containing various feature types, used for classification or regression (Based on user JSON examples)."
+          },
+           {
+            "questionText": "What is the main advantage of Random Forest over a single Decision Tree, according to the JSON example?",
+            "answerOptions": [
+              {"answerText": "Higher interpretability", "isCorrect": false},
+              {"answerText": "Faster training time", "isCorrect": false},
+              {"answerText": "Reduced overfitting", "isCorrect": true},
+              {"answerText": "Requires less data", "isCorrect": false}
+            ],
+            "explanation": "Random Forest reduces overfitting by averaging multiple decision trees, making the model more robust (Based on user JSON)."
+          },
+          {
+            "questionText": "What measure is commonly used in decision trees (mentioned in JSON) to evaluate the quality of a split?",
+            "answerOptions": [
+              {"answerText": "Mean Squared Error", "isCorrect": false},
+              {"answerText": "R-squared", "isCorrect": false},
+              {"answerText": "Gini Impurity", "isCorrect": true},
+              {"answerText": "Accuracy Score", "isCorrect": false}
+            ],
+            "explanation": "Gini impurity is commonly used to measure the quality of a split in decision trees (Based on user JSON)."
+          },
+          {
+            "questionText": "What technique involves using bootstrap sampling and random feature selection at each split to create diverse trees in a Random Forest?",
+            "answerOptions": [
+              {"answerText": "Pruning", "isCorrect": false},
+              {"answerText": "Kernel Trick", "isCorrect": false},
+              {"answerText": "Bagging (Bootstrap Aggregating)", "isCorrect": true},
+              {"answerText": "Gradient Boosting", "isCorrect": false}
+            ],
+            "explanation": "Random Forest uses bootstrap sampling and random feature selection; this technique is also known as bagging (Based on user JSON)."
+          },
+          {
+            "questionText": "What does the 'min_samples_leaf' parameter control in a decision tree?",
+            "answerOptions": [
+              {"answerText": "The minimum number of samples required to be at a leaf node", "isCorrect": true},
+              {"answerText": "The minimum number of features considered for a split", "isCorrect": false},
+              {"answerText": "The maximum depth of the tree", "isCorrect": false},
+              {"answerText": "The criterion used for splitting (Gini/Entropy)", "isCorrect": false}
+            ],
+            "explanation": "The 'min_samples_leaf' parameter specifies the minimum number of samples required to be present at a terminal node (leaf) (Based on user JSON)."
+          },
+          {
+            "questionText": "What is 'overfitting' in the context of decision trees?",
+            "answerOptions": [
+              {"answerText": "When the tree is too simple to capture the data pattern", "isCorrect": false},
+              {"answerText": "When the tree fits the training data perfectly, including noise, but performs poorly on new data", "isCorrect": true},
+              {"answerText": "When the tree uses only one feature for all splits", "isCorrect": false},
+              {"answerText": "When the tree's predictions are consistently biased", "isCorrect": false}
+            ],
+            "explanation": "Overfitting occurs when the tree learns the training data too well, including noise, leading to poor generalization on unseen data (Based on user JSON)."
+          }
+        ]
+      },
+      {
+        "algorithm": "Principal Component Analysis (PCA)",
+        "questions": [
+          {
+            "questionText": "What is the primary goal of Principal Component Analysis (PCA)[cite: 73]?",
+            "answerOptions": [
+              {"answerText": "To classify data into distinct groups", "isCorrect": false},
+              {"answerText": "To predict a continuous target variable", "isCorrect": false},
+              {"answerText": "To reduce the dimensionality of data while retaining variance [cite: 72]", "isCorrect": true},
+              {"answerText": "To find the optimal hyperplane between classes", "isCorrect": false}
+            ],
+            "explanation": "PCA is a data dimension-reduction technique where the goal is to explain most of the variability with fewer variables[cite: 72, 73]."
+          },
+           {
+            "questionText": "What kind of dataset is PCA most suitable for?",
+            "answerOptions": [
+              {"answerText": "Datasets with primarily categorical features", "isCorrect": false},
+              {"answerText": "Datasets with many numerical features, especially if they are correlated [cite: 71]", "isCorrect": true},
+              {"answerText": "Small datasets with very few features", "isCorrect": false},
+              {"answerText": "Datasets where the target variable is binary", "isCorrect": false}
+            ],
+            "explanation": "PCA is used for dimensionality reduction on datasets with many numerical features, particularly when features exhibit correlation[cite: 71]."
+          },
+          {
+            "questionText": "What do the principal components generated by PCA represent[cite: 75]?",
+            "answerOptions": [
+              {"answerText": "Random samples from the dataset", "isCorrect": false},
+              {"answerText": "Clusters of similar data points", "isCorrect": false},
+              {"answerText": "New variables capturing directions of maximum variance in the data [cite: 76]", "isCorrect": true},
+              {"answerText": "Specific features selected from the original dataset", "isCorrect": false}
+            ],
+            "explanation": "Principal components have direction representing axes where data has most variance, and magnitude signifying the amount of variance captured[cite: 75, 76]."
+          },
+          {
+            "questionText": "Is PCA a supervised or unsupervised technique?",
+            "answerOptions": [
+              {"answerText": "Supervised", "isCorrect": false},
+              {"answerText": "Unsupervised", "isCorrect": true},
+              {"answerText": "Semi-Supervised", "isCorrect": false},
+              {"answerText": "Reinforcement", "isCorrect": false}
+            ],
+            "explanation": "PCA works on the features without using target labels, making it an unsupervised technique focused on data structure (variance)."
+          },
+          {
+            "questionText": "According to the slides, why doesn't PCA automatically determine the 'best' number of components[cite: 94]?",
+            "answerOptions": [
+              {"answerText": "It depends on whether the data is linear or non-linear", "isCorrect": false},
+              {"answerText": "It requires knowing the true class labels", "isCorrect": false},
+              {"answerText": "The choice involves trade-offs (variance explained vs. complexity) and domain knowledge [cite: 95, 96, 97]", "isCorrect": true},
+              {"answerText": "The algorithm can only create 2 or 3 components", "isCorrect": false}
+            ],
+            "explanation": "Reasons include specific variance thresholds needed[cite: 94], domain knowledge influencing choice[cite: 95, 96], and balancing computational efficiency[cite: 97]."
+          },
+          {
+            "questionText": "Which of these was mentioned as an application where PCA could be used for dimensionality reduction[cite: 71]?",
+            "answerOptions": [
+              {"answerText": "Predicting exact customer purchase amount", "isCorrect": false},
+              {"answerText": "Classifying emails as spam or not spam directly", "isCorrect": false},
+              {"answerText": "Simplifying product quality measurements in manufacturing [cite: 85, 86]", "isCorrect": true},
+              {"answerText": "Calculating the probability of loan default", "isCorrect": false}
+            ],
+            "explanation": "Product Quality Control, reducing dozens of measurements to key components indicative of quality, was listed as an example[cite: 85, 86]."
+          }
+        ]
+      }
+    ]
+  }
