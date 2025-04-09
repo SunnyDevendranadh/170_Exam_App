@@ -23,7 +23,14 @@ import cumulativeData from "./data/cumilative.json";
 import cumulativeData2 from "./data/cumilative_2.json";
 
 // Import concept guides
-import { conceptGuides } from "./data/conceptGuides";
+import {
+  naiveBayesConcepts,
+  svmConcepts,
+  regressionConcepts,
+  decisionTreeConcepts,
+  knnConcepts,
+  pcaConcepts,
+} from "./data/concepts";
 
 // Import shadcn/ui components
 import { Button } from "./components/ui/button";
@@ -456,7 +463,21 @@ const App: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <ConceptGuide
               topicTitle={topicData[selectedTopic].title}
-              concepts={conceptGuides[selectedTopic]}
+              concepts={
+                selectedTopic === "naiveBayes"
+                  ? naiveBayesConcepts
+                  : selectedTopic === "svm"
+                  ? svmConcepts
+                  : selectedTopic === "regression"
+                  ? regressionConcepts
+                  : selectedTopic === "decisionTree"
+                  ? decisionTreeConcepts
+                  : selectedTopic === "knn"
+                  ? knnConcepts
+                  : selectedTopic === "pca"
+                  ? pcaConcepts
+                  : []
+              }
               onBack={handleBack}
             />
           </div>
