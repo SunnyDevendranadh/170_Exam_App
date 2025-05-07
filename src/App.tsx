@@ -10,6 +10,7 @@ import svmData from "./data/svm.json";
 import pcaData from "./data/pca.json";
 import regressionData from "./data/regression.json";
 import danceData from "./data/dance_quiz.json";
+import agenticAIData from "./data/agentic_ai.json";
 
 // Import JSON data for Quiz 2
 import decisionTreeData2 from "./data/quiz_2/decisiontree2.json";
@@ -18,6 +19,7 @@ import naiveBayesData2 from "./data/quiz_2/naiveBayes2.json";
 import svmData2 from "./data/quiz_2/svm2.json";
 import pcaData2 from "./data/quiz_2/pca2.json";
 import regressionData2 from "./data/quiz_2/regression2.json";
+import agenticAIData2 from "./data/quiz_2/agenticai2.json";
 
 // Import cumilative quiz data
 import cumulativeData from "./data/cumilative.json";
@@ -87,7 +89,8 @@ type TopicKey =
   | "svm"
   | "pca"
   | "regression"
-  | "dance";
+  | "dance"
+  | "agenticAI";
 
 type ViewMode =
   | "topics"
@@ -127,6 +130,10 @@ const topicIcons: Record<TopicKey, { icon: string; description: string }> = {
   dance: {
     icon: "💃",
     description: "Explore Dance Philosophies and Analysis",
+  },
+  agenticAI: {
+    icon: "🤖",
+    description: "Understand Agentic AI and its applications",
   },
 };
 
@@ -174,6 +181,11 @@ const topicData: Record<TopicKey, TopicInfo> = {
     title: "Dance Philosophies & Analysis",
     data: danceData as unknown as RawTopicJsonData,
     data2: danceData as unknown as RawTopicJsonData, // Using same data for both sets since it's a final exam
+  },
+  agenticAI: {
+    title: "Agentic AI",
+    data: agenticAIData as unknown as RawTopicJsonData,
+    data2: agenticAIData2 as unknown as RawTopicJsonData,
   },
 };
 
