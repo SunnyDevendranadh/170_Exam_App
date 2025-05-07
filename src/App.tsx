@@ -33,6 +33,7 @@ import {
   decisionTreeConcepts,
   knnConcepts,
   pcaConcepts,
+  agenticAIConcepts
 } from "./data/concepts";
 
 // Import shadcn/ui components
@@ -499,7 +500,7 @@ const App: React.FC = () => {
                   ? knnConcepts
                   : selectedTopic === "pca"
                   ? pcaConcepts
-                  : []
+                  : agenticAIConcepts
               }
               onBack={handleBack}
             />

@@ -330,4 +330,108 @@ export const pcaConcepts: Concept[] = [
       "Evaluation: explained_variance_ratio_"
     ]
   }
+];
+
+export const agenticAIConcepts: Concept[] = [
+  {
+    title: "Definition & Core Concept",
+    description: [
+      "Agentic AI refers to autonomous software systems that interact with data and tools, make decisions, and perform tasks with minimal human intervention",
+      "Unlike traditional AI, these agents are goal-oriented, capable of creating and executing multi-step plans independently",
+      "Can adapt to changing environments and evolve strategies as needed"
+    ]
+  },
+  {
+    title: "Key Components",
+    description: [
+      "Autonomy: Acts independently with minimal human supervision",
+      "Goal-Oriented Behavior: Analyzes data, sets objectives, plans multi-step processes",
+      "Tool Use: Interacts with APIs, software, and other digital tools",
+      "Memory: Uses temporary or persistent storage for relevant information",
+      "Adaptability: Adjusts approach as conditions change"
+    ]
+  },
+  {
+    title: "Building Blocks",
+    description: [
+      "Brain (AI Model): LLMs like ChatGPT, Claude, or Llama",
+      "Tools: APIs, software functions (send emails, search, analyze)",
+      "Memory: Context retention (short or long-term)",
+      "Interface: Connects user and agent (web app, chat interface)",
+      "Model Context Protocol (MCP): Enables agent function and interaction"
+    ]
+  },
+  {
+    title: "Vs. Traditional AI",
+    description: [
+      "Structure: Traditional AI uses fixed, rule-based workflows; Agentic AI uses dynamic planning and adaptation",
+      "Human Involvement: Traditional AI needs frequent supervision; Agentic AI requires minimal intervention",
+      "Task Complexity: Traditional AI handles simple, repetitive tasks; Agentic AI manages complex, multi-step, open-ended tasks",
+      "Behavior: Traditional AI is reactive and follows scripts; Agentic AI is proactive and creates plans"
+    ]
+  },
+  {
+    title: "How Agentic AI Works",
+    description: [
+      "Understanding Your Request: Interprets instructions",
+      "Thinking and Planning: Creates step-by-step plans",
+      "Taking Action: Executes plan by interacting with apps/systems"
+    ]
+  },
+  {
+    title: "Common Design Patterns",
+    description: [
+      "Prompt Chaining: Decomposes tasks into sequential LLM calls",
+      "Routing: Directs inputs to specialized processes or models",
+      "Parallelization: Runs subtasks simultaneously",
+      "Orchestrator-Workers: Central agent delegates to worker agents",
+      "Evaluator-Optimizer: Iterative loop where one agent generates and another evaluates"
+    ]
+  },
+  {
+    title: "Building an AI Agent",
+    description: [
+      "Define Role and Goal: Specify agent's purpose",
+      "Choose an LLM: Select appropriate model",
+      "Design Interface: Connect user to agent",
+      "Specify Tools: Define APIs/functions the agent can access",
+      "Craft Prompts: Create clear instructions",
+      "Implement Feedback Loops: Allow verification of actions",
+      "Test and Iterate: Continuously evaluate performance"
+    ]
+  },
+  {
+    title: "Best Practices",
+    description: [
+      "Simplicity: Start simple; add complexity only when necessary",
+      "Transparency: Make planning and decision-making visible",
+      "Documentation and Testing: Document tools and interfaces, test rigorously",
+      "Empathize with the Model: Design from the LLM's perspective"
+    ]
+  },
+  {
+    title: "Market and Impact",
+    description: [
+      "Market Growth: Projected to reach $216.8 billion by 2035 for multi-agent systems",
+      "Government Market: Forecasted at $47.6 billion by 2034 (41.7% CAGR)",
+      "Major Vendors: OpenAI, Anthropic, Microsoft, Meta, Google, AWS, Nvidia, Hugging Face"
+    ]
+  },
+  {
+    title: "Job Automation Impact",
+    description: [
+      "At-Risk Roles: Data analysts, junior developers, content creators, research assistants",
+      "Agent Pricing: $2,000/month (basic worker) to $20,000/month (PhD-level researcher)",
+      "Job Security: Focus on creativity, judgment, and human connection"
+    ]
+  },
+  {
+    title: "Benefits",
+    description: [
+      "Saves Time: Automates repetitive and complex tasks",
+      "Boosts Productivity: Works 24/7, handles multiple tasks simultaneously",
+      "Increases Efficiency: Connects apps, manages data independently",
+      "Always Available: Ready to assist anytime"
+    ]
+  }
 ]; 
