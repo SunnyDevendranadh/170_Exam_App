@@ -9,6 +9,7 @@ import naiveBayesData from "./data/naiveBayes.json";
 import svmData from "./data/svm.json";
 import pcaData from "./data/pca.json";
 import regressionData from "./data/regression.json";
+import danceData from "./data/dance_quiz.json";
 
 // Import JSON data for Quiz 2
 import decisionTreeData2 from "./data/quiz_2/decisiontree2.json";
@@ -85,7 +86,8 @@ type TopicKey =
   | "naiveBayes"
   | "svm"
   | "pca"
-  | "regression";
+  | "regression"
+  | "dance";
 
 type ViewMode =
   | "topics"
@@ -121,6 +123,10 @@ const topicIcons: Record<TopicKey, { icon: string; description: string }> = {
   regression: {
     icon: "📈",
     description: "Master various regression techniques",
+  },
+  dance: {
+    icon: "💃",
+    description: "Explore Dance Philosophies and Analysis",
   },
 };
 
@@ -163,6 +169,11 @@ const topicData: Record<TopicKey, TopicInfo> = {
     title: "Regression Models",
     data: regressionData as unknown as RawTopicJsonData,
     data2: regressionData2 as unknown as RawTopicJsonData,
+  },
+  dance: {
+    title: "Dance Philosophies & Analysis",
+    data: danceData as unknown as RawTopicJsonData,
+    data2: danceData as unknown as RawTopicJsonData, // Using same data for both sets since it's a final exam
   },
 };
 

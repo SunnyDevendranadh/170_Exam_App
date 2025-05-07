@@ -1,0 +1,1104 @@
+{
+  "questions": [
+    {
+      "questionText": "What is the primary value or purpose of the classical dance philosophy?",
+      "answerOptions": [
+        {
+          "answerText": "Emotional expression and personal narrative",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Form, structure, and technical precision",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Movement for movement's sake without narrative",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Connection to community and polyrhythmic movement",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Classical dance philosophy emphasizes form, structure, and technical precision, focusing on codified movements and aesthetic beauty."
+    },
+    {
+      "questionText": "Which choreographer is most closely associated with the classical dance philosophy?",
+      "answerOptions": [
+        {
+          "answerText": "Martha Graham",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Merce Cunningham",
+          "isCorrect": false
+        },
+        {
+          "answerText": "George Balanchine",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Katherine Dunham",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "George Balanchine is the most prominent figure associated with classical dance philosophy, known for his neoclassical ballet works."
+    },
+    {
+      "questionText": "What is the primary value or purpose of the expressionist dance philosophy?",
+      "answerOptions": [
+        {
+          "answerText": "Emotional expression and personal narrative",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Form, structure, and technical precision",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Movement for movement's sake without narrative",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Connection to community and polyrhythmic movement",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Expressionist dance philosophy focuses on emotional expression and personal narrative, using movement to convey psychological and emotional states."
+    },
+    {
+      "questionText": "Which choreographer is most closely associated with the expressionist dance philosophy?",
+      "answerOptions": [
+        {
+          "answerText": "Martha Graham",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Merce Cunningham",
+          "isCorrect": false
+        },
+        {
+          "answerText": "George Balanchine",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Katherine Dunham",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Martha Graham is the key figure in expressionist dance, known for her focus on emotional expression and psychological themes."
+    },
+    {
+      "questionText": "What is the primary value or purpose of the objectivist dance philosophy?",
+      "answerOptions": [
+        {
+          "answerText": "Emotional expression and personal narrative",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Form, structure, and technical precision",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Movement for movement's sake without narrative",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Connection to community and polyrhythmic movement",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Objectivist dance philosophy emphasizes movement for movement's sake, focusing on the physical properties and mechanics of dance."
+    },
+    {
+      "questionText": "Which choreographer is most closely associated with the objectivist dance philosophy?",
+      "answerOptions": [
+        {
+          "answerText": "Martha Graham",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Merce Cunningham",
+          "isCorrect": true
+        },
+        {
+          "answerText": "George Balanchine",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Katherine Dunham",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Merce Cunningham is the leading figure in objectivist dance, known for his focus on pure movement and chance operations."
+    },
+    {
+      "questionText": "What is the primary value or purpose of the Africanist dance philosophy?",
+      "answerOptions": [
+        {
+          "answerText": "Emotional expression and personal narrative",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Form, structure, and technical precision",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Movement for movement's sake without narrative",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Connection to community and polyrhythmic movement",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Africanist dance philosophy emphasizes connection to community and polyrhythmic movement, incorporating traditional rhythms and social functions."
+    },
+    {
+      "questionText": "Which choreographer is most closely associated with the Africanist dance philosophy?",
+      "answerOptions": [
+        {
+          "answerText": "Martha Graham",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Merce Cunningham",
+          "isCorrect": false
+        },
+        {
+          "answerText": "George Balanchine",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Katherine Dunham",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Katherine Dunham is a key figure in Africanist dance, known for her research and incorporation of African and Caribbean movement traditions."
+    },
+    {
+      "questionText": "Which of the following is a key feature of the Africanist dance philosophy?",
+      "answerOptions": [
+        {
+          "answerText": "Narrative-driven emotional expression",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Torso articulation and polyrhythmic movement",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Chance operations and rejection of narrative",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Ballet-influenced technical precision",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Africanist dance philosophy is characterized by torso articulation and polyrhythmic movement, emphasizing full-body expression."
+    },
+    {
+      "questionText": "What technique is characterized by 'contract and release' movements?",
+      "answerOptions": [
+        {
+          "answerText": "Balanchine's classical technique",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Cunningham's objectivist technique",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Graham's expressionist technique",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Dunham's Africanist technique",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Graham's expressionist technique is known for its 'contract and release' movements, derived from natural breathing patterns."
+    },
+    {
+      "questionText": "Which dance philosophy is characterized by emotionally ambiguous, non-narrative choreography?",
+      "answerOptions": [
+        {
+          "answerText": "Classical",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Expressionist",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Objectivist",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Africanist",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Objectivist dance philosophy is characterized by emotionally ambiguous, non-narrative choreography, focusing on pure movement."
+    },
+    {
+      "questionText": "George Balanchine's 'Black and White Heaven' philosophy focused on:",
+      "answerOptions": [
+        {
+          "answerText": "Emotional expression through movement",
+          "isCorrect": false
+        },
+        {
+          "answerText": "All dancers rather than just principals",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Chance operations and aleatory technique",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Connecting dance to socio-cultural contexts",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Balanchine's 'Black and White Heaven' philosophy emphasized the importance of all dancers in the ensemble, not just principal dancers."
+    },
+    {
+      "questionText": "Which dance philosophy places emphasis on rapid footwork and verticality?",
+      "answerOptions": [
+        {
+          "answerText": "Classical (Balanchine)",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Expressionist (Graham)",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Objectivist (Cunningham)",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Africanist (Dunham)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Cunningham's objectivist philosophy emphasizes rapid footwork and verticality, focusing on pure movement qualities."
+    },
+    {
+      "questionText": "In Susan Foster's analysis, which dance philosophy emphasizes the form and structure of movement?",
+      "answerOptions": [
+        {
+          "answerText": "Classical",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Expressionist",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Objectivist",
+          "isCorrect": false
+        },
+        {
+          "answerText": "All of the above",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "In Foster's analysis, classical dance philosophy emphasizes the form and structure of movement, particularly in Balanchine's work."
+    },
+    {
+      "questionText": "Which value is most important in Africanist dance philosophy according to Brenda Dixon Gottschild?",
+      "answerOptions": [
+        {
+          "answerText": "Technical precision",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Narrative storytelling",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Connection to community",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Physical virtuosity",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to Gottschild, connection to community is a fundamental value in Africanist dance philosophy."
+    },
+    {
+      "questionText": "According to Susan Foster's framework in 'Reading Dancing,' which of the following is NOT one of her main 'points of comparison' for analyzing dance?",
+      "answerOptions": [
+        {
+          "answerText": "Frames",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Modes of representation",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Vocabulary",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Historical context",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Historical context is not one of Foster's main points of comparison in her framework for analyzing dance."
+    },
+    {
+      "questionText": "How does Susan Foster characterize Balanchine's creative process?",
+      "answerOptions": [
+        {
+          "answerText": "Focused on emotional narrative and psychological depth",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Like light through a prism, refracting music into dance",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Based on chance operations and aleatory techniques",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Driven by social and political commentary",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Foster characterizes Balanchine's creative process as being like light through a prism, transforming music into dance."
+    },
+    {
+      "questionText": "In Susan Foster's analysis, Martha Graham's creative process is primarily:",
+      "answerOptions": [
+        {
+          "answerText": "Based on mathematical formulas and geometric patterns",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Centered on contract and release movements derived from natural breathing",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Determined by coin tosses and chance operations",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Collaborative with dancers developing their own movements",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Foster describes Graham's creative process as being centered on contract and release movements derived from natural breathing patterns."
+    },
+    {
+      "questionText": "According to Foster, what is a distinctive feature of Merce Cunningham's creative process?",
+      "answerOptions": [
+        {
+          "answerText": "Emotional storytelling through movement",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Use of chance operations to determine choreographic elements",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Classical ballet vocabulary with technical precision",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Focus on group formations and symmetrical patterns",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Foster identifies Cunningham's use of chance operations as a distinctive feature of his creative process."
+    },
+    {
+      "questionText": "In Foster's framework, Deborah Hay's creative process involves:",
+      "answerOptions": [
+        {
+          "answerText": "Strict adherence to classical ballet technique",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Using mind and imagination to subvert mind and ego",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Creating dramatic narratives through movement",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Emphasizing technical virtuosity above all else",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Foster describes Hay's creative process as using mind and imagination to subvert mind and ego."
+    },
+    {
+      "questionText": "According to Foster's analysis, how does Balanchine's work view the relationship between dance and life?",
+      "answerOptions": [
+        {
+          "answerText": "Dance is an escape from life's struggles",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Dance is separate from life, an idealized form",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Dance directly represents life's everyday experiences",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Dance is a political tool to change society",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Foster's analysis suggests that Balanchine viewed dance as separate from life, an idealized form."
+    },
+    {
+      "questionText": "In Foster's analysis, Graham's approach to the relationship between dance and life is:",
+      "answerOptions": [
+        {
+          "answerText": "Dance and life are completely separate",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Dance mirrors the internal emotional landscape of life",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Dance is purely formalist with no connection to life",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Dance is only about physical virtuosity",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Foster describes Graham's approach as viewing dance as mirroring the internal emotional landscape of life."
+    },
+    {
+      "questionText": "According to Foster, what is a primary requirement for dancers in Balanchine's work?",
+      "answerOptions": [
+        {
+          "answerText": "Strong emotional expressiveness",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Specific body type with long limbs and short torso",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Ability to improvise in the moment",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Extensive training in West African dance techniques",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Foster identifies a specific body type with long limbs and short torso as a primary requirement for Balanchine's dancers."
+    },
+    {
+      "questionText": "What does Foster identify as a key requirement for dancers in Graham's work?",
+      "answerOptions": [
+        {
+          "answerText": "The ability to show emotional depth and commitment",
+          "isCorrect": false
+        },
+        {
+          "answerText": "A specific body type with particular proportions",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Training in chance operations and aleatory methods",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Experience with polyrhythmic movement",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Foster identifies the ability to show emotional depth and commitment as a key requirement for Graham's dancers."
+    },
+    {
+      "questionText": "According to Foster, what quality is most important for dancers in Cunningham's work?",
+      "answerOptions": [
+        {
+          "answerText": "Emotional expressiveness",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Technical precision with rapid footwork",
+          "isCorrect": true
+        },
+        {
+          "answerText": "The ability to tell stories through movement",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Extensive ballet training only",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Foster emphasizes technical precision with rapid footwork as the most important quality for Cunningham's dancers."
+    },
+    {
+      "questionText": "What is a key characteristic of Trisha Brown's 'Equipment Dances' from the early 1970s?",
+      "answerOptions": [
+        {
+          "answerText": "They were performed to classical music",
+          "isCorrect": false
+        },
+        {
+          "answerText": "They used everyday objects and architectural structures",
+          "isCorrect": true
+        },
+        {
+          "answerText": "They featured elaborate costumes and set designs",
+          "isCorrect": false
+        },
+        {
+          "answerText": "They told emotional stories about relationships",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Brown's 'Equipment Dances' were notable for their use of everyday objects and architectural structures."
+    },
+    {
+      "questionText": "What technique did Lin Hwai-min blend with modern dance in his work with Cloud Gate Dance Theatre?",
+      "answerOptions": [
+        {
+          "answerText": "Classical ballet",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Tai chi, qigong, and meditation",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Jazz dance",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Hip-hop",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Lin Hwai-min blended tai chi, qigong, and meditation with modern dance in his work with Cloud Gate Dance Theatre."
+    },
+    {
+      "questionText": "What is the structure of Sasha Waltz's 'In C'?",
+      "answerOptions": [
+        {
+          "answerText": "A traditional narrative ballet with clear characters",
+          "isCorrect": false
+        },
+        {
+          "answerText": "A structured improvisation with 53 choreographic figures",
+          "isCorrect": true
+        },
+        {
+          "answerText": "A solo performance with multimedia elements",
+          "isCorrect": false
+        },
+        {
+          "answerText": "A dance film shot underwater",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Waltz's 'In C' is structured as a structured improvisation with 53 choreographic figures."
+    },
+    {
+      "questionText": "What social themes did Eleo Pomare address in works like 'Blues for the Jungle' and 'Junkie'?",
+      "answerOptions": [
+        {
+          "answerText": "Environmental conservation",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Civil rights and challenges facing Black communities",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Gender identity",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Classical mythology",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pomare addressed civil rights and challenges facing Black communities in works like 'Blues for the Jungle' and 'Junkie'."
+    },
+    {
+      "questionText": "Who was Gus Solomons Jr. in relation to Merce Cunningham's company?",
+      "answerOptions": [
+        {
+          "answerText": "The composer who created music for Cunningham",
+          "isCorrect": false
+        },
+        {
+          "answerText": "The first Black dancer in Cunningham's company",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Cunningham's primary collaborator in chance operations",
+          "isCorrect": false
+        },
+        {
+          "answerText": "The costume designer for most of Cunningham's works",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Gus Solomons Jr. was the first Black dancer in Cunningham's company."
+    },
+    {
+      "questionText": "What is distinctive about Katherine Dunham's approach to choreography?",
+      "answerOptions": [
+        {
+          "answerText": "She focused exclusively on classical ballet technique",
+          "isCorrect": false
+        },
+        {
+          "answerText": "She developed a research-to-performance method connecting anthropology and dance",
+          "isCorrect": true
+        },
+        {
+          "answerText": "She used chance operations similar to Cunningham",
+          "isCorrect": false
+        },
+        {
+          "answerText": "She avoided all references to cultural traditions",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dunham developed a distinctive research-to-performance method connecting anthropology and dance."
+    },
+    {
+      "questionText": "How did George Balanchine structure his ballet 'Jewels'?",
+      "answerOptions": [
+        {
+          "answerText": "As a traditional narrative ballet telling one continuous story",
+          "isCorrect": false
+        },
+        {
+          "answerText": "As three acts inspired by different gemstones with distinct musical styles",
+          "isCorrect": true
+        },
+        {
+          "answerText": "As a solo showcase for principal dancers only",
+          "isCorrect": false
+        },
+        {
+          "answerText": "As an abstract work using chance operations",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Balanchine structured 'Jewels' as three acts inspired by different gemstones with distinct musical styles."
+    },
+    {
+      "questionText": "What technique is Victor Quijada known for developing?",
+      "answerOptions": [
+        {
+          "answerText": "A fusion of ballet, contemporary, and street dance",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Traditional classical ballet",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Pure Martha Graham technique",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Exclusively West African dance forms",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Quijada is known for developing a fusion technique combining ballet, contemporary, and street dance."
+    },
+    {
+      "questionText": "What is a key characteristic of Martha Graham's 'Lamentation'?",
+      "answerOptions": [
+        {
+          "answerText": "It features a large ensemble of dancers in bright costumes",
+          "isCorrect": false
+        },
+        {
+          "answerText": "It is performed seated inside a stretchy purple fabric",
+          "isCorrect": true
+        },
+        {
+          "answerText": "It uses chance operations to determine the sequence",
+          "isCorrect": false
+        },
+        {
+          "answerText": "It tells a happy, uplifting story",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Graham's 'Lamentation' is performed seated inside a stretchy purple fabric, emphasizing emotional expression through constrained movement."
+    },
+    {
+      "questionText": "What primary movement quality characterizes West African dance traditions?",
+      "answerOptions": [
+        {
+          "answerText": "Rigid torso with movement only in the arms",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Full-body articulation with emphasis on polyrhythm",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Minimal movement performed mainly while seated",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Movement derived exclusively from ballet technique",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "West African dance traditions are characterized by full-body articulation with emphasis on polyrhythm."
+    },
+    {
+      "questionText": "How did Merce Cunningham use technology in creating 'CRWDSPCR'?",
+      "answerOptions": [
+        {
+          "answerText": "He used film projections as part of the performance",
+          "isCorrect": false
+        },
+        {
+          "answerText": "He used a choreographic software called LifeForms",
+          "isCorrect": true
+        },
+        {
+          "answerText": "He incorporated electronic sensors on the dancers",
+          "isCorrect": false
+        },
+        {
+          "answerText": "He avoided all technology in his creative process",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Cunningham used the choreographic software LifeForms in creating 'CRWDSPCR'."
+    },
+    {
+      "questionText": "What is significant about Cunningham's approach to stage space?",
+      "answerOptions": [
+        {
+          "answerText": "He believed the center of the stage was the most important area",
+          "isCorrect": false
+        },
+        {
+          "answerText": "He treated all areas of the stage as equally important",
+          "isCorrect": true
+        },
+        {
+          "answerText": "He only allowed dancers to use the downstage area",
+          "isCorrect": false
+        },
+        {
+          "answerText": "He prohibited dancers from moving across the stage",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Cunningham treated all areas of the stage as equally important, rejecting traditional hierarchies of space."
+    },
+    {
+      "questionText": "What distinguished Katherine Dunham's dance technique from other modern dance approaches?",
+      "answerOptions": [
+        {
+          "answerText": "It excluded all elements of classical ballet",
+          "isCorrect": false
+        },
+        {
+          "answerText": "It incorporated African and Caribbean movement with flexible torso and articulated pelvis",
+          "isCorrect": true
+        },
+        {
+          "answerText": "It was based entirely on chance operations",
+          "isCorrect": false
+        },
+        {
+          "answerText": "It focused exclusively on narrative storytelling",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dunham's technique incorporated African and Caribbean movement with flexible torso and articulated pelvis."
+    },
+    {
+      "questionText": "According to Brenda Dixon Gottschild, which of the following is NOT one of the Africanist aesthetic values?",
+      "answerOptions": [
+        {
+          "answerText": "Coolness",
+          "isCorrect": false
+        },
+        {
+          "answerText": "High-affect juxtaposition",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Minimalist movement",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Polycentrism",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Minimalist movement is not one of the Africanist aesthetic values identified by Gottschild."
+    },
+    {
+      "questionText": "What was the context for Martha Graham's 'Appalachian Spring' (1944)?",
+      "answerOptions": [
+        {
+          "answerText": "It was created as an abstract work with no narrative",
+          "isCorrect": false
+        },
+        {
+          "answerText": "It was commissioned for the Berlin Olympics",
+          "isCorrect": false
+        },
+        {
+          "answerText": "It premiered during World War II depicting American pioneering themes",
+          "isCorrect": true
+        },
+        {
+          "answerText": "It was primarily a solo work without other dancers",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "'Appalachian Spring' premiered during World War II and depicted American pioneering themes."
+    },
+    {
+      "questionText": "What is a defining characteristic of George Balanchine's 'Rubies'?",
+      "answerOptions": [
+        {
+          "answerText": "Slow, meditative movement quality",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Jazzy, energetic movement with angular positions",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Use of chance operations",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Traditional narrative storytelling",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "'Rubies' is characterized by jazzy, energetic movement with angular positions."
+    },
+    {
+      "questionText": "How did Cunningham typically work with music in his choreography?",
+      "answerOptions": [
+        {
+          "answerText": "The music was created first, and the dance followed its structure",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Music and dance were created independently and combined only in performance",
+          "isCorrect": true
+        },
+        {
+          "answerText": "He preferred to choreograph in silence with no music",
+          "isCorrect": false
+        },
+        {
+          "answerText": "His dancers created their own musical accompaniment",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Cunningham typically created music and dance independently, combining them only in performance."
+    },
+    {
+      "questionText": "What technique did Deborah Hay develop that influenced her choreographic approach?",
+      "answerOptions": [
+        {
+          "answerText": "Classical ballet",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Cellular consciousness and perception-based movement",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Graham's contract and release",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Street dance forms",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Hay developed cellular consciousness and perception-based movement as part of her choreographic approach."
+    },
+    {
+      "questionText": "How does Mark Morris's choreographic approach differ from Cunningham's?",
+      "answerOptions": [
+        {
+          "answerText": "Morris typically works closely with music, while Cunningham worked independently of it",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Morris used chance operations, while Cunningham did not",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Morris focused on solo works, while Cunningham only created group pieces",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Morris avoided all classical references, unlike Cunningham",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Morris typically works closely with music, while Cunningham worked independently of it."
+    },
+    {
+      "questionText": "What feature is characteristic of Trisha Brown's 'Accumulations' series?",
+      "answerOptions": [
+        {
+          "answerText": "Elaborate costumes and set designs",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Narrative storytelling with clear characters",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Adding movements in sequence with systematic repetition",
+          "isCorrect": true
+        },
+        {
+          "answerText": "Use of traditional ballet vocabulary",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Brown's 'Accumulations' series is characterized by adding movements in sequence with systematic repetition."
+    },
+    {
+      "questionText": "What is the definition of 'aleatory' in dance composition?",
+      "answerOptions": [
+        {
+          "answerText": "A technique focused on emotional expression",
+          "isCorrect": false
+        },
+        {
+          "answerText": "The use of chance procedures to determine choreographic elements",
+          "isCorrect": true
+        },
+        {
+          "answerText": "A strict adherence to classical ballet vocabulary",
+          "isCorrect": false
+        },
+        {
+          "answerText": "A form of dance notation",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Aleatory in dance composition refers to the use of chance procedures to determine choreographic elements."
+    },
+    {
+      "questionText": "In dance terminology, what does it mean for a dancer to 'articulate' a body part?",
+      "answerOptions": [
+        {
+          "answerText": "To hold it completely still",
+          "isCorrect": false
+        },
+        {
+          "answerText": "To move it with clear definition and intention",
+          "isCorrect": true
+        },
+        {
+          "answerText": "To disguise or hide it from the audience",
+          "isCorrect": false
+        },
+        {
+          "answerText": "To injure it during performance",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "To articulate a body part means to move it with clear definition and intention."
+    },
+    {
+      "questionText": "What defines 'African diaspora' in relation to dance?",
+      "answerOptions": [
+        {
+          "answerText": "Only dances performed in Africa",
+          "isCorrect": false
+        },
+        {
+          "answerText": "Dance forms and traditions that originated in Africa and spread globally",
+          "isCorrect": true
+        },
+        {
+          "answerText": "A specific dance technique created by Katherine Dunham",
+          "isCorrect": false
+        },
+        {
+          "answerText": "A type of dance costume",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "African diaspora in dance refers to dance forms and traditions that originated in Africa and spread globally."
+    },
+    {
+      "questionText": "What is 'vernacular dance' and how does it differ from formal dance traditions?",
+      "answerOptions": [
+        {
+          "answerText": "It develops in everyday settings rather than formal studios",
+          "isCorrect": true
+        },
+        {
+          "answerText": "It can only be performed by professional dancers",
+          "isCorrect": false
+        },
+        {
+          "answerText": "It requires extensive classical training",
+          "isCorrect": false
+        },
+        {
+          "answerText": "It never changes or evolves over time",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Vernacular dance develops in everyday settings rather than formal studios, emerging from social and cultural practices."
+    },
+    {
+      "questionText": "Which of the following best describes the significance of polyrhythm in Africanist dance aesthetics?",
+      "answerOptions": [
+        {
+          "answerText": "It involves dancing to a single, steady rhythm",
+          "isCorrect": false
+        },
+        {
+          "answerText": "It refers to multiple rhythms occurring simultaneously in the body",
+          "isCorrect": true
+        },
+        {
+          "answerText": "It requires complete silence during performance",
+          "isCorrect": false
+        },
+        {
+          "answerText": "It focuses on movement without any rhythmic structure",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Polyrhythm in Africanist dance aesthetics refers to multiple rhythms occurring simultaneously in the body."
+    }
+  ]
+} 
