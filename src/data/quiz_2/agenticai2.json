@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "questionText": "What fundamental capability distinguishes Agentic AI from traditional AI?",
+      "answerOptions": [
+        { "answerText": "The ability to process natural language", "isCorrect": false },
+        { "answerText": "The ability to take autonomous actions", "isCorrect": true },
+        { "answerText": "The ability to generate images", "isCorrect": false },
+        { "answerText": "The ability to train on large datasets", "isCorrect": false }
+      ],
+      "explanation": "The fundamental difference with Agentic AI is its ability to take autonomous actions based on reasoning, rather than simply responding to inputs or generating content."
+    },
+    {
+      "questionText": "What is the 'brain' component of an Agentic AI system typically composed of?",
+      "answerOptions": [
+        { "answerText": "A collection of if-then rules", "isCorrect": false },
+        { "answerText": "A database of past interactions", "isCorrect": false },
+        { "answerText": "A large language model", "isCorrect": true },
+        { "answerText": "A simple neural network", "isCorrect": false }
+      ],
+      "explanation": "The 'brain' component of an Agentic AI system is typically a large language model (LLM) that provides reasoning capabilities and decision-making logic."
+    },
+    {
+      "questionText": "What is the purpose of the 'memory' component in Agentic AI architecture?",
+      "answerOptions": [
+        { "answerText": "To store the agent's codebase", "isCorrect": false },
+        { "answerText": "To save conversations and context across interactions", "isCorrect": true },
+        { "answerText": "To cache API responses", "isCorrect": false },
+        { "answerText": "To store backup copies of the model", "isCorrect": false }
+      ],
+      "explanation": "The memory component stores conversations, context, and task-relevant information, allowing the agent to maintain continuity across multiple interactions and refer to past events."
+    },
+    {
+      "questionText": "Which component enables Agentic AI systems to perform real-world actions?",
+      "answerOptions": [
+        { "answerText": "Tools", "isCorrect": true },
+        { "answerText": "Memory", "isCorrect": false },
+        { "answerText": "LLM", "isCorrect": false },
+        { "answerText": "Planning module", "isCorrect": false }
+      ],
+      "explanation": "Tools are the components that enable Agentic AI systems to interact with the external world by connecting to APIs, databases, services, and other systems."
+    },
+    {
+      "questionText": "What is a key challenge in designing effective Agentic AI tool interfaces?",
+      "answerOptions": [
+        { "answerText": "Making them visually appealing", "isCorrect": false },
+        { "answerText": "Providing clear descriptions the AI can understand", "isCorrect": true },
+        { "answerText": "Limiting their computational requirements", "isCorrect": false },
+        { "answerText": "Ensuring they work offline", "isCorrect": false }
+      ],
+      "explanation": "A key challenge in designing tool interfaces is providing clear, unambiguous descriptions that the AI can understand, including precise information about parameters, inputs, outputs, and expected behaviors."
+    },
+    {
+      "questionText": "What step typically follows 'perception' in the Agentic AI workflow?",
+      "answerOptions": [
+        { "answerText": "Memory storage", "isCorrect": false },
+        { "answerText": "Action execution", "isCorrect": false },
+        { "answerText": "Reasoning", "isCorrect": true },
+        { "answerText": "Tool selection", "isCorrect": false }
+      ],
+      "explanation": "In the typical Agentic AI workflow, after perceiving information from the environment, the next step is reasoning about that information to understand it and determine appropriate responses."
+    },
+    {
+      "questionText": "What type of learning allows Agentic AI to improve its performance over time?",
+      "answerOptions": [
+        { "answerText": "Supervised learning", "isCorrect": false },
+        { "answerText": "Unsupervised learning", "isCorrect": false },
+        { "answerText": "Transfer learning", "isCorrect": false },
+        { "answerText": "Reinforcement learning", "isCorrect": true }
+      ],
+      "explanation": "Reinforcement learning enables Agentic AI to improve over time by receiving feedback on its actions, learning which strategies lead to better outcomes and adjusting its behavior accordingly."
+    },
+    {
+      "questionText": "Which type of worker job is MOST likely to be entirely replaced by Agentic AI?",
+      "answerOptions": [
+        { "answerText": "Creative directors", "isCorrect": false },
+        { "answerText": "Customer service representatives", "isCorrect": true },
+        { "answerText": "Therapists", "isCorrect": false },
+        { "answerText": "Executive leadership", "isCorrect": false }
+      ],
+      "explanation": "Customer service representatives perform largely predictable, pattern-based tasks involving information retrieval and problem resolution according to defined protocols—making these roles the most vulnerable to complete replacement by Agentic AI."
+    },
+    {
+      "questionText": "What is a key difference between Agentic AI and Robotic Process Automation (RPA)?",
+      "answerOptions": [
+        { "answerText": "RPA can interact with physical systems", "isCorrect": false },
+        { "answerText": "RPA is more expensive to implement", "isCorrect": false },
+        { "answerText": "Agentic AI can handle unexpected scenarios through reasoning", "isCorrect": true },
+        { "answerText": "Agentic AI requires more computing resources", "isCorrect": false }
+      ],
+      "explanation": "While RPA follows rigid, predefined rules and workflows, Agentic AI can use reasoning capabilities to handle unexpected scenarios, adapt to new situations, and make decisions without explicit programming for every circumstance."
+    },
+    {
+      "questionText": "What is a primary concern with Agentic AI having autonomous capabilities?",
+      "answerOptions": [
+        { "answerText": "Energy consumption", "isCorrect": false },
+        { "answerText": "Monitoring and accountability", "isCorrect": true },
+        { "answerText": "Deployment costs", "isCorrect": false },
+        { "answerText": "User interface design", "isCorrect": false }
+      ],
+      "explanation": "A primary concern with autonomous Agentic AI is ensuring proper monitoring and accountability mechanisms are in place to track actions, prevent misuse, and ensure the system operates within defined ethical and operational boundaries."
+    },
+    {
+      "questionText": "What is a key advantage of the 'Orchestrator-Workers' multi-agent workflow?",
+      "answerOptions": [
+        { "answerText": "Reduced computing costs", "isCorrect": false },
+        { "answerText": "Faster execution times", "isCorrect": false },
+        { "answerText": "Task specialization and modular problem-solving", "isCorrect": true },
+        { "answerText": "Simplified deployment", "isCorrect": false }
+      ],
+      "explanation": "The Orchestrator-Workers workflow enables task specialization where worker agents can focus on specific subtasks, allowing for modular problem-solving and more effective handling of complex problems through decomposition."
+    },
+    {
+      "questionText": "What distinguishes 'self-reactiveness' in Agentic AI?",
+      "answerOptions": [
+        { "answerText": "The ability to process information without external triggers", "isCorrect": false },
+        { "answerText": "The ability to monitor and adjust strategies during execution", "isCorrect": true },
+        { "answerText": "The ability to respond to user questions", "isCorrect": false },
+        { "answerText": "The ability to operate without human supervision", "isCorrect": false }
+      ],
+      "explanation": "Self-reactiveness refers to an agent's ability to monitor its own progress, detect when strategies aren't working, and dynamically adjust approaches mid-task to achieve its goals more effectively."
+    },
+    {
+      "questionText": "What role do LLMs typically play in an Agentic AI system?",
+      "answerOptions": [
+        { "answerText": "Data storage", "isCorrect": false },
+        { "answerText": "User interface", "isCorrect": false },
+        { "answerText": "Decision-making and reasoning", "isCorrect": true },
+        { "answerText": "Network connectivity", "isCorrect": false }
+      ],
+      "explanation": "Large Language Models (LLMs) typically serve as the core reasoning engine in Agentic AI, enabling understanding, decision-making, planning, and adapting to new situations based on natural language capabilities."
+    },
+    {
+      "questionText": "What is the main advantage of 'weighted' voting in multi-agent systems?",
+      "answerOptions": [
+        { "answerText": "It's faster to compute", "isCorrect": false },
+        { "answerText": "It gives more influence to specialized agents", "isCorrect": true },
+        { "answerText": "It requires less memory", "isCorrect": false },
+        { "answerText": "It's easier to implement", "isCorrect": false }
+      ],
+      "explanation": "Weighted voting in multi-agent systems allows specialized or high-confidence agents to have more influence in the final decision, improving accuracy by giving more weight to agents with relevant expertise or higher confidence."
+    },
+    {
+      "questionText": "How does the 'Evaluator-Optimizer' workflow improve agent outputs?",
+      "answerOptions": [
+        { "answerText": "By increasing processing speed", "isCorrect": false },
+        { "answerText": "By providing critical feedback for refinement", "isCorrect": true },
+        { "answerText": "By reducing memory usage", "isCorrect": false },
+        { "answerText": "By adding more data sources", "isCorrect": false }
+      ],
+      "explanation": "The Evaluator-Optimizer workflow improves outputs through iterative refinement, where an evaluator agent provides critical feedback that helps the optimizer agent refine its work, similar to an editor reviewing and improving a writer's draft."
+    },
+    {
+      "questionText": "What factor most significantly affects the cost of running Agentic AI systems?",
+      "answerOptions": [
+        { "answerText": "Storage requirements", "isCorrect": false },
+        { "answerText": "Network bandwidth", "isCorrect": false },
+        { "answerText": "LLM inference costs", "isCorrect": true },
+        { "answerText": "Human oversight", "isCorrect": false }
+      ],
+      "explanation": "LLM inference costs typically represent the most significant expense in operating Agentic AI systems, as each reasoning step requires running the large language model, which can be computationally intensive and expensive at scale."
+    },
+    {
+      "questionText": "What is a primary benefit of using Agentic AI for business process automation?",
+      "answerOptions": [
+        { "answerText": "Reduced need for software updates", "isCorrect": false },
+        { "answerText": "Ability to handle edge cases and exceptions", "isCorrect": true },
+        { "answerText": "Lower initial implementation costs", "isCorrect": false },
+        { "answerText": "Simplified regulatory compliance", "isCorrect": false }
+      ],
+      "explanation": "A primary benefit of Agentic AI for business process automation is its ability to handle edge cases, exceptions, and unexpected scenarios through reasoning capabilities, unlike traditional automation which requires explicit programming for every possible scenario."
+    },
+    {
+      "questionText": "Which vendor's Agentic AI platform is known as 'AgentFlow'?",
+      "answerOptions": [
+        { "answerText": "Microsoft", "isCorrect": false },
+        { "answerText": "Google", "isCorrect": false },
+        { "answerText": "Anthropic", "isCorrect": true },
+        { "answerText": "Meta", "isCorrect": false }
+      ],
+      "explanation": "Anthropic offers AgentFlow, a platform designed to create, deploy, and manage AI agents based on their Claude model, providing tools for agent orchestration and workflow management."
+    },
+    {
+      "questionText": "What does 'hallucinating tools' refer to in Agentic AI?",
+      "answerOptions": [
+        { "answerText": "Creating visualization tools", "isCorrect": false },
+        { "answerText": "Inventing non-existent APIs or capabilities", "isCorrect": true },
+        { "answerText": "Developing creative solutions", "isCorrect": false },
+        { "answerText": "Generating random numbers", "isCorrect": false }
+      ],
+      "explanation": "Hallucinating tools refers to the problem where an AI agent attempts to use tools or APIs that don't actually exist, often imagining capabilities that haven't been provided to it, which can lead to execution failures."
+    },
+    {
+      "questionText": "What is the primary purpose of 'planning' in the Agentic AI workflow?",
+      "answerOptions": [
+        { "answerText": "To schedule maintenance updates", "isCorrect": false },
+        { "answerText": "To determine resource allocation", "isCorrect": false },
+        { "answerText": "To break down complex tasks into manageable steps", "isCorrect": true },
+        { "answerText": "To estimate computational costs", "isCorrect": false }
+      ],
+      "explanation": "Planning in the Agentic AI workflow involves breaking down complex tasks into manageable steps, determining the sequence of actions, identifying required tools, and establishing a roadmap to achieve the specified goal efficiently."
+    },
+    {
+      "questionText": "What is a key challenge in implementing multi-turn conversations in Agentic AI?",
+      "answerOptions": [
+        { "answerText": "Preventing excessive computational costs", "isCorrect": false },
+        { "answerText": "Maintaining context across interactions", "isCorrect": true },
+        { "answerText": "Finding appropriate training data", "isCorrect": false },
+        { "answerText": "Creating visually appealing interfaces", "isCorrect": false }
+      ],
+      "explanation": "A key challenge in implementing multi-turn conversations is maintaining context across interactions, requiring effective memory management to recall previous exchanges, user preferences, and the evolving state of tasks."
+    },
+    {
+      "questionText": "What is a 'tool description' in Agentic AI?",
+      "answerOptions": [
+        { "answerText": "A user manual for humans", "isCorrect": false },
+        { "answerText": "A specification that defines how the agent can use a capability", "isCorrect": true },
+        { "answerText": "A marketing document", "isCorrect": false },
+        { "answerText": "A visual diagram of the tool's interface", "isCorrect": false }
+      ],
+      "explanation": "A tool description is a specification that defines how an Agentic AI can interact with a capability, including the name, purpose, required parameters, and expected outputs, enabling the agent to properly use the tool when needed."
+    },
+    {
+      "questionText": "What skill will become MORE valuable for workers as Agentic AI adoption increases?",
+      "answerOptions": [
+        { "answerText": "Data entry", "isCorrect": false },
+        { "answerText": "Template-based report writing", "isCorrect": false },
+        { "answerText": "Prompt engineering and agent orchestration", "isCorrect": true },
+        { "answerText": "Basic scheduling", "isCorrect": false }
+      ],
+      "explanation": "As Agentic AI becomes more widespread, skills related to prompt engineering and agent orchestration will increase in value, as organizations will need professionals who can design, configure, and manage AI agents to solve complex business problems."
+    },
+    {
+      "questionText": "What distinguishes an 'agentic interface' from a traditional chatbot?",
+      "answerOptions": [
+        { "answerText": "Visual appearance", "isCorrect": false },
+        { "answerText": "The ability to take proactive actions on behalf of users", "isCorrect": true },
+        { "answerText": "Response speed", "isCorrect": false },
+        { "answerText": "The number of training examples", "isCorrect": false }
+      ],
+      "explanation": "An agentic interface differs from a traditional chatbot by its ability to take proactive actions on behalf of users, rather than simply responding to queries—it can initiate processes, make decisions, and complete tasks autonomously."
+    },
+    {
+      "questionText": "How does the concept of 'agency' in AI relate to traditional software?",
+      "answerOptions": [
+        { "answerText": "It's essentially the same as software automation", "isCorrect": false },
+        { "answerText": "It represents a shift from tools used by humans to assistants working for humans", "isCorrect": true },
+        { "answerText": "It's a marketing term with no technical difference", "isCorrect": false },
+        { "answerText": "It refers exclusively to mobile applications", "isCorrect": false }
+      ],
+      "explanation": "The concept of 'agency' in AI represents a fundamental shift from traditional software as tools that humans use to complete tasks, to AI assistants that work for humans by taking initiative, making decisions, and executing actions on their behalf."
+    },
+    {
+      "questionText": "What is a key economic factor driving Agentic AI adoption?",
+      "answerOptions": [
+        { "answerText": "Government subsidies", "isCorrect": false },
+        { "answerText": "Reduced training costs", "isCorrect": false },
+        { "answerText": "Labor cost reduction and productivity enhancement", "isCorrect": true },
+        { "answerText": "Lower hardware requirements", "isCorrect": false }
+      ],
+      "explanation": "A key economic factor driving Agentic AI adoption is the potential for significant labor cost reduction while simultaneously enhancing productivity, as agents can automate tasks that previously required human workers, operating 24/7 without breaks or benefits."
+    },
+    {
+      "questionText": "What is the 'ReAct' framework in Agentic AI?",
+      "answerOptions": [
+        { "answerText": "A method for rapid development of agents", "isCorrect": false },
+        { "answerText": "A framework for agents to Reason and Act iteratively", "isCorrect": true },
+        { "answerText": "A reactive programming model", "isCorrect": false },
+        { "answerText": "A resource allocation system", "isCorrect": false }
+      ],
+      "explanation": "ReAct (Reasoning+Acting) is a framework that enables agents to iteratively reason about their environment and take actions, verbalizing their thought process, observing the results, and using those observations to inform subsequent reasoning and actions."
+    },
+    {
+      "questionText": "What year is projected to see mainstream Agentic AI adoption in enterprises?",
+      "answerOptions": [
+        { "answerText": "2023", "isCorrect": false },
+        { "answerText": "2024", "isCorrect": false },
+        { "answerText": "2025", "isCorrect": true },
+        { "answerText": "2030", "isCorrect": false }
+      ],
+      "explanation": "2025 is projected to be the year when Agentic AI reaches mainstream adoption in enterprises, with significant deployments across multiple sectors and substantial impact on workforce and business processes."
+    },
+    {
+      "questionText": "Which is NOT a major challenge in Agentic AI development?",
+      "answerOptions": [
+        { "answerText": "Ensuring reliability and accuracy", "isCorrect": false },
+        { "answerText": "Managing hallucinations", "isCorrect": false },
+        { "answerText": "Hardware limitations", "isCorrect": true },
+        { "answerText": "Aligning agent actions with human intent", "isCorrect": false }
+      ],
+      "explanation": "While hardware capabilities continue to improve, the major challenges in Agentic AI development are primarily software-related, including reliability, hallucination management, and intent alignment, rather than hardware limitations."
+    },
+    {
+      "questionText": "What is the primary goal of 'orchestration' in multi-agent systems?",
+      "answerOptions": [
+        { "answerText": "To reduce energy consumption", "isCorrect": false },
+        { "answerText": "To coordinate multiple agents toward a common goal", "isCorrect": true },
+        { "answerText": "To optimize storage requirements", "isCorrect": false },
+        { "answerText": "To improve user interface design", "isCorrect": false }
+      ],
+      "explanation": "The primary goal of orchestration in multi-agent systems is to coordinate the activities of multiple specialized agents, ensuring they work together effectively toward a common goal by managing task allocation, communication, and result integration."
+    }
+  ]
+} 

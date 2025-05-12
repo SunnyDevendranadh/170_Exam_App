@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "questionText": "What is the primary differentiator of Agentic AI vs. generative AI?",
+      "answerOptions": [
+        { "answerText": "Content creation", "isCorrect": false },
+        { "answerText": "Autonomous decision-making", "isCorrect": true },
+        { "answerText": "Text generation", "isCorrect": false },
+        { "answerText": "Image synthesis", "isCorrect": false }
+      ],
+      "explanation": "Agentic AI is primarily differentiated from generative AI by its autonomous decision-making capabilities, which allows it to take actions independently."
+    },
+    {
+      "questionText": "Agentic AI combines which three components?",
+      "answerOptions": [
+        { "answerText": "LLMs, robotics, blockchain", "isCorrect": false },
+        { "answerText": "LLMs, traditional AI, enterprise automation", "isCorrect": true },
+        { "answerText": "Neural networks, IoT, cloud computing", "isCorrect": false },
+        { "answerText": "RPA, NLP, predictive analytics", "isCorrect": false }
+      ],
+      "explanation": "Agentic AI is formed by combining large language models (LLMs), traditional AI, and enterprise automation technologies."
+    },
+    {
+      "questionText": "Which principle ensures Agentic AI systems can upgrade individual modules without disrupting performance?",
+      "answerOptions": [
+        { "answerText": "Scalability", "isCorrect": false },
+        { "answerText": "Modularity", "isCorrect": true },
+        { "answerText": "Interoperability", "isCorrect": false },
+        { "answerText": "Reinforcement learning", "isCorrect": false }
+      ],
+      "explanation": "Modularity is the architectural principle that allows Agentic AI systems to be designed with separate functional components that can be upgraded independently without affecting overall system performance."
+    },
+    {
+      "questionText": "What is the projected CAGR for the global Agentic AI government market (2025–2034)?",
+      "answerOptions": [
+        { "answerText": "33.6%", "isCorrect": false },
+        { "answerText": "41.7%", "isCorrect": true },
+        { "answerText": "47.6%", "isCorrect": false },
+        { "answerText": "20.8%", "isCorrect": false }
+      ],
+      "explanation": "The global Agentic AI government market is projected to grow at a compound annual growth rate (CAGR) of 41.7% from 2025 to 2034."
+    },
+    {
+      "questionText": "OpenAI's 'PhD Researcher' agent is priced at:",
+      "answerOptions": [
+        { "answerText": "$2,000/month", "isCorrect": false },
+        { "answerText": "$10,000/month", "isCorrect": false },
+        { "answerText": "$20,000/month", "isCorrect": true },
+        { "answerText": "$5,000/month", "isCorrect": false }
+      ],
+      "explanation": "OpenAI's 'PhD Researcher' agent is priced at $20,000 per month, reflecting its advanced capabilities and potential value to organizations."
+    },
+    {
+      "questionText": "Which job role is not explicitly targeted by OpenAI's agents?",
+      "answerOptions": [
+        { "answerText": "Junior developers", "isCorrect": false },
+        { "answerText": "Data analysts", "isCorrect": false },
+        { "answerText": "HR managers", "isCorrect": true },
+        { "answerText": "Research assistants", "isCorrect": false }
+      ],
+      "explanation": "Among the options, HR managers are not explicitly targeted by OpenAI's agent offerings, which focus more on technical, analytical, and research roles."
+    },
+    {
+      "questionText": "The four-step process of Agentic AI includes all except:",
+      "answerOptions": [
+        { "answerText": "Perception", "isCorrect": false },
+        { "answerText": "Reasoning", "isCorrect": false },
+        { "answerText": "Training", "isCorrect": true },
+        { "answerText": "Action", "isCorrect": false }
+      ],
+      "explanation": "The four-step process of Agentic AI includes perception, reasoning, planning, and action. Training is not part of this operational process but rather a development phase."
+    },
+    {
+      "questionText": "Which component allows Agentic AI to interact with external APIs?",
+      "answerOptions": [
+        { "answerText": "Brain (LLM)", "isCorrect": false },
+        { "answerText": "Tools", "isCorrect": true },
+        { "answerText": "Memory", "isCorrect": false },
+        { "answerText": "Interface", "isCorrect": false }
+      ],
+      "explanation": "Tools are the components that allow Agentic AI to interact with external APIs, enabling the AI to take actions in the real world by connecting with various services and systems."
+    },
+    {
+      "questionText": "What enables AI agents to refine their behavior over time?",
+      "answerOptions": [
+        { "answerText": "Reinforcement learning", "isCorrect": true },
+        { "answerText": "Modularity", "isCorrect": false },
+        { "answerText": "Scalability", "isCorrect": false },
+        { "answerText": "Interoperability", "isCorrect": false }
+      ],
+      "explanation": "Reinforcement learning enables AI agents to learn from their interactions and refine their behavior over time by receiving feedback on their actions and outcomes."
+    },
+    {
+      "questionText": "A tool's API description for Agentic AI must include:",
+      "answerOptions": [
+        { "answerText": "Name, description, input/output types", "isCorrect": true },
+        { "answerText": "Price, developer, release date", "isCorrect": false },
+        { "answerText": "Security protocols, encryption standards", "isCorrect": false },
+        { "answerText": "Cloud integration, latency metrics", "isCorrect": false }
+      ],
+      "explanation": "For a tool to be usable by an Agentic AI system, its API description must include the name, description, and input/output types to enable proper integration and usage."
+    },
+    {
+      "questionText": "The 'Model Context Protocol' (MCP) is critical for:",
+      "answerOptions": [
+        { "answerText": "Enabling agent-to-system interactions", "isCorrect": true },
+        { "answerText": "Reducing computational costs", "isCorrect": false },
+        { "answerText": "Generating marketing content", "isCorrect": false },
+        { "answerText": "Training LLMs", "isCorrect": false }
+      ],
+      "explanation": "The Model Context Protocol (MCP) is critical for enabling effective agent-to-system interactions, establishing a standardized way for agents to communicate with their operating environment."
+    },
+    {
+      "questionText": "Which workflow uses a central agent to delegate subtasks?",
+      "answerOptions": [
+        { "answerText": "Prompt chaining", "isCorrect": false },
+        { "answerText": "Orchestrator-Workers", "isCorrect": true },
+        { "answerText": "Parallelization", "isCorrect": false },
+        { "answerText": "Evaluator-Optimizer", "isCorrect": false }
+      ],
+      "explanation": "The Orchestrator-Workers workflow uses a central agent (the orchestrator) to coordinate and delegate subtasks to specialized worker agents, enabling complex task decomposition and execution."
+    },
+    {
+      "questionText": "Jobs most vulnerable to Agentic AI automation involve:",
+      "answerOptions": [
+        { "answerText": "Pattern-based tasks", "isCorrect": true },
+        { "answerText": "Creative writing", "isCorrect": false },
+        { "answerText": "Strategic leadership", "isCorrect": false },
+        { "answerText": "Emotional counseling", "isCorrect": false }
+      ],
+      "explanation": "Jobs that involve pattern-based tasks and predictable workflows are most vulnerable to automation by Agentic AI, as these can be more easily systematized and executed by algorithmic processes."
+    },
+    {
+      "questionText": "SoftBank's reported commitment to OpenAI's agents in 2025 is:",
+      "answerOptions": [
+        { "answerText": "$1 billion", "isCorrect": false },
+        { "answerText": "$3 billion", "isCorrect": true },
+        { "answerText": "$5 billion", "isCorrect": false },
+        { "answerText": "$10 billion", "isCorrect": false }
+      ],
+      "explanation": "SoftBank has reportedly committed to spending $3 billion on OpenAI's agents in 2025, demonstrating significant financial investment in this technology."
+    },
+    {
+      "questionText": "To stay relevant, workers should focus on skills involving:",
+      "answerOptions": [
+        { "answerText": "Judgment and creativity", "isCorrect": true },
+        { "answerText": "Data entry", "isCorrect": false },
+        { "answerText": "Routine coding", "isCorrect": false },
+        { "answerText": "Basic reporting", "isCorrect": false }
+      ],
+      "explanation": "To remain relevant in an era of increasing AI capabilities, workers should focus on developing skills that involve judgment, creativity, and other uniquely human capabilities that are difficult to automate."
+    },
+    {
+      "questionText": "Which is not a required component to build an AI agent?",
+      "answerOptions": [
+        { "answerText": "LLM", "isCorrect": false },
+        { "answerText": "Interface", "isCorrect": false },
+        { "answerText": "Blockchain integration", "isCorrect": true },
+        { "answerText": "Tools", "isCorrect": false }
+      ],
+      "explanation": "Blockchain integration is not a required component to build an AI agent. The essential components include an LLM (for reasoning), tools (for actions), memory, and an interface for interaction."
+    },
+    {
+      "questionText": "The 'researcher' agent's expected output in the lecture example is:",
+      "answerOptions": [
+        { "answerText": "5 key points", "isCorrect": false },
+        { "answerText": "10 key points", "isCorrect": true },
+        { "answerText": "15 key points", "isCorrect": false },
+        { "answerText": "20 key points", "isCorrect": false }
+      ],
+      "explanation": "In the lecture example, the 'researcher' agent was expected to output 10 key points about a given topic, demonstrating its ability to synthesize and prioritize information."
+    },
+    {
+      "questionText": "Agentic AI templates often use:",
+      "answerOptions": [
+        { "answerText": "Drag-and-drop interfaces", "isCorrect": true },
+        { "answerText": "Assembly code", "isCorrect": false },
+        { "answerText": "Quantum computing", "isCorrect": false },
+        { "answerText": "Manual SQL queries", "isCorrect": false }
+      ],
+      "explanation": "To make Agentic AI accessible to non-technical users, templates often utilize drag-and-drop interfaces that simplify the process of creating and customizing AI agents."
+    },
+    {
+      "questionText": "Agentic AI in HR is least likely to automate:",
+      "answerOptions": [
+        { "answerText": "Employee conflict resolution", "isCorrect": true },
+        { "answerText": "Resume screening", "isCorrect": false },
+        { "answerText": "Scheduling interviews", "isCorrect": false },
+        { "answerText": "Payroll processing", "isCorrect": false }
+      ],
+      "explanation": "Employee conflict resolution requires nuanced understanding of human emotions, complex interpersonal dynamics, and empathy—making it the least likely HR function to be fully automated by Agentic AI among the options given."
+    },
+    {
+      "questionText": "A multi-agent system would excel at:",
+      "answerOptions": [
+        { "answerText": "Contract review with compliance checks", "isCorrect": true },
+        { "answerText": "Simple arithmetic", "isCorrect": false },
+        { "answerText": "Single-step data entry", "isCorrect": false },
+        { "answerText": "Basic chatbot responses", "isCorrect": false }
+      ],
+      "explanation": "A multi-agent system would excel at complex tasks like contract review with compliance checks, where different agents can specialize in various aspects of legal review, industry regulations, and organizational policies."
+    },
+    {
+      "questionText": "Which tool integration enables automated meeting rescheduling?",
+      "answerOptions": [
+        { "answerText": "Calendar APIs", "isCorrect": true },
+        { "answerText": "Image recognition", "isCorrect": false },
+        { "answerText": "Blockchain ledgers", "isCorrect": false },
+        { "answerText": "Social media plugins", "isCorrect": false }
+      ],
+      "explanation": "Calendar APIs enable Agentic AI to access and modify calendar information, allowing for automated meeting rescheduling based on availability and preferences."
+    },
+    {
+      "questionText": "The 'Evaluator-Optimizer' workflow involves:",
+      "answerOptions": [
+        { "answerText": "Iterative refinement via feedback", "isCorrect": true },
+        { "answerText": "Parallel task execution", "isCorrect": false },
+        { "answerText": "Fixed rule-based scripts", "isCorrect": false },
+        { "answerText": "Human-in-the-loop validation", "isCorrect": false }
+      ],
+      "explanation": "The Evaluator-Optimizer workflow involves iterative refinement of outputs through feedback cycles, where one agent evaluates the work of another and provides suggestions for improvement."
+    },
+    {
+      "questionText": "Which characteristic allows Agentic AI to adjust strategies mid-task?",
+      "answerOptions": [
+        { "answerText": "Self-reactiveness", "isCorrect": true },
+        { "answerText": "Modularity", "isCorrect": false },
+        { "answerText": "Scalability", "isCorrect": false },
+        { "answerText": "Interoperability", "isCorrect": false }
+      ],
+      "explanation": "Self-reactiveness is the characteristic that allows Agentic AI to monitor its own progress, detect when strategies aren't working, and adjust approaches mid-task to achieve goals more effectively."
+    },
+    {
+      "questionText": "The 'smolagents' framework is offered by:",
+      "answerOptions": [
+        { "answerText": "OpenAI", "isCorrect": false },
+        { "answerText": "Hugging Face", "isCorrect": true },
+        { "answerText": "Microsoft", "isCorrect": false },
+        { "answerText": "NVIDIA", "isCorrect": false }
+      ],
+      "explanation": "The 'smolagents' framework is offered by Hugging Face, providing an open-source toolkit for building and deploying AI agents."
+    },
+    {
+      "questionText": "Which vendor provides 'Copilot Studio' for agent creation?",
+      "answerOptions": [
+        { "answerText": "Microsoft", "isCorrect": true },
+        { "answerText": "Google", "isCorrect": false },
+        { "answerText": "AWS", "isCorrect": false },
+        { "answerText": "Anthropic", "isCorrect": false }
+      ],
+      "explanation": "Microsoft provides 'Copilot Studio', a platform that enables users to create, customize, and deploy AI agents with minimal coding required."
+    },
+    {
+      "questionText": "The lecture compares AI agents to:",
+      "answerOptions": [
+        { "answerText": "Invisible computer assistants", "isCorrect": true },
+        { "answerText": "Autonomous vehicles", "isCorrect": false },
+        { "answerText": "Quantum computers", "isCorrect": false },
+        { "answerText": "Social media algorithms", "isCorrect": false }
+      ],
+      "explanation": "The lecture compares AI agents to invisible computer assistants that work proactively behind the scenes to accomplish tasks on behalf of users."
+    },
+    {
+      "questionText": "Agentic AI's 'memory' primarily serves to:",
+      "answerOptions": [
+        { "answerText": "Store temporary task context", "isCorrect": true },
+        { "answerText": "Archive historical data", "isCorrect": false },
+        { "answerText": "Train new models", "isCorrect": false },
+        { "answerText": "Encrypt sensitive information", "isCorrect": false }
+      ],
+      "explanation": "Agentic AI's memory component primarily serves to store temporary task context, allowing the agent to maintain awareness of ongoing interactions, user preferences, and task progress."
+    },
+    {
+      "questionText": "Which statement is false about Agentic AI?",
+      "answerOptions": [
+        { "answerText": "It requires constant human supervision", "isCorrect": false },
+        { "answerText": "It handles 50% of business tasks in 2024", "isCorrect": true },
+        { "answerText": "It uses LLMs for reasoning", "isCorrect": false },
+        { "answerText": "It integrates with APIs", "isCorrect": false }
+      ],
+      "explanation": "The statement that Agentic AI handles 50% of business tasks in 2024 is false. While Agentic AI is advancing rapidly, it has not yet reached this level of adoption or capability in business environments."
+    },
+    {
+      "questionText": "Which technology is not part of Agentic AI's 'shift from automation to agency'?",
+      "answerOptions": [
+        { "answerText": "Predictive AI", "isCorrect": false },
+        { "answerText": "Blockchain", "isCorrect": true },
+        { "answerText": "Generative AI", "isCorrect": false },
+        { "answerText": "Machine learning", "isCorrect": false }
+      ],
+      "explanation": "Blockchain technology is not specifically part of the 'shift from automation to agency' in Agentic AI. While blockchain has its own important applications, it's not a core component of the evolution from automated systems to agentic ones."
+    },
+    {
+      "questionText": "The 'PhD Researcher' agent replaces:",
+      "answerOptions": [
+        { "answerText": "Entry-level employees", "isCorrect": false },
+        { "answerText": "Research teams", "isCorrect": true },
+        { "answerText": "Content creators", "isCorrect": false },
+        { "answerText": "Data analysts", "isCorrect": false }
+      ],
+      "explanation": "OpenAI's 'PhD Researcher' agent is designed to replace or significantly augment research teams by performing high-level research tasks that would typically require a team of skilled researchers."
+    }
+  ]
+}
