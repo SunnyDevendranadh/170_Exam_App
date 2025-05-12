@@ -1,0 +1,504 @@
+{
+    "questions": [
+      {
+        "questionText": "According to Susan Foster's Reading Dancing, what is a primary method she uses to illustrate her four distinct models for representation in dance?",
+        "answerOptions": [
+          {"answerText": "wyłącznie poprzez analizę historycznych baletów dworskich.", "isCorrect": false},
+          {"answerText": "Through an analysis of the works of contemporary choreographers like Hay, Balanchine, Graham, and Cunningham, and then through historical examples.", "isCorrect": true},
+          {"answerText": "By focusing solely on the improvisational scores of Judson Dance Theater.", "isCorrect": false},
+          {"answerText": "By comparing dance to musical composition techniques exclusively.", "isCorrect": false}
+        ],
+        "explanation": "Susan Foster illustrates her four distinct models for representation in dance primarily through an analysis of the works of contemporary choreographers like Hay, Balanchine, Graham, and Cunningham, and then through historical examples."
+      },
+      {
+        "questionText": "Susan Foster's analytical approach in Reading Dancing borrows from which of the following theoretical fields?",
+        "answerOptions": [
+          {"answerText": "Existential philosophy and psychoanalysis.", "isCorrect": false},
+          {"answerText": "Formalist music theory and classical art history.", "isCorrect": false},
+          {"answerText": "Contemporary semiotics and post-structuralist criticism.", "isCorrect": true},
+          {"answerText": "Marxist theory and performance art manifestos.", "isCorrect": false}
+        ],
+        "explanation": "Susan Foster's analytical approach in Reading Dancing borrows from contemporary semiotics and post-structuralist criticism."
+      },
+      {
+        "questionText": "Chapter 1 of Susan Foster's Reading Dancing, titled \"Reading Dance: Composing the Choreographer, the Dancer, and the Viewer,\" primarily focuses on:",
+        "answerOptions": [
+          {"answerText": "Providing a detailed history of 18th-century neoclassical dance.", "isCorrect": false},
+          {"answerText": "Introducing her analysis of Deborah Hay, George Balanchine, Martha Graham, and Merce Cunningham under the section \"Four Bodies and Subjects\".", "isCorrect": true},
+          {"answerText": "Outlining the rules for choreographing allegorical dance in the Renaissance.", "isCorrect": false},
+          {"answerText": "Debating the merits of dance notation systems.", "isCorrect": false}
+        ],
+        "explanation": "Chapter 1 of Susan Foster's Reading Dancing primarily focuses on introducing her analysis of Deborah Hay, George Balanchine, Martha Graham, and Merce Cunningham under the section \"Four Bodies and Subjects\"."
+      },
+      {
+        "questionText": "Which of the following sets of elements are detailed in Chapter 2 of Susan Foster's Reading Dancing, \"Reading Choreography: Composing Dances\"?",
+        "answerOptions": [
+          {"answerText": "Lighting design, costume construction, and stage management.", "isCorrect": false},
+          {"answerText": "Audience reception, critical reviews, and box office success.", "isCorrect": false},
+          {"answerText": "Frames, Modes of Representation, Styles, Vocabularies, and Syntaxes.", "isCorrect": true},
+          {"answerText": "Dancer training, rehearsal schedules, and company funding models.", "isCorrect": false}
+        ],
+        "explanation": "Chapter 2 of Susan Foster's Reading Dancing, \"Reading Choreography: Composing Dances,\" details Frames, Modes of Representation, Styles, Vocabularies, and Syntaxes."
+      },
+      {
+        "questionText": "According to the Quizlet summary of Foster's points of comparison, how does George Balanchine primarily relate dance to other arts in his creative process?",
+        "answerOptions": [
+          {"answerText": "He prioritizes narrative storytelling derived from literature.", "isCorrect": false},
+          {"answerText": "He uses the musical structure to organize the dance.", "isCorrect": true},
+          {"answerText": "He draws inspiration from contemporary visual art for set and costume design.", "isCorrect": false},
+          {"answerText": "He views dance as entirely separate and independent from music.", "isCorrect": false}
+        ],
+        "explanation": "According to the Quizlet summary of Foster's points of comparison, George Balanchine primarily uses the musical structure to organize the dance."
+      },
+      {
+        "questionText": "Based on the Quizlet summary of Foster's analysis, what is the typical viewer's response elicited by Martha Graham's expressionist choreography?",
+        "answerOptions": [
+          {"answerText": "A feeling of detached intellectual curiosity.", "isCorrect": false},
+          {"answerText": "An appreciation for purely formal beauty and technical skill.", "isCorrect": false},
+          {"answerText": "An affective response to the exploration of human emotions and relationships.", "isCorrect": true},
+          {"answerText": "A sense of lighthearted entertainment and delight.", "isCorrect": false}
+        ],
+        "explanation": "Based on the Quizlet summary of Foster's analysis, Martha Graham's expressionist choreography typically elicits an affective response to the exploration of human emotions and relationships."
+      },
+      {
+        "questionText": "In Susan Foster's analytical framework as summarized by Quizlet, how is the \"dancing body\" conceptualized in the work of Deborah Hay?",
+        "answerOptions": [
+          {"answerText": "As an idealized, ethereal form.", "isCorrect": false},
+          {"answerText": "As a neutral instrument for executing complex steps.", "isCorrect": false},
+          {"answerText": "As a collection of cells with a cellular consciousness.", "isCorrect": true},
+          {"answerText": "As a vessel for portraying dramatic characters.", "isCorrect": false}
+        ],
+        "explanation": "In Susan Foster's analytical framework as summarized by Quizlet, the \"dancing body\" in the work of Deborah Hay is conceptualized as a collection of cells with a cellular consciousness."
+      },
+      {
+        "questionText": "According to the Quizlet summary of Foster's \"Reading Dancing,\" what is the \"dancing subject\" that corresponds with Merce Cunningham's objectivist approach?",
+        "answerOptions": [
+          {"answerText": "The choreographer's internal emotional state.", "isCorrect": false},
+          {"answerText": "A specific narrative character or mythical figure.", "isCorrect": false},
+          {"answerText": "The exploration of artistic features and possibilities, rather than the choreographer's self.", "isCorrect": true},
+          {"answerText": "The direct expression of social or political commentary.", "isCorrect": false}
+        ],
+        "explanation": "According to the Quizlet summary of Foster's \"Reading Dancing,\" the \"dancing subject\" corresponding with Merce Cunningham's objectivist approach is the exploration of artistic features and possibilities, rather than the choreographer's self."
+      },
+      {
+        "questionText": "How does Susan Foster, in \"Choreographies of Writing,\" conceptualize the relationship between dance and writing?",
+        "answerOptions": [
+          {"answerText": "She argues that writing is inherently superior to dance for conveying meaning.", "isCorrect": false},
+          {"answerText": "She views dance, particularly choreography, as a sort of text or \"bodily writing\" that can create meaning and culture.", "isCorrect": true},
+          {"answerText": "She believes dance and writing are entirely separate and incommunicable domains.", "isCorrect": false},
+          {"answerText": "She suggests that dance can only illustrate meanings already present in written text.", "isCorrect": false}
+        ],
+        "explanation": "In \"Choreographies of Writing,\" Susan Foster conceptualizes dance, particularly choreography, as a sort of text or \"bodily writing\" that can create meaning and culture."
+      },
+      {
+        "questionText": "A critique of Susan Foster's model in Reading Dancing, as mentioned in culturalresearch.org, suggests that it fails to adequately account for:",
+        "answerOptions": [
+          {"answerText": "The influence of musical scores on choreographic structure.", "isCorrect": false},
+          {"answerText": "The role of the audience in interpreting dance.", "isCorrect": false},
+          {"answerText": "The evolving bodies and aging of choreographers like Graham and Cunningham.", "isCorrect": true},
+          {"answerText": "The economic conditions affecting dance production.", "isCorrect": false}
+        ],
+        "explanation": "A critique of Susan Foster's model in Reading Dancing, mentioned in culturalresearch.org, suggests it fails to adequately account for the evolving bodies and aging of choreographers like Graham and Cunningham."
+      },
+      {
+        "questionText": "In Reading Dancing, Susan Foster uses the term \"subject\" (e.g., \"dancer's subject\") to signify:",
+        "answerOptions": [
+          {"answerText": "The main theme or topic of a dance.", "isCorrect": false},
+          {"answerText": "A fixed, unchanging self or identity of the performer.", "isCorrect": false},
+          {"answerText": "A theoretical position that the self is a process constituted by cultural and historical circumstances.", "isCorrect": true},
+          {"answerText": "The objective, physical presence of the dancer on stage.", "isCorrect": false}
+        ],
+        "explanation": "In Reading Dancing, Susan Foster uses the term \"subject\" to signify a theoretical position that the self is a process constituted by cultural and historical circumstances."
+      },
+      {
+        "questionText": "According to Susan Foster's discussion in \"Choreographies of Writing,\" what is a key aim of \"performative writing\" in the context of dance scholarship?",
+        "answerOptions": [
+          {"answerText": "To provide a definitive, objective record of every movement in a performance.", "isCorrect": false},
+          {"answerText": "To replace the experience of watching dance with a textual equivalent.", "isCorrect": false},
+          {"answerText": "To enrich analysis by creating a text that enacts or mirrors the sensual or dynamic form of the dance itself.", "isCorrect": true},
+          {"answerText": "To focus exclusively on the historical and biographical context of the choreographer.", "isCorrect": false}
+        ],
+        "explanation": "According to Susan Foster in \"Choreographies of Writing,\" a key aim of \"performative writing\" in dance scholarship is to enrich analysis by creating a text that enacts or mirrors the sensual or dynamic form of the dance itself."
+      },
+      {
+        "questionText": "Deborah Hay's dance philosophy often involves a practice she describes as:",
+        "answerOptions": [
+          {"answerText": "\"Perfecting the form.\"", "isCorrect": false},
+          {"answerText": "\"Narrative embodiment.\"", "isCorrect": false},
+          {"answerText": "\"Playing awake\".", "isCorrect": true},
+          {"answerText": "\"Historical reconstruction.\"", "isCorrect": false}
+        ],
+        "explanation": "Deborah Hay's dance philosophy often involves a practice she describes as \"Playing awake\"."
+      },
+      {
+        "questionText": "What is a characteristic choreographic tool used by Deborah Hay to initiate movement and inquiry for her dancers?",
+        "answerOptions": [
+          {"answerText": "Strictly codified movement sequences.", "isCorrect": false},
+          {"answerText": "Detailed emotional scripts for character development.", "isCorrect": false},
+          {"answerText": "\"What if?\" questions posed as scores.", "isCorrect": true},
+          {"answerText": "Direct imitation of animal movements.", "isCorrect": false}
+        ],
+        "explanation": "A characteristic choreographic tool used by Deborah Hay to initiate movement and inquiry for her dancers is \"What if?\" questions posed as scores."
+      },
+      {
+        "questionText": "The concept of the \"cellular body\" is central to the choreographic practice and philosophy of which of the following artists?",
+        "answerOptions": [
+          {"answerText": "George Balanchine", "isCorrect": false},
+          {"answerText": "Martha Graham", "isCorrect": false},
+          {"answerText": "Deborah Hay.", "isCorrect": true},
+          {"answerText": "Merce Cunningham", "isCorrect": false}
+        ],
+        "explanation": "The concept of the \"cellular body\" is central to the choreographic practice and philosophy of Deborah Hay."
+      },
+      {
+        "questionText": "George Balanchine's neoclassical style is famously characterized by its profound connection to:",
+        "answerOptions": [
+          {"answerText": "Literary narratives and dramatic plots.", "isCorrect": false},
+          {"answerText": "The visual designs of contemporary painters.", "isCorrect": false},
+          {"answerText": "Musical structure and visualization.", "isCorrect": true},
+          {"answerText": "Social and political commentary.", "isCorrect": false}
+        ],
+        "explanation": "George Balanchine's neoclassical style is famously characterized by its profound connection to musical structure and visualization."
+      },
+      {
+        "questionText": "What was George Balanchine's general approach to plot in his ballets?",
+        "answerOptions": [
+          {"answerText": "He prioritized complex, multi-layered narratives.", "isCorrect": false},
+          {"answerText": "He generally de-emphasized plot, preferring to \"let dance be the star of the show\".", "isCorrect": true},
+          {"answerText": "He exclusively created story ballets based on classical literature.", "isCorrect": false},
+          {"answerText": "He used plot as a framework for improvisational dance.", "isCorrect": false}
+        ],
+        "explanation": "George Balanchine's general approach to plot in his ballets was to de-emphasize it, preferring to \"let dance be the star of the show\"."
+      },
+      {
+        "questionText": "Which statement reflects George Balanchine's often-cited view on gender in ballet?",
+        "answerOptions": [
+          {"answerText": "\"Ballet is androgynous.\"", "isCorrect": false},
+          {"answerText": "\"The male dancer is the true center of ballet.\"", "isCorrect": false},
+          {"answerText": "\"Ballet is woman\".", "isCorrect": true},
+          {"answerText": "\"Gender is irrelevant in classical ballet.\"", "isCorrect": false}
+        ],
+        "explanation": "George Balanchine's often-cited view on gender in ballet is reflected in the statement \"Ballet is woman\"."
+      },
+      {
+        "questionText": "The primary purpose of Martha Graham's \"contraction and release\" technique was to:",
+        "answerOptions": [
+          {"answerText": "Achieve extreme physical flexibility and extension.", "isCorrect": false},
+          {"answerText": "Increase the emotional activity and expressive capacity of the dancer’s body.", "isCorrect": true},
+          {"answerText": "Create purely abstract, formal patterns in space.", "isCorrect": false},
+          {"answerText": "Mimic the movements of classical Greek sculpture.", "isCorrect": false}
+        ],
+        "explanation": "The primary purpose of Martha Graham's \"contraction and release\" technique was to increase the emotional activity and expressive capacity of the dancer’s body."
+      },
+      {
+        "questionText": "Martha Graham's ballets were often inspired by a wide variety of sources, including:",
+        "answerOptions": [
+          {"answerText": "Mathematical formulas and scientific theories.", "isCorrect": false},
+          {"answerText": "Popular social dances and sporting events.", "isCorrect": false},
+          {"answerText": "Modern painting, the American frontier, religious ceremonies of Native Americans, and Greek mythology.", "isCorrect": true},
+          {"answerText": "Minimalist music and architectural design.", "isCorrect": false}
+        ],
+        "explanation": "Martha Graham's ballets were often inspired by sources such as modern painting, the American frontier, religious ceremonies of Native Americans, and Greek mythology."
+      },
+      {
+        "questionText": "What is a primary method Merce Cunningham used to structure his choreography and free his imagination from clichés?",
+        "answerOptions": [
+          {"answerText": "Close collaboration with composers to align dance with musical narratives.", "isCorrect": false},
+          {"answerText": "The use of chance procedures like flipping coins or consulting the I-Ching.", "isCorrect": true},
+          {"answerText": "Strict adherence to traditional balletic forms and sequences.", "isCorrect": false},
+          {"answerText": "Detailed emotional analysis to guide movement creation.", "isCorrect": false}
+        ],
+        "explanation": "A primary method Merce Cunningham used to structure his choreography and free his imagination from clichés was the use of chance procedures like flipping coins or consulting the I-Ching."
+      },
+      {
+        "questionText": "What was the characteristic relationship between dance and music in Merce Cunningham's collaborations with John Cage?",
+        "answerOptions": [
+          {"answerText": "The music directly dictated the rhythm and mood of the dance.", "isCorrect": false},
+          {"answerText": "The dance was created first, and music was composed to fit the movement.", "isCorrect": false},
+          {"answerText": "Music and dance were developed independently and coexisted in the same time and space.", "isCorrect": true},
+          {"answerText": "Both dance and music were based on a shared narrative theme.", "isCorrect": false}
+        ],
+        "explanation": "In Merce Cunningham's collaborations with John Cage, music and dance were developed independently and coexisted in the same time and space."
+      },
+      {
+        "questionText": "Merce Cunningham's approach to stage space often involved:",
+        "answerOptions": [
+          {"answerText": "A strong central focus with hierarchical positioning of dancers.", "isCorrect": false},
+          {"answerText": "The idea that all facings and areas of the stage are equally valid, with no single fixed point of focus.", "isCorrect": true},
+          {"answerText": "Strictly symmetrical formations and patterns.", "isCorrect": false},
+          {"answerText": "Using the proscenium arch to frame pictorial compositions.", "isCorrect": false}
+        ],
+        "explanation": "Merce Cunningham's approach to stage space often involved the idea that all facings and areas of the stage are equally valid, with no single fixed point of focus."
+      },
+      {
+        "questionText": "Katherine Dunham's most significant contribution to modern dance vocabulary, stemming from her anthropological research in African and Caribbean cultures, is known as:",
+        "answerOptions": [
+          {"answerText": "The \"fall and recovery\" principle.", "isCorrect": false},
+          {"answerText": "The \"articulated torso\" and polyrhythmic movement.", "isCorrect": true},
+          {"answerText": "The use of chance operations in choreography.", "isCorrect": false},
+          {"answerText": "The development of purely abstract, non-narrative dance.", "isCorrect": false}
+        ],
+        "explanation": "Katherine Dunham's most significant contribution to modern dance vocabulary from her research is known as the \"articulated torso\" and polyrhythmic movement."
+      },
+      {
+        "questionText": "Katherine Dunham's choreographic approach often involved:",
+        "answerOptions": [
+          {"answerText": "Ignoring the cultural context of dance forms to create purely abstract works.", "isCorrect": false},
+          {"answerText": "A \"research-to-performance\" method, adapting and abstracting movement motifs from ritual events while retaining links to their original cultural context.", "isCorrect": true},
+          {"answerText": "Strictly replicating traditional folk dances without any modification for the stage.", "isCorrect": false},
+          {"answerText": "Using dance primarily as a form of political protest without theatrical elements.", "isCorrect": false}
+        ],
+        "explanation": "Katherine Dunham's choreographic approach often involved a \"research-to-performance\" method, adapting and abstracting movement motifs from ritual events while retaining links to their original cultural context."
+      },
+      {
+        "questionText": "Eleo Pomare described his choreographic style in a work like Narcissus Rising (1968) as:",
+        "answerOptions": [
+          {"answerText": "\"Romantic expressionism,\" focusing on overt emotional display.", "isCorrect": false},
+          {"answerText": "\"Early cool,\" with a cerebral focus on gesture that creates a screen between viewer and performer.", "isCorrect": true},
+          {"answerText": "\"Classical formalism,\" emphasizing pure balletic lines.", "isCorrect": false},
+          {"answerText": "\"Folkloric realism,\" aiming for exact replication of traditional dances.", "isCorrect": false}
+        ],
+        "explanation": "Eleo Pomare described his choreographic style in Narcissus Rising (1968) as \"Early cool,\" with a cerebral focus on gesture that creates a screen between viewer and performer."
+      },
+      {
+        "questionText": "Eleo Pomare's work Blues for the Jungle (1966), which includes the solo Junkie, primarily depicted:",
+        "answerOptions": [
+          {"answerText": "Mythological tales from ancient Greece.", "isCorrect": false},
+          {"answerText": "Abstract explorations of space and time.", "isCorrect": false},
+          {"answerText": "Characters and experiences from urban African American life, including pimps, whores, and junkies.", "isCorrect": true},
+          {"answerText": "Celebratory dances based on European folk traditions.", "isCorrect": false}
+        ],
+        "explanation": "Eleo Pomare's Blues for the Jungle (1966) primarily depicted characters and experiences from urban African American life, including pimps, whores, and junkies."
+      },
+      {
+        "questionText": "Trisha Brown's pioneering works of the 1960s, in the early days of postmodern dance, were often characterized by:",
+        "answerOptions": [
+          {"answerText": "Elaborate narratives and emotional expressivity.", "isCorrect": false},
+          {"answerText": "Scientific principles at their base, being anti-expressive and coolly intellectual.", "isCorrect": true},
+          {"answerText": "The use of virtuosic ballet technique and elaborate costumes.", "isCorrect": false},
+          {"answerText": "Strict adherence to musical structures and rhythms.", "isCorrect": false}
+        ],
+        "explanation": "Trisha Brown's pioneering works of the 1960s were often characterized by scientific principles at their base, being anti-expressive and coolly intellectual."
+      },
+      {
+        "questionText": "Trisha Brown's \"Equipment Pieces\" from the 1970s, such as Man Walking Down the Side of a Building, are significant because they:",
+        "answerOptions": [
+          {"answerText": "Focused on intricate, small-scale gestural movement.", "isCorrect": false},
+          {"answerText": "Used various mechanisms like harnesses and ropes to alter the dancer's relationship with gravity and redefine performance space.", "isCorrect": true},
+          {"answerText": "Were primarily improvisational and based on chance.", "isCorrect": false},
+          {"answerText": "Recreated historical court dances with authentic costuming.", "isCorrect": false}
+        ],
+        "explanation": "Trisha Brown's \"Equipment Pieces\" are significant because they used various mechanisms like harnesses and ropes to alter the dancer's relationship with gravity and redefine performance space."
+      },
+      {
+        "questionText": "The choreographic style of Lin Hwai-min and the Cloud Gate Dance Theatre of Taiwan is known for its fusion of:",
+        "answerOptions": [
+          {"answerText": "Strict classical ballet technique with American jazz dance.", "isCorrect": false},
+          {"answerText": "Traditional European folk dances with Broadway theatricality.", "isCorrect": false},
+          {"answerText": "Eastern aesthetics (meditation, Qi Gong, martial arts, calligraphy) with Western modern dance and ballet.", "isCorrect": true},
+          {"answerText": "Hip-hop and street dance styles with Latin American social dances.", "isCorrect": false}
+        ],
+        "explanation": "The choreographic style of Lin Hwai-min and the Cloud Gate Dance Theatre of Taiwan is known for its fusion of Eastern aesthetics (meditation, Qi Gong, martial arts, calligraphy) with Western modern dance and ballet."
+      },
+      {
+        "questionText": "Sasha Waltz's choreographic work In C, based on Terry Riley's music, is structured around:",
+        "answerOptions": [
+          {"answerText": "A fixed, unchangeable sequence of movements performed in unison.", "isCorrect": false},
+          {"answerText": "A purely improvisational score with no predetermined figures.", "isCorrect": false},
+          {"answerText": "A playful system of 53 choreographic figures allowing for structured improvisation and a democratic process among dancers.", "isCorrect": true},
+          {"answerText": "A narrative storyline depicting the life of Terry Riley.", "isCorrect": false}
+        ],
+        "explanation": "Sasha Waltz's choreographic work In C is structured around a playful system of 53 choreographic figures allowing for structured improvisation and a democratic process among dancers."
+      },
+      {
+        "questionText": "Gus Solomons Jr. often described his postmodern choreographic approach, influenced by his training in another field, as:",
+        "answerOptions": [
+          {"answerText": "\"Melted architecture\".", "isCorrect": true},
+          {"answerText": "\"Kinetic poetry.\"", "isCorrect": false},
+          {"answerText": "\"Emotional landscapes.\"", "isCorrect": false},
+          {"answerText": "\"Rhythmic sculpture.\"", "isCorrect": false}
+        ],
+        "explanation": "Gus Solomons Jr. often described his postmodern choreographic approach as \"Melted architecture\"."
+      },
+      {
+        "questionText": "A hallmark of Mark Morris's choreographic work is his deep engagement with and sensitivity to:",
+        "answerOptions": [
+          {"answerText": "Literary narratives, which he directly translates into movement.", "isCorrect": false},
+          {"answerText": "Visual art, often creating dances as direct responses to paintings.", "isCorrect": false},
+          {"answerText": "Musical scores, demonstrating profound musicality and often using live music.", "isCorrect": true},
+          {"answerText": "Technological innovation, frequently incorporating digital media.", "isCorrect": false}
+        ],
+        "explanation": "A hallmark of Mark Morris's choreographic work is his deep engagement with and sensitivity to musical scores, demonstrating profound musicality and often using live music."
+      },
+      {
+        "questionText": "The RUBBERBAND Method, developed by Victor Quijada, is characterized by its fusion of:",
+        "answerOptions": [
+          {"answerText": "Classical Indian dance with contemporary ballet.", "isCorrect": false},
+          {"answerText": "African diasporic dance with traditional Japanese theater.", "isCorrect": false},
+          {"answerText": "The energy of hip-hop and breaking with the refinement of classical ballet and contemporary dance.", "isCorrect": true},
+          {"answerText": "Tap dance rhythms with ballroom partnering techniques.", "isCorrect": false}
+        ],
+        "explanation": "The RUBBERBAND Method, developed by Victor Quijada, is characterized by its fusion of the energy of hip-hop and breaking with the refinement of classical ballet and contemporary dance."
+      },
+      {
+        "questionText": "Which of the following is a key characteristic of classical dance philosophy as discussed in the provided materials?",
+        "answerOptions": [
+          {"answerText": "Emphasis on improvisation and spontaneous expression.", "isCorrect": false},
+          {"answerText": "Rejection of narrative and storytelling.", "isCorrect": false},
+          {"answerText": "Strict adherence to correct form and technique, with fluid, graceful movements and long lines.", "isCorrect": true},
+          {"answerText": "Prioritization of pedestrian movement and everyday gestures.", "isCorrect": false}
+        ],
+        "explanation": "A key characteristic of classical dance philosophy is strict adherence to correct form and technique, with fluid, graceful movements and long lines."
+      },
+      {
+        "questionText": "The primary purpose of Expressionist Dance, as it emerged in the early 20th century, was to:",
+        "answerOptions": [
+          {"answerText": "Showcase technical virtuosity and complex acrobatic feats.", "isCorrect": false},
+          {"answerText": "Provide lighthearted entertainment with no deeper meaning.", "isCorrect": false},
+          {"answerText": "Serve as a counter-movement to classical ballet, emphasizing the individual and artistic presentation of feelings.", "isCorrect": true},
+          {"answerText": "Strictly adhere to the choreographic rules of 18th-century court dances.", "isCorrect": false}
+        ],
+        "explanation": "The primary purpose of Expressionist Dance was to serve as a counter-movement to classical ballet, emphasizing the individual and artistic presentation of feelings."
+      },
+      {
+        "questionText": "Objectivist dance philosophy, often associated with Merce Cunningham, values:",
+        "answerOptions": [
+          {"answerText": "The direct expression of the choreographer's personal emotions.", "isCorrect": false},
+          {"answerText": "The telling of clear, linear narratives through movement.", "isCorrect": false},
+          {"answerText": "Exploring possibilities and making dances less about the choreographer and more about the artistic features themselves.", "isCorrect": true},
+          {"answerText": "The faithful recreation of historical dance forms.", "isCorrect": false}
+        ],
+        "explanation": "Objectivist dance philosophy, often associated with Merce Cunningham, values exploring possibilities and making dances less about the choreographer and more about the artistic features themselves."
+      },
+      {
+        "questionText": "A key feature of \"pedestrian movement\" as utilized in postmodern dance is:",
+        "answerOptions": [
+          {"answerText": "The incorporation of highly virtuosic and technically demanding steps.", "isCorrect": false},
+          {"answerText": "The use of everyday actions like walking, sitting, and running as valid choreographic material.", "isCorrect": true},
+          {"answerText": "A focus on creating elaborate, fantastical characters and narratives.", "isCorrect": false},
+          {"answerText": "Strict adherence to the rhythmic and melodic structures of the accompanying music.", "isCorrect": false}
+        ],
+        "explanation": "A key feature of \"pedestrian movement\" in postmodern dance is the use of everyday actions like walking, sitting, and running as valid choreographic material."
+      },
+      {
+        "questionText": "What is a central argument of Brenda Dixon-Gottschild in \"Stripping the Emperor: George Balanchine and the Americanization of Ballet\"?",
+        "answerOptions": [
+          {"answerText": "Balanchine's work was a pure continuation of European classical ballet with no American influences.", "isCorrect": false},
+          {"answerText": "The Africanist aesthetic has been an \"invisibilized\" yet conditioning factor in Balanchine's Americanized style of ballet.", "isCorrect": true},
+          {"answerText": "Balanchine primarily drew inspiration from Asian dance forms.", "isCorrect": false},
+          {"answerText": "Africanist aesthetics had no significant impact on American concert dance.", "isCorrect": false}
+        ],
+        "explanation": "A central argument of Brenda Dixon-Gottschild in \"Stripping the Emperor\" is that the Africanist aesthetic has been an \"invisibilized\" yet conditioning factor in Balanchine's Americanized style of ballet."
+      },
+      {
+        "questionText": "Which of the following is one of the five Africanist aesthetic principles discussed by Brenda Dixon-Gottschild?",
+        "answerOptions": [
+          {"answerText": "Linearity and symmetry.", "isCorrect": false},
+          {"answerText": "Emotional detachment and restraint.", "isCorrect": false},
+          {"answerText": "Polycentrism/Polyrhythm.", "isCorrect": true},
+          {"answerText": "Strict adherence to a single rhythmic pulse.", "isCorrect": false}
+        ],
+        "explanation": "Polycentrism/Polyrhythm is one of the five Africanist aesthetic principles discussed by Brenda Dixon-Gottschild."
+      },
+      {
+        "questionText": "Vernacular dance is best defined as:",
+        "answerOptions": [
+          {"answerText": "Dances created exclusively for professional concert stage performance.", "isCorrect": false},
+          {"answerText": "Dances which have developed 'naturally' as a part of 'everyday' culture within a particular community, often learned without formal instruction.", "isCorrect": true},
+          {"answerText": "A codified system of dance technique taught only in academic institutions.", "isCorrect": false},
+          {"answerText": "Improvisational dances performed solely by trained soloists.", "isCorrect": false}
+        ],
+        "explanation": "Vernacular dance is best defined as dances which have developed 'naturally' as a part of 'everyday' culture within a particular community, often learned without formal instruction."
+      },
+      {
+        "questionText": "Aleatory dance is characterized by:",
+        "answerOptions": [
+          {"answerText": "The strict and precise execution of predetermined choreographic sequences.", "isCorrect": false},
+          {"answerText": "The incorporation of elements of chance or performer determination in the composition or realization of the work.", "isCorrect": true},
+          {"answerText": "A primary focus on storytelling and narrative development.", "isCorrect": false},
+          {"answerText": "The exclusive use of classical music as accompaniment.", "isCorrect": false}
+        ],
+        "explanation": "Aleatory dance is characterized by the incorporation of elements of chance or performer determination in the composition or realization of the work."
+      },
+      {
+        "questionText": "In Martha Graham's iconic solo Lamentation (1930), the dancer is famously costumed in:",
+        "answerOptions": [
+          {"answerText": "A flowing white gown reminiscent of Greek statues.", "isCorrect": false},
+          {"answerText": "A simple black leotard and tights to emphasize the body's lines.", "isCorrect": false},
+          {"answerText": "A loose purple tube-like jersey garment from which only her head, hands, and feet protrude.", "isCorrect": true},
+          {"answerText": "Elaborate, feathered wings and a jeweled headdress.", "isCorrect": false}
+        ],
+        "explanation": "In Martha Graham's Lamentation (1930), the dancer is famously costumed in a loose purple tube-like jersey garment from which only her head, hands, and feet protrude."
+      },
+      {
+        "questionText": "Katherine Dunham's Shango is a staged translation of a Vodun ritual that includes elements such as:",
+        "answerOptions": [
+          {"answerText": "The use of classical ballet pointe work and European courtly gestures.", "isCorrect": false},
+          {"answerText": "A ceremony of sacrifice to Shango, the thunder god, and possession by Damballa, the snake god.", "isCorrect": true},
+          {"answerText": "Abstract, minimalist movement with no clear narrative or cultural references.", "isCorrect": false},
+          {"answerText": "Improvisational solos based on contemporary jazz music.", "isCorrect": false}
+        ],
+        "explanation": "Katherine Dunham's Shango includes elements such as a ceremony of sacrifice to Shango, the thunder god, and possession by Damballa, the snake god."
+      },
+      {
+        "questionText": "The costumes designed by Jasmin Lepore for Sasha Waltz's In C are best described as:",
+        "answerOptions": [
+          {"answerText": "Uniform black unitards for all dancers.", "isCorrect": false},
+          {"answerText": "Elaborate, historically accurate period costumes.", "isCorrect": false},
+          {"answerText": "Diverse pastel-colored clothing, with some dancers in shorts and others in long trousers.", "isCorrect": true},
+          {"answerText": "Metallic, futuristic bodysuits with integrated lighting.", "isCorrect": false}
+        ],
+        "explanation": "The costumes designed by Jasmin Lepore for Sasha Waltz's In C are best described as diverse pastel-colored clothing, with some dancers in shorts and others in long trousers."
+      },
+      {
+        "questionText": "The set design for Merce Cunningham's CRWDSPCR, choreographed using LifeForms software, typically featured:",
+        "answerOptions": [
+          {"answerText": "A lush, naturalistic forest scene.", "isCorrect": false},
+          {"answerText": "An elaborate, multi-tiered architectural structure.", "isCorrect": false},
+          {"answerText": "An aquamarine backcloth and a dappled floor pattern, with dancers in multi-colored, sectioned leotards.", "isCorrect": true},
+          {"answerText": "A completely bare stage with no scenic elements.", "isCorrect": false}
+        ],
+        "explanation": "The set design for Merce Cunningham's CRWDSPCR typically featured an aquamarine backcloth and a dappled floor pattern, with dancers in multi-colored, sectioned leotards."
+      },
+      {
+        "questionText": "The overall mood of the pas de deux in George Balanchine's Diamonds section of Jewels is characterized by:",
+        "answerOptions": [
+          {"answerText": "Fiery passion and overt sensuality.", "isCorrect": false},
+          {"answerText": "Playful wit and comedic timing.", "isCorrect": false},
+          {"answerText": "Gentle exchange, majesty of service, and the glory of humility.", "isCorrect": true},
+          {"answerText": "Angular tension and aggressive athleticism.", "isCorrect": false}
+        ],
+        "explanation": "The overall mood of the pas de deux in George Balanchine's Diamonds section of Jewels is characterized by gentle exchange, majesty of service, and the glory of humility."
+      },
+      {
+        "questionText": "Lin Hwai-min's dance work Dust is thematically inspired by:",
+        "answerOptions": [
+          {"answerText": "Ancient Chinese calligraphy and landscape painting.", "isCorrect": false},
+          {"answerText": "Joyful folk celebrations and harvest rituals.", "isCorrect": false},
+          {"answerText": "The bombing of Dresden and broader themes of human suffering and genocide in the 21st century.", "isCorrect": true},
+          {"answerText": "The life and work of composer Erik Satie.", "isCorrect": false}
+        ],
+        "explanation": "Lin Hwai-min's dance work Dust is thematically inspired by the bombing of Dresden and broader themes of human suffering and genocide in the 21st century."
+      },
+      {
+        "questionText": "Regarding the role of gender, a general distinction between classical ballet and many forms of modern/postmodern dance is that:",
+        "answerOptions": [
+          {"answerText": "Classical ballet has always featured completely interchangeable gender roles, while modern dance enforces strict stereotypes.", "isCorrect": false},
+          {"answerText": "Classical ballet often maintained strict divisions and traditional gender roles, whereas many modern and postmodern choreographers challenged or made these roles more fluid.", "isCorrect": true},
+          {"answerText": "Both classical ballet and all forms of modern dance consistently portray women as delicate and men as powerful.", "isCorrect": false},
+          {"answerText": "Gender is entirely irrelevant in both classical ballet and modern dance traditions.", "isCorrect": false}
+        ],
+        "explanation": "A general distinction regarding gender is that classical ballet often maintained strict divisions and traditional gender roles, whereas many modern and postmodern choreographers challenged or made these roles more fluid."
+      },
+      {
+        "questionText": "The relationship between dance and music in the work of Merce Cunningham typically differs from that in George Balanchine's work in that:",
+        "answerOptions": [
+          {"answerText": "Cunningham's dance closely follows the musical rhythm and melody, while Balanchine's dance is independent of the score.", "isCorrect": false},
+          {"answerText": "Balanchine often used music to structure the dance and visualize its components, while Cunningham allowed dance and music to exist as independent, coexisting entities.", "isCorrect": true},
+          {"answerText": "Both choreographers always used silence as the primary accompaniment for their dances.", "isCorrect": false},
+          {"answerText": "Cunningham exclusively used popular music, while Balanchine only used baroque scores.", "isCorrect": false}
+        ],
+        "explanation": "The relationship between dance and music differs in that Balanchine often used music to structure the dance and visualize its components, while Cunningham allowed dance and music to exist as independent, coexisting entities."
+      }
+    ]
+  }

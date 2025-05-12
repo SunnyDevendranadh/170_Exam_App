@@ -20,6 +20,7 @@ import svmData2 from "./data/quiz_2/svm2.json";
 import pcaData2 from "./data/quiz_2/pca2.json";
 import regressionData2 from "./data/quiz_2/regression2.json";
 import agenticAIData2 from "./data/quiz_2/agenticai2.json";
+import danceData2 from "./data/quiz_2/dance_quiz2.json";
 
 // Import cumilative quiz data
 import cumulativeData from "./data/cumilative.json";
@@ -182,7 +183,7 @@ const topicData: Record<TopicKey, TopicInfo> = {
   dance: {
     title: "Dance Philosophies & Analysis",
     data: danceData as unknown as RawTopicJsonData,
-    data2: danceData as unknown as RawTopicJsonData, // Using same data for both sets since it's a final exam
+    data2: danceData2 as unknown as RawTopicJsonData, // Now using dance_quiz2.json for Quiz 2
   },
   agenticAI: {
     title: "Agentic AI",
