@@ -330,4 +330,201 @@ export const pcaConcepts: Concept[] = [
       "Evaluation: explained_variance_ratio_"
     ]
   }
+];
+
+export const danceConcepts: Concept[] = [
+  {
+    title: "Exam Basics",
+    description: [
+      "Format: 50 multiple-choice questions (iClicker style)",
+      "Bring: Scantron 882-E",
+      "Time: Up to 60 minutes (most finish in 20-30)",
+      "Tips: Questions cover philosophies, choreographers, readings, videos, vocabulary, and major course themes"
+    ]
+  },
+  {
+    title: "Four Philosophies of Dance",
+    description: [
+      "1. Classical:",
+      "- Purpose: Technical perfection, beauty, form, structure, musicality",
+      "- Choreographer: George Balanchine",
+      "- Known for neoclassical ballet, plotless works, focus on musicality",
+      "- Key Works: 'Apollo' (quartet, Greek myth), 'Diamonds' (formal group), 'Rubies' (jazzy, angular)",
+      "- Features: Minimal costumes/sets, highlights pure movement, traditional gender roles",
+      "",
+      "2. Expressionist:",
+      "- Purpose: Expresses emotional truth, psychological states, dramatic gesture",
+      "- Choreographer: Martha Graham",
+      "- Created 'contraction and release' technique, focused on myth, psychology, and emotion",
+      "- Key Work: 'Lamentation' (solo, purple tube, grief)",
+      "- Features: Symbolic costumes/sets, intense emotionality, strong female roles",
+      "",
+      "3. Objectivist:",
+      "- Purpose: Movement for movement's sake, chance, process over emotion or narrative",
+      "- Choreographer: Merce Cunningham",
+      "- Used chance operations (I Ching, dice), separated music/dance, used technology (LifeForms software)",
+      "- Key Works: 'CRWDSPCR' (abstract, group), 'Suite for Five,' 'Interscape'",
+      "- Features: No fixed points in space, dancers face any direction, gender-neutral roles",
+      "",
+      "4. Africanist:",
+      "- Purpose: Community, polyrhythm, groundedness, spirituality, cultural storytelling",
+      "- Choreographer: Katherine Dunham",
+      "- Blended African/Caribbean dance with ballet, anthropological research, social activism",
+      "- Key Work: 'Shango' (spiritual, African deity)",
+      "- Features: Isolations, polyrhythm, celebration of cultural identity, both men and women strong"
+    ]
+  },
+  {
+    title: "Susan Foster's Framework (from Reading Dancing)",
+    description: [
+      "Dance Technique: Movement style and training",
+      "Bodily Presence: How the dancer's body appears/moves in space",
+      "Expressive Concepts: What ideas/emotions are communicated",
+      "Subjectivity/Identity: Dancer's role/persona in the work",
+      "Rhetorical Forms: How dance communicates (allegory, pathos, etc.)"
+    ]
+  },
+  {
+    title: "Key Choreographers & What to Know",
+    description: [
+      "Deborah Hay: Improvisation, focus on presence",
+      "George Balanchine: Neoclassical ballet, musicality, plotless works",
+      "Martha Graham: Emotional, psychological, contraction/release",
+      "Merce Cunningham: Chance, independence from music, technology",
+      "Lin Hwai-min: Blends Asian and Western dance, grounded movement",
+      "Trisha Brown: Pedestrian movement, structured improvisation",
+      "Sasha Waltz: Group improvisation, ritualistic",
+      "Eleo Pomare: Social justice, realism, 'Junkie'",
+      "Gus Solomons, Jr.: Abstract, architectural, precise movement",
+      "Mark Morris: Classical/modern blend, musicality",
+      "Katherine Dunham: African/Caribbean + ballet, anthropology",
+      "Áse Dance Theatre Collective: Neo-folkloric, African diaspora",
+      "Victor Quijada: Hip-hop + contemporary, RUBBERBANDance"
+    ]
+  },
+  {
+    title: "Key Vocabulary",
+    description: [
+      "Aleatory: Chance-based composition (Cunningham)",
+      "Articulate: Precise, independent movement of body parts",
+      "African Diaspora: Spread of African cultures; polyrhythm, total body articulation",
+      "Vernacular Dance: Community/social dance, learned informally (e.g., street dance)"
+    ]
+  },
+  {
+    title: "Creative Process by Choreographer",
+    description: [
+      "Balanchine: Musicality, form, minimalism, collaboration with composers",
+      "Graham: Emotional impulse, myth, symbolic sets",
+      "Cunningham: Chance, technology, process over product",
+      "Dunham: Cultural research, authenticity, social context"
+    ]
+  },
+  {
+    title: "Dance & Life: Philosophies",
+    description: [
+      "Classical: Dance as elevated art, technical perfection",
+      "Expressionist: Dance as emotional/psychological exploration",
+      "Objectivist: Dance as movement in time/space, chance, everyday life",
+      "Africanist: Dance as community, spirituality, culture"
+    ]
+  },
+  {
+    title: "Who Can Be a Dancer?",
+    description: [
+      "Classical: Technical precision, specific body type",
+      "Expressionist: Emotional depth, physical strength",
+      "Objectivist: Adaptable, neutral, versatile",
+      "Africanist: Culturally aware, polyrhythmic, grounded"
+    ]
+  },
+  {
+    title: "Gender in Dance",
+    description: [
+      "Classical: Traditional, 'ballet is woman'",
+      "Expressionist: Strong female roles, psychological depth",
+      "Objectivist: Gender-neutral, same movement for all",
+      "Africanist: Complementary, both genders strong, cultural context"
+    ]
+  },
+  {
+    title: "Required Readings Summarized",
+    description: [
+      "Susan Foster, Reading Dancing (pp. 1-57):",
+      "- Dance is a system of meaning, not just movement",
+      "- Foster compares choreographers' creative processes",
+      "- Explores how dance expresses identity, gender, and social values",
+      "",
+      "Merce Cunningham, 'Torse: There are No Fixed Points in Space':",
+      "- Describes using chance (I Ching) to create 64 movement phrases",
+      "- Performed in any order/direction",
+      "- No fixed stage orientation; dance is dynamic and unpredictable",
+      "",
+      "John Cage, 'Excerpts':",
+      "- Explains use of chance, independence of music/dance",
+      "- Zen influence, focus on process over product",
+      "",
+      "Joanna Dee Das, Katherine Dunham: Dance and the African Diaspora:",
+      "- Dunham's research in the Caribbean led to technique blending Africanist movement with ballet",
+      "- Social activist and educator",
+      "",
+      "Trina Parks, 'Katherine Dunham: A Personal Remembrance':",
+      "- Firsthand account of Dunham's mentorship and technique",
+      "- Supportive yet demanding teaching style",
+      "- Legacy shaped future dancers' lives",
+      "",
+      "Brenda Dixon-Gottschild, 'Stripping the Emperor':",
+      "- Argues Africanist aesthetics are foundational in American dance, including ballet",
+      "- Highlights Balanchine's use of Africanist qualities",
+      "- Need to acknowledge Black contributions",
+      "",
+      "Ellen Chenoweth, 'Victor Quijada':",
+      "- Quijada's RUBBERBANDance Group fuses hip-hop, contemporary, and classical",
+      "- Bridge between genres, innovating with both street and concert dance"
+    ]
+  },
+  {
+    title: "Required Videos: Key Features",
+    description: [
+      "Balanchine: 'Diamonds' (formal, group), 'Apollo' (quartet, myth), 'Rubies' (jazzy, angular)",
+      "Graham: 'Lamentation' (solo, purple tube, grief)",
+      "Cunningham: 'CRWDSPCR' (abstract, group, LifeForms), 'Interscape,' 'Suite for Five'",
+      "Lin Hwai-min: 'Floating on the Ground,' 'Dust' (East/West blend, grounded)",
+      "Trisha Brown: 'Excerpts' (pedestrian to complex)",
+      "Sasha Waltz: 'In C' (structured group improvisation)",
+      "Eleo Pomare: 'Junkie' (realism, addiction), '1960s' (social justice)",
+      "Gus Solomons, Jr.: '1960s' (abstract), 'Six Solos' (precision)",
+      "Mark Morris: 'Creative Process,' 'Non Troppo' (classical/modern)",
+      "Katherine Dunham: 'Steps of the Gods,' 'Articulated Torso,' 'Shango' (spiritual, African/Caribbean)",
+      "Áse Dance Theatre: 'Uncle Freddie' (neo-folkloric, Haitian Vodou)",
+      "Victor Quijada: 'Rubberbandance on Freedom Program' (hip-hop/contemporary)"
+    ]
+  },
+  {
+    title: "Practice Questions (with Answers)",
+    description: [
+      "Which philosophy uses chance? Objectivist (Cunningham)",
+      "Graham's technique is based on? Contraction and release",
+      "Foster's 'bodily presence' means? How the body appears/moves in space",
+      "Dunham's choreography combines? Ballet and African/Caribbean dance",
+      "'Aleatory' means? Chance-based (dice)",
+      "Balanchine focuses on? Form, musicality, precision",
+      "'CRWDSPCR' was created with? LifeForms software",
+      "Africanist philosophy values? Polyrhythm, cultural heritage",
+      "'Lamentation' features? Seated dancer, purple fabric",
+      "Pomare's work is? Socio-political"
+    ]
+  },
+  {
+    title: "Final Review Checklist",
+    description: [
+      "Know the four philosophies and their choreographers",
+      "Understand Foster's framework",
+      "Identify creative processes and philosophies",
+      "Recognize vocabulary and apply it",
+      "Know the main points from each reading",
+      "Identify general features of each required video",
+      "Quiz yourself with practice questions"
+    ]
+  }
 ]; 
