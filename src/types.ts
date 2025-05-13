@@ -6,6 +6,14 @@ export interface Question {
   correctAnswer: string;
 }
 
+// Define a Quiz Question interface for quiz data files
+export interface QuizQuestion {
+  question: string;
+  options: string[];
+  answer: string;
+  explanation: string;
+}
+
 // Define the Concept interface for concept guides
 export interface Concept {
   title: string;

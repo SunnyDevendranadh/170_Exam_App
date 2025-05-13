@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Quiz from "./components/Quiz";
 import { ConceptGuide } from "./components/ConceptGuide";
+import DanceQuizSelector from "./components/DanceQuizSelector";
 
 // Import JSON data for Quiz 1
 import decisionTreeData from "./data/decisionTree.json";
@@ -101,7 +102,8 @@ type ViewMode =
   | "concepts"
   | "quizSelection"
   | "finalQuiz"
-  | "finalQuizSelection";
+  | "finalQuizSelection"
+  | "danceQuizzes";
 type QuizSet = 1 | 2;
 
 // Topic icons and colors for improved UI
@@ -203,7 +205,11 @@ const App: React.FC = () => {
 
   // Add explicit void return type
   const handleBack = (): void => {
-    if (viewMode === "quizSelection" || viewMode === "finalQuizSelection") {
+    if (
+      viewMode === "quizSelection" ||
+      viewMode === "finalQuizSelection" ||
+      viewMode === "danceQuizzes"
+    ) {
       setViewMode("topics");
       setSelectedTopic(null);
     } else if (viewMode === "finalQuiz") {
@@ -237,6 +243,10 @@ const App: React.FC = () => {
   const handleSelectFinalQuiz = (quizSet: QuizSet): void => {
     setSelectedQuizSet(quizSet);
     setViewMode("finalQuiz");
+  };
+
+  const handleShowDanceQuizzes = (): void => {
+    setViewMode("danceQuizzes");
   };
 
   // Get the keys strongly typed
@@ -312,6 +322,41 @@ const App: React.FC = () => {
                     Start Final Quiz
                   </Button>
                 </CardFooter>
+              </Card>
+            </div>
+
+            {/* Dance Quizzes Card */}
+            <div className="mb-8">
+              <Card className="flex flex-col items-center overflow-hidden hover:shadow-lg transition-all duration-300 bg-purple-50 border-purple-200 shadow max-w-2xl mx-auto">
+                <CardHeader className="pb-3 border-b border-purple-100">
+                  <CardTitle className="flex items-center gap-2 text-black text-center">
+                    <span
+                      className="text-3xl mx-auto"
+                      role="img"
+                      aria-hidden="true"
+                    >
+                      💃
+                    </span>
+                    <span className="mx-auto">Dance Quizzes</span>
+                  </CardTitle>
+                  <CardDescription className="text-center text-gray-600">
+                    Practice with all three dance quizzes in one place
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-6 text-center">
+                  <p className="text-sm text-gray-500 mb-4">
+                    All three dance quizzes with different questions for
+                    thorough practice
+                  </p>
+                  <Button
+                    variant="default"
+                    className="bg-purple-600 hover:bg-purple-700 text-white"
+                    onClick={handleShowDanceQuizzes}
+                    aria-label="Go to dance quizzes"
+                  >
+                    Practice Dance Quizzes
+                  </Button>
+                </CardContent>
               </Card>
             </div>
 
@@ -429,6 +474,18 @@ const App: React.FC = () => {
               title={`${topicData[selectedTopic].title} - Quiz ${selectedQuizSet}`}
               questions={processQuestions(getQuizData(selectedTopic).questions)}
             />
+          </div>
+        ) : viewMode === "danceQuizzes" ? (
+          <div className="max-w-4xl mx-auto scroll-y-only">
+            <Button
+              onClick={handleBack}
+              className="mb-6 gap-2"
+              variant="default"
+              aria-label="Go back to topics"
+            >
+              <span aria-hidden="true">←</span> Back to Topics
+            </Button>
+            <DanceQuizSelector />
           </div>
         ) : viewMode === "finalQuizSelection" ? (
           <div className="max-w-4xl mx-auto">

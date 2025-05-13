@@ -501,6 +501,19 @@ export const danceConcepts: Concept[] = [
     ]
   },
   {
+    title: "Reading Dance by Susan Foster",
+    description: [
+      "This text analyzes four choreographers—Martha Graham, George Balanchine, Merce Cunningham, and Deborah Hay",
+      "Key choreographers have distinct approaches to movement, body, and art's purpose",
+      "Hay: Communion, Discovery, Harmony, Cells, Metaphors, Accord",
+      "Balanchine: Celebration, Crafting, Control, Medium, Artisan, Exhilaration",
+      "Graham: Communication, Testifying, Expression, Vehicle, Feelings, Empathy",
+      "Cunningham: Collaboration, Drafting, Articulation, Muscles, Activity, Attentiveness",
+      "Each choreographer cultivates a distinct dancer's body and audience experience",
+      "Audiences engage differently—empathy (Graham), exhilaration (Balanchine), attentiveness (Cunningham), accord (Hay)"
+    ]
+  },
+  {
     title: "Practice Questions (with Answers)",
     description: [
       "Which philosophy uses chance? Objectivist (Cunningham)",
